@@ -19,7 +19,7 @@ const Navbar = () => {
   const textColor = scrolled || !isHomePage ? 'text-gray-800' : 'text-gray-800';
   const bgColor = scrolled || !isHomePage ? 'bg-white/90' : 'bg-white/70';
 
-  const navItems = ['About', 'Themes', 'Departments', 'Speakers', 'Contact'];
+  const navItems = ['About', 'Themes', 'Departments', 'Committee', 'Speakers', 'Contact', 'Registration'];
 
   return (
     <motion.nav
@@ -43,7 +43,7 @@ const Navbar = () => {
                 whileHover={{ scale: 1.05 }}
                 className="text-2xl font-bold text-green-600"
               >
-                🌱 Crest
+                🌱 NITK - CREST 2025
               </motion.span>
             </Link>
           </motion.div>

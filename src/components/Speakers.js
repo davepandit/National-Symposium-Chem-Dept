@@ -1,68 +1,44 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
 
 const speakers = [
-  {
-    name: 'Dr. Sarah Johnson',
-    role: 'Environmental Scientist',
-    organization: 'Global Sustainability Institute',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
-  },
-  {
-    name: 'Prof. Michael Chen',
-    role: 'Renewable Energy Expert',
-    organization: 'Tech University',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
-  },
-  {
-    name: 'Dr. Emily Williams',
-    role: 'Sustainability Consultant',
-    organization: 'EcoSolutions International',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
-  },
+  { name: 'Prof. Tanmay Basak', affiliation: 'IIT Madras' },
+  { name: 'Prof. R. Vinu', affiliation: 'IIT Madras' },
+  { name: 'Prof. Sanjeev Chaudhari', affiliation: 'IIT Bombay' },
+  { name: 'Dr. Manoj P Samuel', affiliation: 'Executive Director of CWRDM, Kozhikode' },
+  { name: 'Dr. Sivaraman Savithri', affiliation: 'CSIR NIIST' },
+  { name: 'Dr. T.C.S.M. Gupta', affiliation: 'Senior Vice President, R&D, Apar Industries Limited Mumbai' },
+  { name: 'Prof. P C Abhilash', affiliation: 'IIT BHU Varanasi' },
+  { name: 'Prof. Nihar Ranjan Mohapatra', affiliation: 'IIT Gandhinagar' },
+  { name: 'Dr. Venkata Vanukuru', affiliation: 'Technical Director/DMTS, GLOBALFOUNDRIES' },
+  { name: 'Dr. Somashekhar S Hiremath', affiliation: 'Professor, Department of Mechanical Engineering, IIT Madras' },
+  { name: 'Dr. Madhav Dhananjaya Gadgil', affiliation: 'Indian ecologist' },
+  { name: 'Dr. Kota Ullas Karanth', affiliation: 'NITK Alumni' },
 ];
 
 const Speakers = () => {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
   return (
-    <section ref={ref} className="py-24 bg-green-100" id="speakers">
+    <section className="py-24 bg-green-50" id="speakers">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl font-bold text-green-800 mb-4">Featured Speakers</h2>
-          <p className="text-xl text-green-700">Learn from the world's leading sustainability experts</p>
-        </motion.div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Keynote Speakers</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {speakers.map((speaker, index) => (
             <motion.div
-              key={speaker.name}
+              key={index}
+              className="bg-white rounded-lg shadow-lg overflow-hidden"
+              whileHover={{ scale: 1.05 }}
               initial={{ opacity: 0, y: 50 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="group bg-white rounded-xl shadow-lg overflow-hidden"
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
             >
-              <div className="relative mb-6 overflow-hidden">
-                <img
-                  src={speaker.image}
-                  alt={speaker.name}
-                  className="w-full aspect-square object-cover transform group-hover:scale-110 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-green-700/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              <div className="p-6 text-center">
-                <h3 className="text-2xl font-semibold text-green-800 mb-2">{speaker.name}</h3>
-                <p className="text-green-600 font-medium mb-1">{speaker.role}</p>
-                <p className="text-green-500">{speaker.organization}</p>
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                alt={speaker.name}
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">{speaker.name}</h3>
+                <p className="text-gray-600">{speaker.affiliation}</p>
               </div>
             </motion.div>
           ))}

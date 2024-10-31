@@ -1,42 +1,80 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const themes = [
   {
+    title: 'Earth (Material)',
+    description: 'Sustainable materials and waste management',
+    icon: '🌱',
+    image: 'https://images.unsplash.com/photo-1470115636492-6d2b56f9146d',
+    color: 'from-green-600 to-green-800',
+    points: [
+      'Circular economy and waste management',
+      'Sustainable materials',
+      'Soil pollution control',
+      'Nanomaterials',
+      'Biomaterials',
+      'Sustainable mining'
+    ]
+  },
+  {
     title: 'Water',
-    description: 'Exploring sustainable water management and conservation techniques',
+    description: 'Sustainable water management and conservation',
     icon: '💧',
     image: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05',
-    color: 'from-blue-500 to-green-500',
+    color: 'from-blue-400 to-blue-600',
+    points: [
+      'Wastewater treatment',
+      'Sustainable water infrastructure',
+      'Desalination',
+      'AI and ML for Water Research',
+      'Water quality, management & reuse',
+      'Water conservation'
+    ]
   },
   {
-    title: 'Energy',
-    description: 'Harnessing renewable energy sources and reducing carbon emissions',
-    icon: '⚡',
-    image: 'https://images.unsplash.com/photo-1547483238-2cbf881a559f',
-    color: 'from-yellow-500 to-green-500',
-  },
-  {
-    title: 'Earth',
-    description: 'Promoting sustainable agriculture and land use practices',
-    icon: '🌍',
-    image:  'https://images.unsplash.com/photo-1470115636492-6d2b56f9146d',
-    color: 'from-green-500 to-green-700',
+    title: 'Space (Climate)',
+    description: 'Addressing climate change and its impacts from a global perspective',
+    icon: '🚀',
+    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa',
+    color: 'from-indigo-800 to-purple-900',
+    points: [
+      'Climate change mitigation and adaption',
+      'Global warming',
+      'Environmental impact assessment',
+      'Disaster Management',
+      'Low carbon economy'
+    ]
   },
   {
     title: 'Air',
-    description: 'Developing clean air technologies and reducing pollution',
+    description: 'Air quality and pollution control',
     icon: '💨',
     image: 'https://images.unsplash.com/photo-1534088568595-a066f410bcda',
-    color: 'from-green-300 to-green-500',
+    color: 'from-sky-300 to-sky-500',
+    points: [
+      'Carbon Capture, Utilisation and Storage',
+      'Air pollution control',
+      'Particulate matter',
+      'Air monitoring and emission research',
+      'Air quality modeling'
+    ]
   },
   {
-    title: 'Innovation',
-    description: 'Utilizing cutting-edge technology for environmental monitoring',
-    icon: '💡',
-    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa',
-    color: 'from-purple-500 to-green-500',
+    title: 'Fire (Energy)',
+    description: 'Renewable energy and sustainable technologies',
+    icon: '🔥',
+    image: 'https://images.unsplash.com/photo-1496483353456-90997957cf99?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmlyZXxlbnwwfHwwfHx8MA%3D%3D',
+    color: 'from-orange-500 to-red-600',
+    points: [
+      'Hydrogen production and storage',
+      'Renewable energy',
+      'Thermochemical conversion',
+      'Batteries, fuel cells, Supercapacitors',
+      'AI and ML applications in Energy'
+    ]
   },
 ];
 
@@ -46,13 +84,17 @@ const ThemeCard = ({ theme, index }) => {
     threshold: 0.2,
   });
 
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <motion.div
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, delay: index * 0.2 }}
-      className="relative group h-96 overflow-hidden rounded-2xl shadow-lg"
+      className="relative group h-96 overflow-hidden rounded-2xl shadow-lg cursor-pointer"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <div className="absolute inset-0 overflow-hidden">
         <img
@@ -80,15 +122,47 @@ const ThemeCard = ({ theme, index }) => {
         >
           {theme.title}
         </motion.h3>
-        <motion.p
-          initial={{ x: -50, opacity: 0 }}
-          animate={inView ? { x: 0, opacity: 1 } : {}}
-          transition={{ duration: 0.5, delay: index * 0.2 + 0.5 }}
-          className="text-lg text-white/90"
-        >
-          {theme.description}
-        </motion.p>
+        <AnimatePresence>
+          {!isHovered && (
+            <motion.p
+              key="description"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.3 }}
+              className="text-lg text-white/90"
+            >
+              {theme.description}
+            </motion.p>
+          )}
+        </AnimatePresence>
       </div>
+      <AnimatePresence>
+        {isHovered && (
+          <motion.div
+            key="points"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
+            transition={{ duration: 0.3 }}
+            className={`absolute inset-0 bg-gradient-to-b ${theme.color} p-6 flex flex-col justify-center items-center`}
+          >
+            <h4 className="text-2xl font-bold text-white mb-4">{theme.title}</h4>
+            <ul className="text-sm space-y-2 list-disc list-inside text-white">
+              {theme.points.map((point, i) => (
+                <motion.li
+                  key={i}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: i * 0.1 }}
+                >
+                  {point}
+                </motion.li>
+              ))}
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 };

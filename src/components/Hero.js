@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, MapPin } from 'react-feather';
 import { TypeAnimation } from 'react-type-animation';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -15,19 +16,19 @@ const Hero = () => {
         <div className="absolute inset-0 bg-green-50/80" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="space-y-8"
         >
-          <div className="text-4xl sm:text-5xl md:text-7xl font-bold text-gray-800 tracking-tight">
+          <div className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-gray-800 tracking-tight">
             <TypeAnimation
               sequence={[
-                'CREST 2024',
+                'NITK - CREST 2025',
                 1000,
-                'Innovate. Sustain. Transform.',
+                '1st National Conference on Climate Resilience and Environmentally Sustainable Technology',
                 500,
               ]}
               wrapper="span"
@@ -42,7 +43,7 @@ const Hero = () => {
             transition={{ delay: 3.8, duration: 0.8 }}
             className="max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-gray-600"
           >
-            Join leading experts and innovators at NITK's premier conference on renewable energy and sustainable technologies
+            Join experts, researchers, and professionals from diverse engineering disciplines to address the pressing challenges of climate change and environmental sustainability.
           </motion.p>
 
           <motion.div
@@ -56,7 +57,7 @@ const Hero = () => {
               className="flex items-center space-x-2 bg-white rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-md"
             >
               <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
-              <span className="text-sm sm:text-base text-gray-800">September 15-17, 2024</span>
+              <span className="text-sm sm:text-base text-gray-800">27th Feb - 1st Mar 2025</span>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05 }}
@@ -72,13 +73,15 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 4.2, duration: 0.8 }}
           >
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-green-600 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all shadow-lg hover:bg-green-700 text-sm sm:text-base"
-            >
-              Register Now
-            </motion.button>
+            <Link to="/registration">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-green-600 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all shadow-lg hover:bg-green-700 text-sm sm:text-base"
+              >
+                Register Now
+              </motion.button>
+            </Link>
           </motion.div>
         </motion.div>
       </div>
