@@ -7,7 +7,7 @@ const speakers = [
     name: 'Dr. Sarah Johnson',
     role: 'Environmental Scientist',
     organization: 'Global Sustainability Institute',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
   },
   {
     name: 'Prof. Michael Chen',
@@ -19,7 +19,7 @@ const speakers = [
     name: 'Dr. Emily Williams',
     role: 'Sustainability Consultant',
     organization: 'EcoSolutions International',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
   },
 ];
 
