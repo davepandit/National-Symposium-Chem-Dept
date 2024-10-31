@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -15,8 +16,10 @@ const Navbar = () => {
   }, []);
 
   const isHomePage = location.pathname === '/';
-  const textColor = scrolled || !isHomePage ? 'text-gray-800' : 'text-white';
-  const bgColor = scrolled || !isHomePage ? 'bg-white/90' : 'bg-transparent';
+  const textColor = scrolled || !isHomePage ? 'text-gray-800' : 'text-gray-800';
+  const bgColor = scrolled || !isHomePage ? 'bg-white/90' : 'bg-white/70';
+
+  const navItems = ['About', 'Themes', 'Departments', 'Speakers', 'Contact'];
 
   return (
     <motion.nav
@@ -38,9 +41,7 @@ const Navbar = () => {
             <Link to="/" className="flex items-center space-x-2">
               <motion.span
                 whileHover={{ scale: 1.05 }}
-                className={`text-2xl font-bold ${
-                  scrolled || !isHomePage ? 'text-green-600' : 'text-white'
-                }`}
+                className="text-2xl font-bold text-green-600"
               >
                 🌱 Crest
               </motion.span>
@@ -48,7 +49,7 @@ const Navbar = () => {
           </motion.div>
           
           <div className="hidden md:flex items-center space-x-8">
-            {['About', 'Themes', 'Departments', 'Speakers', 'Contact'].map((item, index) => (
+            {navItems.map((item, index) => (
               <motion.div
                 key={item}
                 initial={{ opacity: 0, y: -20 }}
@@ -72,7 +73,8 @@ const Navbar = () => {
 
           <motion.button
             whileTap={{ scale: 0.95 }}
-            className="md:hidden p-2 rounded-lg hover:bg-green-100/10"
+            className="md:hidden p-2 rounded-lg hover:bg-gray-100/10"
+            onClick={() => setIsOpen(!isOpen)}
           >
             <svg
               className={`w-6 h-6 ${textColor}`}
@@ -90,6 +92,29 @@ const Navbar = () => {
           </motion.button>
         </div>
       </div>
+
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3 }}
+            className="md:hidden bg-white"
+          >
+            {navItems.map((item) => (
+              <Link
+                key={item}
+                to={`/${item.toLowerCase()}`}
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                onClick={() => setIsOpen(false)}
+              >
+                {item}
+              </Link>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   );
 };

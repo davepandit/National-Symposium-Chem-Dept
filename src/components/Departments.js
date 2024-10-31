@@ -4,34 +4,34 @@ import { useInView } from 'react-intersection-observer';
 
 const departments = [
   {
-    name: 'Environmental Engineering',
-    description: 'Developing sustainable solutions for environmental challenges',
-    image: 'https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    name: 'Chemical Engineering',
+    description: 'Pioneering sustainable chemical processes and green technologies for a cleaner future.',
+    projects: ['Bio-based materials', 'Carbon capture technologies', 'Waste-to-energy solutions'],
   },
   {
-    name: 'Renewable Energy',
-    description: 'Advancing clean energy technologies for a sustainable future',
-    image: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    name: 'Civil Engineering',
+    description: 'Developing eco-friendly infrastructure and sustainable construction practices to build resilient cities.',
+    projects: ['Green building design', 'Sustainable urban planning', 'Water resource management'],
   },
   {
-    name: 'Sustainable Architecture',
-    description: 'Designing eco-friendly buildings and infrastructure',
-    image: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    name: 'Electrical and Electronics Engineering',
+    description: 'Advancing renewable energy systems and smart grid technologies for efficient power distribution.',
+    projects: ['Solar power integration', 'Smart grid optimization', 'Energy-efficient electronics'],
   },
   {
-    name: 'Water Resources',
-    description: 'Managing water resources for sustainable development',
-    image: 'https://images.unsplash.com/photo-1468421870903-4df1664ac249?ixlib=rb-1.2.1&auto=format&fit=crop&w=1349&q=80',
+    name: 'Mechanical Engineering',
+    description: 'Innovating in energy-efficient systems and sustainable manufacturing processes.',
+    projects: ['Electric vehicle technology', 'Renewable energy harvesting', 'Sustainable manufacturing'],
   },
   {
-    name: 'Waste Management',
-    description: 'Innovative solutions for waste reduction and recycling',
-    image: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    name: 'Computer Science and Engineering',
+    description: 'Applying AI and machine learning to tackle environmental challenges and optimize resource usage.',
+    projects: ['AI for climate modeling', 'Smart city technologies', 'Energy-efficient computing'],
   },
   {
-    name: 'Green Technologies',
-    description: 'Developing eco-friendly technologies for various applications',
-    image: 'https://images.unsplash.com/photo-1497440001374-f26997328c1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    name: 'Electronics and Communication Engineering',
+    description: 'Developing IoT solutions for environmental monitoring and control to create smarter, greener systems.',
+    projects: ['IoT for precision agriculture', 'Wireless sensor networks', 'Low-power communication systems'],
   },
 ];
 
@@ -50,9 +50,9 @@ const Departments = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-green-800 mb-4">Participating Departments</h2>
-          <p className="text-xl text-green-700">
-            Bringing together expertise from various disciplines to address sustainability challenges
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">NITK Departments</h2>
+          <p className="text-xl text-gray-600">
+            Collaborating across disciplines to address sustainability challenges
           </p>
         </motion.div>
 
@@ -63,19 +63,16 @@ const Departments = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: index * 0.1 }}
-              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-green-50 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
             >
-              <div className="aspect-w-16 aspect-h-9">
-                <img
-                  src={dept.image}
-                  alt={dept.name}
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300"
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-green-800/90 to-transparent flex flex-col justify-end p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">{dept.name}</h3>
-                <p className="text-green-100 text-sm">{dept.description}</p>
-              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">{dept.name}</h3>
+              <p className="text-gray-600 text-sm mb-4">{dept.description}</p>
+              <h4 className="text-lg font-medium text-gray-700 mb-2">Key Projects:</h4>
+              <ul className="list-disc list-inside text-gray-600 text-sm">
+                {dept.projects.map((project, idx) => (
+                  <li key={idx}>{project}</li>
+                ))}
+              </ul>
             </motion.div>
           ))}
         </div>
