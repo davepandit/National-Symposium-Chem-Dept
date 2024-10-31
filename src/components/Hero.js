@@ -40,9 +40,9 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 3.8, duration: 0.8 }}
-            className="max-w-2xl mx-auto text-lg sm:text-xl text-gray-600"
+            className="max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-gray-600"
           >
-            Join the forefront of sustainable innovation at NITK's premier conference on renewable energy and eco-friendly technologies
+            Join leading experts and innovators at NITK's premier conference on renewable energy and sustainable technologies
           </motion.p>
 
           <motion.div
@@ -53,17 +53,17 @@ const Hero = () => {
           >
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="flex items-center space-x-2 bg-white rounded-full px-6 py-3 shadow-md"
+              className="flex items-center space-x-2 bg-white rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-md"
             >
-              <Calendar className="w-5 h-5 text-gray-600" />
-              <span className="text-gray-800">September 15-17, 2024</span>
+              <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
+              <span className="text-sm sm:text-base text-gray-800">September 15-17, 2024</span>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="flex items-center space-x-2 bg-white rounded-full px-6 py-3 shadow-md"
+              className="flex items-center space-x-2 bg-white rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-md"
             >
-              <MapPin className="w-5 h-5 text-gray-600" />
-              <span className="text-gray-800">NITK, Surathkal</span>
+              <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
+              <span className="text-sm sm:text-base text-gray-800">NITK, Surathkal</span>
             </motion.div>
           </motion.div>
 
@@ -75,7 +75,7 @@ const Hero = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-green-600 text-white font-semibold px-8 py-4 rounded-full transition-all shadow-lg hover:bg-green-700"
+              className="bg-green-600 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all shadow-lg hover:bg-green-700 text-sm sm:text-base"
             >
               Register Now
             </motion.button>

@@ -7,29 +7,33 @@ import Themes from './components/Themes';
 import Departments from './components/Departments';
 import Speakers from './components/Speakers';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-white">
+      <div className="flex flex-col min-h-screen bg-white overflow-x-hidden">
         <Navbar />
-        <Routes>
-          <Route path="/" element={
-            <>
-              <Hero />
-              <About />
-              <Themes />
-              <Departments />
-              <Speakers />
-              <Contact />
-            </>
-          } />
-          <Route path="/about" element={<About />} />
-          <Route path="/themes" element={<Themes />} />
-          <Route path="/departments" element={<Departments />} />
-          <Route path="/speakers" element={<Speakers />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={
+              <>
+                <Hero />
+                <About />
+                <Themes />
+                <Departments />
+                <Speakers />
+                <Contact />
+              </>
+            } />
+            <Route path="/about" element={<About />} />
+            <Route path="/themes" element={<Themes />} />
+            <Route path="/departments" element={<Departments />} />
+            <Route path="/speakers" element={<Speakers />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
       </div>
     </Router>
   );
