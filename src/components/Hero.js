@@ -23,12 +23,12 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="space-y-8"
         >
-          <div className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-gray-800 tracking-tight">
+          <div className="text-4xl sm:text-5xl md:text-7xl font-bold text-gray-800 tracking-tight">
             <TypeAnimation
               sequence={[
-                'NITK - CREST 2025',
+                'NITK CREST-2025',
                 1000,
-                '1st National Conference on Climate Resilience and Environmentally Sustainable Technology',
+                'Innovate. Sustain. Transform.',
                 500,
               ]}
               wrapper="span"
