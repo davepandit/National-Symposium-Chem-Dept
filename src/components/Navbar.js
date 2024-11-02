@@ -38,16 +38,44 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
             className="flex items-center"
           >
-            <Link to="/" className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-3">
+              <motion.div
+                className="relative"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              >
+                <motion.img
+                  src="/favicon.png"
+                  alt="NITK - CREST 2025 Logo"
+                  width={60}
+                  height={60}
+                  className="rounded-full"
+                />
+                <motion.div
+                  className="absolute inset-0 rounded-full"
+                  animate={{
+                    boxShadow: [
+                      '0 0 0 0px rgba(74, 222, 128, 0)',
+                      '0 0 0 4px rgba(74, 222, 128, 0.3)',
+                      '0 0 0 8px rgba(74, 222, 128, 0)',
+                    ],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    repeatType: 'reverse',
+                  }}
+                />
+              </motion.div>
               <motion.span
                 whileHover={{ scale: 1.05 }}
                 className="text-2xl font-bold text-green-600"
               >
-                🌱 NITK - CREST 2025
+                NITK - CREST 2025
               </motion.span>
             </Link>
           </motion.div>
-          
+
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item, index) => (
               <motion.div
