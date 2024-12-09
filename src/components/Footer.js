@@ -4,7 +4,7 @@ import { Facebook, Twitter, Instagram, Linkedin, Download } from 'react-feather'
 
 const Footer = () => {
   const handleDownload = () => {
-    const brochureUrl = 'https://drive.google.com/file/d/1CHovurNqQd2Vk30OnQr7AN6AKvxQmCYE/view?usp=sharing';
+    const brochureUrl = 'https://drive.google.com/file/d/1pTMg_TYgZZ1BXDLJvro4VZC75XQk3mNx/view?usp=sharing';
     window.open(brochureUrl, '_blank');
   };
 
@@ -38,8 +38,9 @@ const Footer = () => {
               <p>National Institute of Technology Karnataka</p>
               <p>Surathkal, Mangalore - 575025</p>
               <p>Karnataka, India</p>
-              <p className="mt-2">Email: crest2025@nitk.edu.in</p>
-              <p>Phone: 0824 247XXXX</p>
+              
+              <p>Website: www.nitk-crest2025.nitk.ac.in</p>
+              <p>Email: nitk-crest2025@nitk.edu.in</p>
             </address>
           </div>
           <div>

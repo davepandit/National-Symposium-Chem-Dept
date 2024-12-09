@@ -6,41 +6,7 @@ const committeeData = {
     { name: 'Prof. B. Ravi', title: 'Director, National Institute of Technology Karnataka, Surathkal' }
   ],
   chairman: [
-    { name: 'Dr. I. Regupathi', title: 'Head of the Department, Chemical Engineering' }
-  ],
-  advisoryCommittee: [
-    { name: 'Prof. Subhash C. Yaragal', title: 'Deputy Director' },
-    { name: 'Prof. Udaya Bhat', title: 'Dean (R&C)' },
-    { name: 'Prof. Dwarakish G S', title: 'Dean (Academics)' },
-    { name: 'Prof. Gangadharan K V', title: 'Dean (P&D)' },
-    { name: 'Prof. T. Laxminidhi', title: 'Dean (FW)' },
-    { name: 'Dr. Basavaraju Manu', title: 'Civil Engg' },
-    { name: 'Dr. S. M. Murigendrappa', title: 'Mechanical Engg' },
-    { name: 'Dr. Kumkum Banerjee', title: 'MM Engg.' },
-    { name: 'Dr. Harsha Vardhan', title: 'Mining Engg' },
-    { name: 'Dr. Manu Basavaraju', title: 'CSE' },
-    { name: 'Dr. Ashvini Chaturvedi', title: 'PIC - CE' },
-    { name: 'Dr. Keyur Raval', title: 'PIC - CRF' },
-    { name: 'Dr. Vidya Shetty', title: 'Chemical Engg.' },
-    { name: 'Dr. Hari Prasad Dasari', title: 'Chemical Engg.' },
-    { name:  'Dr. Shyam Lal', title: 'E&C Engg.' },
-    { name: 'Dr. Mohit P. Tahiliani', title: 'CSE' },
-    { name: 'Dr. Ram Mohana Reddy Guddeti', title: 'IT' },
-    { name: 'Dr. B Venkatesa Perumal', title: 'EEE' },
-    { name: 'Dr. Pruthviraj U.', title: 'WROE' },
-    { name: 'Dr. Babloo Chaudhary', title: 'Civil Engg' },
-  ],
-  nationalAdvisoryCommittee: [
-    { name: 'Prof. Tanmay Basak', title: 'IIT Madras' },
-    { name: 'Prof. R. Vinu', title: 'IIT Madras' },
-    { name: 'Prof. Rabibrata Mukherjee', title: 'IIT Kharagpur' },
-    { name: 'Prof. B. C. Meikap', title: 'IIT Kharagpur' },
-    { name: 'Prof. Goutam Deo', title: 'IIT Kanpur' },
-    { name: 'Prof. G. Pugazhenthi', title: 'IIT Guwahati' },
-    { name: 'Prof. Parag Arvind Deshpande', title: 'IIT Jodhpur' },
-    { name: 'Prof. Prabir Kumar Saha', title: 'IIT Guwahati' },
-    { name: 'Prof. V. Sivasubramanian', title: 'NIT Calicut' },
-    { name: 'Prof. Uday Bhaskar Babu', title: 'NIT Warangal' },
+    { name: 'Prof. I. Regupathi', title: 'Head of the Department, Chemical Engineering' }
   ],
   conveners: [
     { name: 'Dr. Chinta Sankar Rao', title: 'Chemical Engineering' },
@@ -49,7 +15,7 @@ const committeeData = {
     { name: 'Dr. Anupama Surenjan', title: 'Civil Engineering' },
     { name: 'Dr. Nikhil K S', title: 'Electronics and Communication Engg.' },
     { name: 'Dr. Sourav Kanti Addya', title: 'Computer Science & Engg.' },
-    { name: 'Dr. Lipak Sahoo', title: 'Metallurgical and Materials Engg.' },
+    { name: 'Dr. Lipak Sahoo', title: 'Metallurgical and Materials Engg.' }
   ]
 };
 
@@ -83,8 +49,6 @@ const Committee = () => {
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Conference Committee</h2>
         <CommitteeSection title="Patron" members={committeeData.patron} />
         <CommitteeSection title="Chairman" members={committeeData.chairman} />
-        <CommitteeSection title="Advisory Committee" members={committeeData.advisoryCommittee} />
-        <CommitteeSection title="National Advisory Committee" members={committeeData.nationalAdvisoryCommittee} />
         <CommitteeSection title="Conveners" members={committeeData.conveners} />
       </div>
     </section>

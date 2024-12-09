@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -76,6 +75,20 @@ const themes = [
       'AI and ML applications in Energy'
     ]
   },
+  {
+    title: 'Artificial Intelligence',
+    description: 'Artificial intelligence for sustainable solutions',
+    icon: '🤖',
+    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995',
+    color: 'from-violet-500 to-violet-700',
+    points: [
+      'AI for environmental monitoring',
+      'Machine learning for sustainability',
+      'Smart environmental solutions',
+      'Predictive modeling for climate change',
+      'AI-driven resource optimization'
+    ]
+  }
 ];
 
 const ThemeCard = ({ theme, index }) => {

@@ -32,7 +32,7 @@ const Contact = () => {
               </div>
               <div className="flex items-center">
                 <Mail className="w-6 h-6 text-green-600 mr-4" />
-                <p className="text-gray-700">crest2025@nitk.edu.in</p>
+                <p className="text-gray-700">nitk-crest2025@nitk.edu.in</p>
               </div>
             </div>
           </motion.div>

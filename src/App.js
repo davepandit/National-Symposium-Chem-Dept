@@ -5,8 +5,9 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Themes from './components/Themes';
 import Timeline from './components/Timline';
-import Departments from './components/Departments';
-import Speakers from './components/Speakers';
+import Proceedings from './components/Proceedings';
+// import Departments from './components/Departments';
+// import Speakers from './components/Speakers';
 import Committee from './components/Committee';
 import Registration from './components/Registration';
 import Contact from './components/Contact';
@@ -25,15 +26,16 @@ function App() {
                 <About />
                 <Themes />
                 <Timeline />
-                <Departments />
-                <Speakers />
+                <Proceedings />
+                {/* <Departments /> */}
+                {/* <Speakers /> */}
               </>
             } />
             <Route path="/about" element={<About />} />
             <Route path="/themes" element={<Themes />} />
-            <Route path="/departments" element={<Departments />} />
+            {/* <Route path="/departments" element={<Departments />} /> */}
             <Route path="/committee" element={<Committee />} />
-            <Route path="/speakers" element={<Speakers />} />
+            {/* <Route path="/speakers" element={<Speakers />} /> */}
             <Route path="/contact" element={<Contact />} />
             <Route path="/registration" element={<Registration />} />
           </Routes>
