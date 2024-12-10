@@ -57,7 +57,7 @@ const Hero = () => {
               className="flex items-center space-x-2 bg-white rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-md"
             >
               <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
-              <span className="text-sm sm:text-base text-gray-800">27th Feb - 1st Mar 2025</span>
+              <span className="text-sm sm:text-base text-gray-800">27<sup>th</sup> Feb - 1<sup>st</sup> Mar 2025</span>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05 }}

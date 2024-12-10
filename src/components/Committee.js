@@ -3,20 +3,193 @@ import { motion } from 'framer-motion';
 
 const committeeData = {
   patron: [
-    { name: 'Prof. B. Ravi', title: 'Director, National Institute of Technology Karnataka, Surathkal' }
+    { 
+      name: 'Prof. B. Ravi', 
+      title: 'Director, National Institute of Technology Karnataka, Surathkal',
+      image: 'https://www.nitk.ac.in/images/pictures/5509/content/Dir_Passport_size_photo.jpg'
+    }
   ],
   chairman: [
-    { name: 'Prof. I. Regupathi', title: 'Head of the Department, Chemical Engineering' }
+    { 
+      name: 'Prof. I. Regupathi', 
+      title: 'Head of the Department, Chemical Engineering',
+      image: 'https://chemical.nitk.ac.in/sites/default/files/regupathi.JPG'
+    }
   ],
   conveners: [
-    { name: 'Dr. Chinta Sankar Rao', title: 'Chemical Engineering' },
-    { name: 'Dr. Vaishakh Nair', title: 'Chemical Engineering' },
-    { name: 'Dr. Ranjeet Kumar Sahu', title: 'Mechanical Engineering' },
-    { name: 'Dr. Anupama Surenjan', title: 'Civil Engineering' },
-    { name: 'Dr. Nikhil K S', title: 'Electronics and Communication Engg.' },
-    { name: 'Dr. Sourav Kanti Addya', title: 'Computer Science & Engg.' },
-    { name: 'Dr. Lipak Sahoo', title: 'Metallurgical and Materials Engg.' }
+    { 
+      name: 'Dr. Chinta Sankar Rao', 
+      title: 'Chemical Engineering',
+      image: 'https://chemical.nitk.ac.in/sites/default/files/CSRao_2.jpg'
+    },
+    { 
+      name: 'Dr. Vaishakh Nair', 
+      title: 'Chemical Engineering',
+      image: 'https://chemical.nitk.ac.in/sites/default/files/Vaishakh_nair_0.jpg'
+    },
+    { 
+      name: 'Dr. Ranjeet Kumar Sahu', 
+      title: 'Mechanical Engineering',
+      image: 'https://mech.nitk.ac.in/sites/default/files/Sahu.jpg'
+    },
+    { 
+      name: 'Dr. Anupama Surenjan', 
+      title: 'Civil Engineering',
+      image: 'https://civil.nitk.ac.in/sites/default/files/Anupama%20Surenjan%20medium.jpg'
+    },
+    { 
+      name: 'Dr. Nikhil K S', 
+      title: 'Electronics and Communication Engg.',
+      image: 'https://ece.nitk.ac.in/sites/default/files/Untitled1.png'
+    },
+    { 
+      name: 'Dr. Sourav Kanti Addya', 
+      title: 'Computer Science & Engg.',
+      image: 'https://cse.nitk.ac.in/sites/default/files/saurav.jpg'
+    },
+    { 
+      name: 'Dr. Lipak Sahoo', 
+      title: 'Metallurgical and Materials Engg.',
+      image: 'https://mme.nitk.ac.in/sites/default/files/SAN_8059_40pct.JPG'
+    }
+  ],
+  steeringCommittee: [
+    {
+      name: 'Dr. Basavaraju Manu',
+      title: 'Civil Engineering',
+      image: 'https://civil.nitk.ac.in/sites/default/files/Dr.%20Basavaraju%20Manu%20Medium.jpg'
+    },
+    {
+      name: 'Dr. S. M. Murigendrappa',
+      title: 'Mechanical Engineering',
+      image: 'https://mech.nitk.ac.in/sites/default/files/Murigendrappa%20%282%29.jpg'
+    },
+    {
+      name: 'Dr. Kumkum Banerjee',
+      title: 'Metallurgical and Materials Engineering',
+      image: 'https://mme.nitk.ac.in/sites/default/files/KB_0.jpg'
+    },
+    {
+      name: 'Dr. Harsha Vardhan',
+      title: 'Mining Engineering',
+      image: 'https://mining.nitk.ac.in/sites/default/files/HV_2.jpg'
+    },
+    {
+      name: 'Dr. Manu Basavaraju',
+      title: 'Computer Science & Engineering',
+      image: 'https://cse.nitk.ac.in/sites/default/files/dr-manu-basavaraju.jpg'
+    },
+    {
+      name: 'Dr. Ashvini Chaturvedi',
+      title: 'PIC - CE',
+      image: 'https://ece.nitk.ac.in/sites/default/files/ashvini1_0.jpg'
+    },
+    {
+      name: 'Dr. Keyur Raval',
+      title: 'PIC - CRF',
+      image: 'https://chemical.nitk.ac.in/sites/default/files/keyur.JPG'
+    },
+    {
+      name: 'Dr. Vidya Shetty',
+      title: 'Chemical Engineering',
+      image: 'https://chemical.nitk.ac.in/sites/default/files/CV%20pics.png'
+    },
+    {
+      name: 'Dr. Hari Prasad Dasari',
+      title: 'Chemical Engineering',
+      image: 'https://chemical.nitk.ac.in/sites/default/files/field/image/original_Hari%20Prasad%20Dasari.jpg'
+    },
+    {
+      name: 'Dr. Shyam Lal',
+      title: 'Electronics & Communication Engineering',
+      image: 'https://ece.nitk.ac.in/sites/default/files/big.jpg'
+    },
+    {
+      name: 'Dr. Mohit P. Tahiliani',
+      title: 'Computer Science & Engineering',
+      image: 'https://cse.nitk.ac.in/sites/default/files/mohit-p-tahiliani.jpg'
+    },
+    {
+      name: 'Dr. Ram Mohana Reddy Guddeti',
+      title: 'Information Technology',
+      image: 'https://infotech.nitk.ac.in/sites/default/files/grm-2024-image.png'
+    },
+    {
+      name: 'Dr. B Venkatesa Perumal',
+      title: 'Electrical & Electronics Engineering',
+      image: 'https://eee.nitk.ac.in/sites/default/files/Dr.BVPerumal_0.jpg'
+    },
+    {
+      name: 'Dr. Pruthviraj U.',
+      title: 'WROE',
+      image: 'https://appmech.nitk.ac.in/sites/default/files/Copy%20of%20PU.JPG'
+    },
+    {
+      name: 'Dr. Babloo Chaudhary',
+      title: 'Civil Engineering',
+      image: 'https://civil.nitk.ac.in/sites/default/files/Babloo%20pic_4.jpg'
+    }
+  ],
+  advisoryCommittee: [
+    {
+      name: 'Prof. Subhash C. Yaragal',
+      title: 'Deputy Director',
+      image: 'https://civil.nitk.ac.in/sites/default/files/subhas-yaragal-image.jpg'
+    },
+    {
+      name: 'Prof. Udaya Bhat',
+      title: 'Dean (R&C)',
+      image: 'https://www.nitk.ac.in/images/pictures/6924/content/Uday_Bhat.jpg'
+    },
+    {
+      name: 'Prof. Dwarakish G S',
+      title: 'Dean (Academics)',
+      image: 'https://www.nitk.ac.in/images/pictures/6199/content/IMG-20231110-WA0016.jpg'
+    },
+    {
+      name: 'Prof. Gangadharan K V',
+      title: 'Dean (P&D)',
+      image: 'https://mech.nitk.ac.in/sites/default/files/K%20V%20Gangadharan_Medium.jpg'
+    },
+    {
+      name: 'Prof. T. Laxminidhi',
+      title: 'Dean (FW)',
+      image: 'https://ece.nitk.ac.in/sites/default/files/tln-d.png'
+    },
+    {
+      name: 'Prof. A Chitharanjan Hegde',
+      title: 'Dean (SW)',
+      image: 'https://www.nitk.ac.in/images/pictures/6255/content/A_C_Hegde.jpg'
+    }
+  ],
+  nationalAdvisoryCommittee: [
+    { name: 'Prof. Tanmay Basak', title: 'IIT Madras' },
+    { name: 'Prof. R. Vinu', title: 'IIT Madras' },
+    { name: 'Prof. Rabibrata Mukherjee', title: 'IIT Kharagpur' },
+    { name: 'Prof. B. C. Meikap', title: 'IIT Kharagpur' },
+    { name: 'Prof. Goutam Deo', title: 'IIT Kanpur' },
+    { name: 'Prof. G. Pugazhenthi', title: 'IIT Guwahati' },
+    { name: 'Prof. Parag Arvind Deshpande', title: 'IIT Jodhpur' },
+    { name: 'Prof. Prabir Kumar Saha', title: 'IIT Guwahati' },
+    { name: 'Prof. V. Sivasubramanian', title: 'NIT Calicut' },
+    { name: 'Prof. Uday Bhaskar Babu', title: 'NIT Warangal' }
   ]
+};
+
+const CommitteeMemberImage = ({ src, alt }) => {
+  const [error, setError] = React.useState(false);
+
+  return (
+    <div className="relative h-48 w-48 mx-auto mb-4 rounded-full overflow-hidden">
+      <img
+        src={error ? 'https://via.placeholder.com/200x200?text=Image+Not+Available' : src}
+        alt={alt}
+        onError={() => setError(true)}
+        className="w-full h-full object-cover object-center"
+        loading="lazy"
+      />
+    </div>
+  );
 };
 
 const CommitteeSection = ({ title, members }) => (
@@ -31,9 +204,10 @@ const CommitteeSection = ({ title, members }) => (
       {members.map((member, index) => (
         <motion.div
           key={index}
-          className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow duration-300"
+          className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow duration-300 text-center"
           whileHover={{ scale: 1.05 }}
         >
+          {member.image && <CommitteeMemberImage src={member.image} alt={member.name} />}
           <h4 className="font-semibold text-gray-800">{member.name}</h4>
           <p className="text-sm text-gray-600">{member.title}</p>
         </motion.div>
@@ -50,6 +224,9 @@ const Committee = () => {
         <CommitteeSection title="Patron" members={committeeData.patron} />
         <CommitteeSection title="Chairman" members={committeeData.chairman} />
         <CommitteeSection title="Conveners" members={committeeData.conveners} />
+        <CommitteeSection title="Advisory Committee" members={committeeData.advisoryCommittee} />
+        <CommitteeSection title="Steering Committee" members={committeeData.steeringCommittee} />
+        <CommitteeSection title="National Advisory Committee" members={committeeData.nationalAdvisoryCommittee} />
       </div>
     </section>
   );

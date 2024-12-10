@@ -3,8 +3,13 @@ import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Linkedin, Download } from 'react-feather';
 
 const Footer = () => {
-  const handleDownload = () => {
-    const brochureUrl = 'https://drive.google.com/file/d/1pTMg_TYgZZ1BXDLJvro4VZC75XQk3mNx/view?usp=sharing';
+  const handleDownloadFlyer = () => {
+    const flyerUrl = 'https://drive.google.com/file/d/1pTMg_TYgZZ1BXDLJvro4VZC75XQk3mNx/view?usp=sharing';
+    window.open(flyerUrl, '_blank');
+  };
+
+  const handleDownloadBrochure = () => {
+    const brochureUrl = 'https://drive.google.com/file/d/1Ea6axZi8AaQ8GAlJlp_1HOLpvbhXW1b8/view?usp=sharing';
     window.open(brochureUrl, '_blank');
   };
 
@@ -44,14 +49,23 @@ const Footer = () => {
             </address>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Download Brochure</h4>
-            <button
-              onClick={handleDownload}
-              className="flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-            >
-              <Download size={20} />
-              <span>Download Brochure</span>
-            </button>
+            <h4 className="text-lg font-semibold mb-4">Downloads</h4>
+            <div className="space-y-4">
+              <button
+                onClick={handleDownloadFlyer}
+                className="flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full"
+              >
+                <Download size={20} />
+                <span>Download Flyer</span>
+              </button>
+              <button
+                onClick={handleDownloadBrochure}
+                className="flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full"
+              >
+                <Download size={20} />
+                <span>Download Brochure</span>
+              </button>
+            </div>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-green-700 text-center">

@@ -30,7 +30,7 @@ const Registration = () => {
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Registration</h2>
         <div className="bg-green-50 rounded-lg shadow-lg p-8">
           <div className="mb-8">
-            <h3 className="text-2xl font-bold mb-4">Registration Fees</h3>
+            <h3 className="text-2xl font-bold mb-4">Registration Fees*</h3>
             <div className="overflow-x-auto">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-green-100">
@@ -52,6 +52,8 @@ const Registration = () => {
               </table>
             </div>
           </div>
+
+          <p className="text-sm text-gray-500 mb-4">*Excluding GST charges</p>
 
           <p className="mb-6 text-gray-600">
             The conference registration fee includes kit, proceedings, and admission to all technical sessions, lunch, tea/coffee, and snacks. It does not include accommodation. Limited accommodation is available for participants in the NITK Guest House. On prior request, they may be provided accommodation based on the availability on a payment basis. A list of nearby Hotels and their tariff will be updated on the conference website for the benefit of outstation participants.

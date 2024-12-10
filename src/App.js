@@ -6,8 +6,8 @@ import About from './components/About';
 import Themes from './components/Themes';
 import Timeline from './components/Timline';
 import Proceedings from './components/Proceedings';
-// import Departments from './components/Departments';
-// import Speakers from './components/Speakers';
+import Speakers from './components/Speakers';
+import Departments from './components/Departments';
 import Committee from './components/Committee';
 import Registration from './components/Registration';
 import Contact from './components/Contact';
@@ -27,15 +27,18 @@ function App() {
                 <Themes />
                 <Timeline />
                 <Proceedings />
-                {/* <Departments /> */}
-                {/* <Speakers /> */}
+                <Speakers />
+                <Departments />
+                <Committee />
+                <Registration />
+                <Contact />
               </>
             } />
             <Route path="/about" element={<About />} />
             <Route path="/themes" element={<Themes />} />
-            {/* <Route path="/departments" element={<Departments />} /> */}
+            <Route path="/speakers" element={<Speakers />} />
+            <Route path="/departments" element={<Departments />} />
             <Route path="/committee" element={<Committee />} />
-            {/* <Route path="/speakers" element={<Speakers />} /> */}
             <Route path="/contact" element={<Contact />} />
             <Route path="/registration" element={<Registration />} />
           </Routes>
