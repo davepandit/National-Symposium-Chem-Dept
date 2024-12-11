@@ -4,10 +4,10 @@ import { useRef } from 'react';
 
 const timelineEvents = [
   { date: '15/11/2024', event: 'Abstract Submission begins' },
-  { date: '25/12/2024', event: 'Last date for Abstract Submission' },
-  { date: '05/01/2025', event: 'Notification of Acceptance' },
-  { date: '30/01/2025', event: 'Early Bird Registration closes' },
-  { date: '10/02/2025', event: 'Registration Deadline' },
+  { date: '20/1/2025', event: 'Last date for Abstract Submission' },
+  { date: '10/02/2025', event: 'Notification of Acceptance' },
+  { date: '10/02/2025', event: 'Early Bird Registration closes' },
+  { date: '20/02/2025', event: 'Registration Deadline' },
   { date: '27/02/2025', event: 'Conference Begins' },
 ];
 

@@ -1,24 +1,8 @@
-
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const themes = [
-  {
-    title: 'Earth (Material)',
-    description: 'Sustainable materials and waste management',
-    icon: '🌱',
-    image: 'https://images.unsplash.com/photo-1470115636492-6d2b56f9146d',
-    color: 'from-green-600 to-green-800',
-    points: [
-      'Circular economy and waste management',
-      'Sustainable materials',
-      'Soil pollution control',
-      'Nanomaterials',
-      'Biomaterials',
-      'Sustainable mining'
-    ]
-  },
   {
     title: 'Water',
     description: 'Sustainable water management and conservation',
@@ -35,17 +19,22 @@ const themes = [
     ]
   },
   {
-    title: 'Space (Climate)',
-    description: 'Addressing climate change and its impacts from a global perspective',
-    icon: '🚀',
-    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa',
-    color: 'from-indigo-800 to-purple-900',
+    title: 'Earth (Materials)',
+    description: 'Sustainable materials and waste management',
+    icon: '🌱',
+    image: 'https://images.unsplash.com/photo-1470115636492-6d2b56f9146d',
+    color: 'from-green-600 to-green-800',
     points: [
-      'Climate change mitigation and adaption',
-      'Global warming',
-      'Environmental impact assessment',
-      'Disaster Management',
-      'Low carbon economy'
+      'Circular economy and waste management',
+      'Sustainable materials',
+      'Soil pollution control',
+      'Nanomaterials',
+      'Biomaterials',
+      'Sustainable mining',
+      'Microplastics',
+      'Green lubricants',
+      'IoT for smart agricultural',
+      'Processing of plastic waste and sludge'
     ]
   },
   {
@@ -66,7 +55,7 @@ const themes = [
     title: 'Fire (Energy)',
     description: 'Renewable energy and sustainable technologies',
     icon: '🔥',
-    image: 'https://images.unsplash.com/photo-1496483353456-90997957cf99?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmlyZXxlbnwwfHwwfHx8MA%3D%3D',
+    image: 'https://images.unsplash.com/photo-1496483353456-90997957cf99',
     color: 'from-orange-500 to-red-600',
     points: [
       'Hydrogen production and storage',
@@ -76,6 +65,20 @@ const themes = [
       'AI and ML applications in Energy'
     ]
   },
+  {
+    title: 'Space (Climate)',
+    description: 'Climate change and its impacts from a global perspective',
+    icon: '🚀',
+    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa',
+    color: 'from-indigo-800 to-purple-900',
+    points: [
+      'Climate change mitigation and adaption',
+      'Global warming',
+      'Environmental impact assessment',
+      'Disaster Management',
+      'Low carbon economy'
+    ]
+  }
 ];
 
 const ThemeCard = ({ theme, index }) => {
