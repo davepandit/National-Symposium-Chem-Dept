@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Themes from './components/Themes';
-import Timeline from './components/Timline';
+import Timeline from './components/Timeline';
 import Proceedings from './components/Proceedings';
 import Speakers from './components/Speakers';
 import Departments from './components/Departments';
@@ -12,6 +12,7 @@ import Committee from './components/Committee';
 import Registration from './components/Registration';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Publications from './components/Publications';
 
 function App() {
   return (
@@ -26,9 +27,8 @@ function App() {
                 <About />
                 <Themes />
                 <Timeline />
-                <Proceedings />
+                <Publications />
                 <Speakers />
-                <Departments />
                 <Committee />
                 <Registration />
                 <Contact />
@@ -41,6 +41,8 @@ function App() {
             <Route path="/committee" element={<Committee />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/registration" element={<Registration />} />
+            <Route path="/timeline" element={<Timeline />} />
+            <Route path="/publications" element={<Publications />} />
           </Routes>
         </main>
         <Footer />

@@ -19,7 +19,7 @@ const Navbar = () => {
   const textColor = scrolled || !isHomePage ? 'text-gray-800' : 'text-gray-800';
   const bgColor = scrolled || !isHomePage ? 'bg-white/90' : 'bg-white/70';
 
-  const navItems = ['About', 'Themes', 'Speakers', 'Departments', 'Committee', 'Contact', 'Registration'];
+  const navItems = ['About', 'Themes', 'Timeline', 'Publications', 'Speakers', 'Committee', 'Contact', 'Registration'];
 
   return (
     <motion.nav

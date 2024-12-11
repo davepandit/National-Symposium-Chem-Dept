@@ -5,73 +5,51 @@ import { useInView } from 'react-intersection-observer';
 const speakers = [
   {
     name: 'Prof. Tanmay Basak',
-    title: 'IIT Madras',
-    image: 'https://via.placeholder.com/400x400?text=Speaker+Image'
+    title: 'IIT Madras'
   },
   {
     name: 'Prof. Pradeep R Nair',
-    title: 'IIT Bombay',
-    image: 'https://via.placeholder.com/400x400?text=Speaker+Image'
+    title: 'IIT Bombay'
   },
   {
     name: 'Prof. R. Vinu',
-    title: 'IIT Madras',
-    image: 'https://via.placeholder.com/400x400?text=Speaker+Image'
+    title: 'IIT Madras'
   },
   {
     name: 'Prof. P C Abhilash',
-    title: 'IIT BHU Varanasi',
-    image: 'https://via.placeholder.com/400x400?text=Speaker+Image'
+    title: 'IIT BHU Varanasi'
   },
   {
     name: 'Prof. Sanjeev Chaudhari',
-    title: 'IIT Bombay',
-    image: 'https://via.placeholder.com/400x400?text=Speaker+Image'
+    title: 'IIT Bombay'
   },
   {
-    name: 'Dr. Nikhil Dhawan',
-    title: 'IIT Roorkee',
-    image: 'https://via.placeholder.com/400x400?text=Speaker+Image'
+    name: 'Prof. Nikhil Dhawan',
+    title: 'IIT Roorkee'
   },
   {
     name: 'Dr. Manoj P Samuel',
-    title: 'Executive Director of CWRDM, Kozhikode',
-    image: 'https://via.placeholder.com/400x400?text=Speaker+Image'
+    title: 'CWRDM, Kozhikode'
   },
   {
     name: 'Dr. Chenna Rao Borra',
-    title: 'IIT Kharagpur',
-    image: 'https://via.placeholder.com/400x400?text=Speaker+Image'
-  },
-  {
-    name: 'Dr. Sivaraman Savithri',
-    title: 'CSIR NIIST',
-    image: 'https://via.placeholder.com/400x400?text=Speaker+Image'
+    title: 'IIT Kharagpur'
   },
   {
     name: 'Dr. T.C.S.M. Gupta',
-    title: 'Senior Vice President, R&D, Apar Industries Limited Mumbai',
-    image: 'https://via.placeholder.com/400x400?text=Speaker+Image'
+    title: 'Apar Industries Limited Mumbai'
   },
   {
     name: 'Dr. Venkata Vanukuru',
-    title: 'Technical Director/DMTS, GLOBALFOUNDRIES',
-    image: 'https://via.placeholder.com/400x400?text=Speaker+Image'
+    title: 'GLOBALFOUNDRIES'
   },
   {
-    name: 'Dr. Somashekhar S Hiremath',
-    title: 'Professor, Department of Mechanical Engineering, IIT Madras',
-    image: 'https://via.placeholder.com/400x400?text=Speaker+Image'
+    name: 'Prof. Somashekhar S Hiremath',
+    title: 'IIT Madras'
   },
   {
-    name: 'Dr. Madhav Dhananjaya Gadgil',
-    title: 'Prominent Indian Ecologist',
-    image: 'https://via.placeholder.com/400x400?text=Speaker+Image'
-  },
-  {
-    name: 'Dr. Kota Ullas Karanth',
-    title: 'NITK Alumni',
-    image: 'https://via.placeholder.com/400x400?text=Speaker+Image'
+    name: 'Shri. Dilip Kumar Dalei',
+    title: 'DRDO'
   }
 ];
 

@@ -31,7 +31,7 @@ const About = () => {
           >
             <h3 className="text-2xl font-semibold mb-4 text-green-700">About the Conference</h3>
             <p className="text-gray-600 mb-6">
-              1<sup>st</sup> National Conference on Climate Resilience and Environmental Sustainability using Technology (NITK - CREST 2025) is a pioneering event that brings together experts, researchers, and professionals from diverse engineering disciplines. NITK-CREST 2025 aims to foster interdisciplinary collaboration to address the pressing challenges of climate change and environmental sustainability. Through innovative technological approaches, the conference will explore cutting-edge solutions for building resilient communities and sustainable ecosystems. Participants will have the opportunity to engage in thought-provoking discussions, share groundbreaking research, and contribute to shaping a sustainable future for generations to come.
+              1<sup>st</sup> National Conference on Climate Resilience and Environmental Sustainability using Technology (NITK - CREST 2025) is a pioneering event that brings together experts, researchers, and professionals. NITK-CREST 2025 aims to foster interdisciplinary collaboration to address the pressing challenges of climate change and environmental sustainability. Through innovative technological approaches, the conference will explore cutting-edge solutions for building resilient communities and sustainable ecosystems. Participants will have the opportunity to engage in thought-provoking discussions, share groundbreaking research, and contribute to shaping a sustainable future for generations to come.
             </p>
           </motion.div>
 

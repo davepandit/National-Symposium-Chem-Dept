@@ -55,69 +55,69 @@ const committeeData = {
   ],
   steeringCommittee: [
     {
-      name: 'Dr. Basavaraju Manu',
-      title: 'Civil Engineering',
+      name: 'Prof. Basavaraju Manu',
+      title: 'Civil Engg',
       image: 'https://civil.nitk.ac.in/sites/default/files/Dr.%20Basavaraju%20Manu%20Medium.jpg'
     },
     {
-      name: 'Dr. S. M. Murigendrappa',
-      title: 'Mechanical Engineering',
+      name: 'Prof. S. M. Murigendrappa',
+      title: 'Mechanical Engg',
       image: 'https://mech.nitk.ac.in/sites/default/files/Murigendrappa%20%282%29.jpg'
     },
     {
-      name: 'Dr. Kumkum Banerjee',
-      title: 'Metallurgical and Materials Engineering',
+      name: 'Prof. Kumkum Banerjee',
+      title: 'MM Engg.',
       image: 'https://mme.nitk.ac.in/sites/default/files/KB_0.jpg'
     },
     {
-      name: 'Dr. Harsha Vardhan',
-      title: 'Mining Engineering',
+      name: 'Prof. Harsha Vardhan',
+      title: 'Mining Engg',
       image: 'https://mining.nitk.ac.in/sites/default/files/HV_2.jpg'
     },
     {
       name: 'Dr. Manu Basavaraju',
-      title: 'Computer Science & Engineering',
+      title: 'CSE',
       image: 'https://cse.nitk.ac.in/sites/default/files/dr-manu-basavaraju.jpg'
     },
     {
-      name: 'Dr. Ashvini Chaturvedi',
+      name: 'Prof. Ashvini Chaturvedi',
       title: 'PIC - CE',
       image: 'https://ece.nitk.ac.in/sites/default/files/ashvini1_0.jpg'
     },
     {
-      name: 'Dr. Keyur Raval',
+      name: 'Prof. Keyur Raval',
       title: 'PIC - CRF',
       image: 'https://chemical.nitk.ac.in/sites/default/files/keyur.JPG'
     },
     {
-      name: 'Dr. Vidya Shetty',
-      title: 'Chemical Engineering',
+      name: 'Prof. Vidya Shetty',
+      title: 'Chemical Engg.',
       image: 'https://chemical.nitk.ac.in/sites/default/files/CV%20pics.png'
     },
     {
-      name: 'Dr. Hari Prasad Dasari',
-      title: 'Chemical Engineering',
+      name: 'Prof. Hari Prasad Dasari',
+      title: 'Chemical Engg.',
       image: 'https://chemical.nitk.ac.in/sites/default/files/field/image/original_Hari%20Prasad%20Dasari.jpg'
     },
     {
+      name: 'Prof. Ram Mohana Reddy Guddeti',
+      title: 'IT',
+      image: 'https://infotech.nitk.ac.in/sites/default/files/grm-2024-image.png'
+    },
+    {
+      name: 'Prof. B Venkatesa Perumal',
+      title: 'EEE',
+      image: 'https://eee.nitk.ac.in/sites/default/files/Dr.BVPerumal_0.jpg'
+    },
+    {
       name: 'Dr. Shyam Lal',
-      title: 'Electronics & Communication Engineering',
+      title: 'E&C Engg.',
       image: 'https://ece.nitk.ac.in/sites/default/files/big.jpg'
     },
     {
       name: 'Dr. Mohit P. Tahiliani',
-      title: 'Computer Science & Engineering',
+      title: 'CSE',
       image: 'https://cse.nitk.ac.in/sites/default/files/mohit-p-tahiliani.jpg'
-    },
-    {
-      name: 'Dr. Ram Mohana Reddy Guddeti',
-      title: 'Information Technology',
-      image: 'https://infotech.nitk.ac.in/sites/default/files/grm-2024-image.png'
-    },
-    {
-      name: 'Dr. B Venkatesa Perumal',
-      title: 'Electrical & Electronics Engineering',
-      image: 'https://eee.nitk.ac.in/sites/default/files/Dr.BVPerumal_0.jpg'
     },
     {
       name: 'Dr. Pruthviraj U.',
@@ -126,7 +126,7 @@ const committeeData = {
     },
     {
       name: 'Dr. Babloo Chaudhary',
-      title: 'Civil Engineering',
+      title: 'Civil Engg',
       image: 'https://civil.nitk.ac.in/sites/default/files/Babloo%20pic_4.jpg'
     }
   ],
@@ -165,14 +165,12 @@ const committeeData = {
   nationalAdvisoryCommittee: [
     { name: 'Prof. Tanmay Basak', title: 'IIT Madras' },
     { name: 'Prof. R. Vinu', title: 'IIT Madras' },
-    { name: 'Prof. Rabibrata Mukherjee', title: 'IIT Kharagpur' },
     { name: 'Prof. B. C. Meikap', title: 'IIT Kharagpur' },
-    { name: 'Prof. Goutam Deo', title: 'IIT Kanpur' },
-    { name: 'Prof. G. Pugazhenthi', title: 'IIT Guwahati' },
-    { name: 'Prof. Parag Arvind Deshpande', title: 'IIT Jodhpur' },
-    { name: 'Prof. Prabir Kumar Saha', title: 'IIT Guwahati' },
     { name: 'Prof. V. Sivasubramanian', title: 'NIT Calicut' },
-    { name: 'Prof. Uday Bhaskar Babu', title: 'NIT Warangal' }
+    { name: 'Prof. Uday Bhaskar Babu', title: 'NIT Warangal' },
+    { name: 'Prof. Soumya K Ghosh', title: 'IIT Kharagpur' },
+    { name: 'Prof. Viswanathan N. Nurni', title: 'IIT Bombay' },
+    { name: 'Dr. Abhilash', title: 'CSIR-NML Jamshedpur' }
   ]
 };
 
