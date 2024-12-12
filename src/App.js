@@ -16,13 +16,11 @@ import Venue from './components/Venue';
 import Accommodation from './components/Accommodation';
 import Sightseeing from './components/Sightseeing';
 
-// Remove unused Proceedings import
-
 function App() {
   return (
     <Router>
       <Navbar />
-      <div className="pt-20"> {/* Add padding top to prevent content from hiding under navbar */}
+      <div className="pt-20">
         <Routes>
           <Route path="/" element={
             <>
@@ -32,13 +30,12 @@ function App() {
               <Timeline />
               <Publications />
               <Speakers />
-              <Departments /> {/* Add Departments to home page */}
+              <Departments />
               <Committee />
               <Registration />
               <Contact />
             </>
           } />
-          {/* Individual routes for navbar navigation */}
           <Route path="/about" element={<About />} />
           <Route path="/themes" element={<Themes />} />
           <Route path="/timeline" element={<Timeline />} />

@@ -16,9 +16,6 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const isHomePage = location.pathname === '/';
-
-  // Scroll handler function
   const handleScroll = (direction) => {
     if (scrollContainerRef.current) {
       const scrollAmount = 200;
@@ -55,7 +52,6 @@ const Navbar = () => {
     >
       <div className="max-w-full mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 flex-shrink-0">
             <motion.img
               src="/favicon.png"
@@ -68,10 +64,8 @@ const Navbar = () => {
             </span>
           </Link>
 
-          {/* Navigation */}
           <div className="hidden md:flex flex-1 justify-center max-w-4xl ml-8">
             <div className="relative flex items-center w-full">
-              {/* Scroll buttons */}
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 onClick={() => handleScroll('left')}
@@ -82,7 +76,6 @@ const Navbar = () => {
                 </svg>
               </motion.button>
 
-              {/* Nav items */}
               <div ref={scrollContainerRef} className="overflow-x-auto scrollbar-hide w-full px-8">
                 <div className="flex space-x-6 items-center">
                   {navItems.map((item) => (
@@ -109,7 +102,6 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Mobile menu button */}
           <motion.button
             whileTap={{ scale: 0.95 }}
             className="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100"
@@ -122,7 +114,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div

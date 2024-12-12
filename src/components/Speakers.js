@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-
-// Import images from assets directory
 import tanmayBasak from '../img/tanmay basak.jpeg';
 import pradeepNair from '../img/Predeep R Nair.jpeg';
 import rVinu from '../img/r vinu.jpeg';
@@ -12,7 +10,6 @@ import manojSamuel from '../img/manoj p samuel.jpeg';
 import chennaRao from '../img/chenna rao.jpeg';
 import venkata from '../img/Venkata Vanukuru.jpeg';
 
-// Use a default avatar for missing images
 const dummySpeaker = 'https://via.placeholder.com/200x200?text=Speaker';
 
 const speakers = [
