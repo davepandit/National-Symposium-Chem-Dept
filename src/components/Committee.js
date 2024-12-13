@@ -160,6 +160,11 @@ const committeeData = {
       name: 'Prof. A Chitharanjan Hegde',
       title: 'Dean (SW)',
       image: 'https://www.nitk.ac.in/images/pictures/6255/content/A_C_Hegde.jpg'
+    },
+    {
+      name: 'Prof. Shreekantha S. Rao',
+      title: 'Dean (A & C)',
+      image: 'https://www.nitk.ac.in/images/pictures/4955/content/Shrikantha_S_Rao.jpg'
     }
   ],
   nationalAdvisoryCommittee: [

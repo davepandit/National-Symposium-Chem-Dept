@@ -17,7 +17,7 @@ const Publications = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Publications/Proceedings</h2>
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">Proceedings</h2>
         </motion.div>
         
         <div className="prose max-w-none text-center">
@@ -33,4 +33,4 @@ const Publications = () => {
   );
 };
 
-export default Publications; 
+export default Publications;

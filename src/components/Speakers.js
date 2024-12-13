@@ -34,11 +34,6 @@ const speakers = [
     image: pcAbhilash
   },
   {
-    name: 'Prof. Sanjeev Chaudhari',
-    title: 'IIT Bombay',
-    image: dummySpeaker // Using dummy image until available
-  },
-  {
     name: 'Dr. Nikhil Dhawan',
     title: 'IIT Roorkee',
     image: nikhilDhawan
@@ -73,7 +68,7 @@ const speakers = [
     title: 'DRDO',
     image: dummySpeaker
   }
-];
+].filter(speaker => speaker.name !== 'Prof. Sanjeev Chaudhari');
 
 const SpeakerCard = ({ speaker, index, inView }) => {
   const [imageError, setImageError] = useState(false);
