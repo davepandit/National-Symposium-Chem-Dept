@@ -15,7 +15,9 @@ const themes = [
       'Desalination',
       'AI and ML for Water Research',
       'Water quality, management & reuse',
-      'Water conservation'
+      'Water conservation',
+      'Ocean and Coastal Engineering',
+      'Flood and Excess Rainfall-Induced Disaster'
     ]
   },
   {
@@ -75,7 +77,7 @@ const themes = [
       'Climate change mitigation and adaption',
       'Global warming',
       'Environmental impact assessment',
-      'Disaster Management',
+      'Disaster Mitigation, Prevention and Management',
       'Low carbon economy'
     ]
   }
