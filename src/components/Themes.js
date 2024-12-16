@@ -27,16 +27,13 @@ const themes = [
     image: 'https://images.unsplash.com/photo-1470115636492-6d2b56f9146d',
     color: 'from-green-600 to-green-800',
     points: [
-      'Circular economy and waste management',
-      'Sustainable materials',
-      'Soil pollution control',
-      'Nanomaterials',
-      'Biomaterials',
-      'Sustainable mining',
-      'Microplastics',
-      'Green lubricants',
-      'IoT for smart agricultural',
-      'Processing of plastic waste and sludge'
+      'Advanced Materials (Nanomaterials, Biomaterials, Green lubricants)',
+      'Circular Economy and Waste Management',
+      'Soil Engineering and Natural Hazards (Foundation, Dynamics, Landslides)',
+      'Sustainable Mining and Resource Management',
+      'Smart Agriculture and IoT Applications',
+      'Environmental Pollution Control and Remediation',
+      'Processing of Waste Materials and Sludge'
     ]
   },
   {

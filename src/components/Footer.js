@@ -4,12 +4,12 @@ import { Facebook, Twitter, Instagram, Linkedin, Download } from 'react-feather'
 
 const Footer = () => {
   const handleDownloadFlyer = () => {
-    const flyerUrl = 'https://drive.google.com/file/d/1pTMg_TYgZZ1BXDLJvro4VZC75XQk3mNx/view?usp=sharing';
+    const flyerUrl = 'https://drive.google.com/file/d/1Ihot9ebhaJkCAla8fYyEZeM0KNRw0NtV/view?usp=sharing';
     window.open(flyerUrl, '_blank');
   };
 
   const handleDownloadBrochure = () => {
-    const brochureUrl = 'https://drive.google.com/file/d/1Ea6axZi8AaQ8GAlJlp_1HOLpvbhXW1b8/view?usp=sharing';
+    const brochureUrl = 'https://drive.google.com/file/d/1JTnSKERB4VcMz5muEK6uy5NVr7oXCUe1/view?usp=sharing';
     window.open(brochureUrl, '_blank');
   };
 
