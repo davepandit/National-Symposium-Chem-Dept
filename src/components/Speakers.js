@@ -9,6 +9,8 @@ import nikhilDhawan from '../img/nikhil dhawan.jpeg';
 import manojSamuel from '../img/manoj p samuel.jpeg';
 import chennaRao from '../img/chenna rao.jpeg';
 import venkata from '../img/Venkata Vanukuru.jpeg';
+import tcsmGupta from '../img/TCSM Gupta.jpeg';
+import somashekhar from '../img/Somashekhar.jpeg';
 
 const dummySpeaker = 'https://via.placeholder.com/200x200?text=Speaker';
 
@@ -51,7 +53,7 @@ const speakers = [
   {
     name: 'Dr. T.C.S.M. Gupta',
     title: 'Apar Industries Limited Mumbai',
-    image: dummySpeaker
+    image: tcsmGupta
   },
   {
     name: 'Dr. Venkata Vanukuru',
@@ -61,7 +63,7 @@ const speakers = [
   {
     name: 'Dr. Somashekhar S Hiremath',
     title: 'IIT Madras',
-    image: dummySpeaker
+    image: somashekhar
   },
   {
     name: 'Shri. Dilip Kumar Dalei',
