@@ -13,6 +13,22 @@ const Abstract = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Abstract Submission Guidelines</h2>
           
           <div className="prose max-w-none">
+            {/* Add CMT submission info */}
+            <div className="mb-8 p-4 bg-blue-50 rounded-lg">
+              <p className="text-lg">
+                Authors must submit their abstracts using the {' '}
+                <a 
+                  href="https://cmt3.research.microsoft.com/NITKCREST2025" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 underline"
+                >
+                  Microsoft CMT portal
+                </a>
+                . Please follow the guidelines below for preparing your abstract.
+              </p>
+            </div>
+
             <h3 className="text-xl font-semibold mb-4">Guidelines:</h3>
             <p className="mb-6">Please follow these formatting guidelines for your abstract submission:</p>
             
@@ -29,7 +45,8 @@ const Abstract = () => {
             <p className="mt-6">Ensure adherence to these guidelines for a consistent and professional presentation.</p>
           </div>
 
-          <div className="mt-8 text-center">
+          <div className="mt-8 text-center space-y-4">
+            {/* Existing template button */}
             <a 
               href="https://docs.google.com/document/d/1JyM6HvGLOPve2QhhGxWpQgrXz3RKI4Ni/edit?usp=sharing&ouid=108533967560820556863&rtpof=true&sd=true"
               target="_blank"
@@ -37,6 +54,16 @@ const Abstract = () => {
               className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors font-medium inline-block"
             >
               Download Abstract Template
+            </a>
+
+            {/* Add CMT submission button */}
+            <a 
+              href="https://cmt3.research.microsoft.com/NITKCREST2025"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium inline-block ml-4"
+            >
+              Submit Abstract
             </a>
           </div>
         </motion.div>
