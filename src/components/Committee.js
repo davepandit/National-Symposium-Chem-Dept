@@ -1,170 +1,205 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
+import acHegdeImage from '../committee/A_C_Hegde.jpg';
+import ashviniImage from '../committee/Ashvini Chaturvedi.jpg';
+import perumalImage from '../committee/B Venkatesa Perumal.jpg';
+import raviImage from '../committee/B. Ravi.jpg';
+import bablooImage from '../committee/Babloo Chaudhary.jpg';
+import csraoImage from '../committee/Chinta Sankar Rao.jpg';
+import anupamaImage from '../committee/Dr. Anupama Surenjan.jpg';
+import basavarajuImage from '../committee/Dr. Basavaraju Manu.jpg';
+import dwarakishImage from '../committee/Dwarakish G S.jpg';
+import hariImage from '../committee/Hari Prasad Dasari.jpg';
+import harshaImage from '../committee/Harsha Vardhan.jpg';
+import regupathiImage from '../committee/I. Regupathi.jpeg';
+import gangadharanImage from '../committee/K V Gangadharan.jpg';
+import keyurImage from '../committee/keyur.jpeg';
+import kumkumImage from '../committee/Kumkum Banerjee.jpg';
+import lipakImage from '../committee/Lipak Sahoo.jpeg';
+import manuImage from '../committee/manu-basavaraju.jpg';
+import mohitImage from '../committee/mohit-p-tahiliani.jpg';
+import murigendrappImage from '../committee/Murigendrappa .jpg';
+import nikhilImage from '../committee/Nikhil K S.png';
+import pruthvirajImage from '../committee/Pruthviraj U..jpeg';
+import ramImage from '../committee/Ram Mohana Reddy Guddeti.png';
+import sahuImage from '../committee/Ranjeet Kumar Sahu.jpg';
+import shreetanthaImage from '../committee/Shrikantha_S_Rao.jpg';
+import shyamImage from '../committee/Shyam Lal.jpg';
+import souravImage from '../committee/Sourav Kanti Addya.jpg';
+import subhashImage from '../committee/subhas-yaragal.jpg';
+import laxminidhiImage from '../committee/T. Laxminidhi.png';
+import udayaImage from '../committee/Uday_Bhat.jpg';
+import vaishakhImage from '../committee/Vaishakh Nair.jpg';
+import vidyaImage from '../committee/Vidya Shetty.png';
+
+const dummyMember = 'https://via.placeholder.com/200x200?text=Member';
 
 const committeeData = {
   patron: [
     { 
       name: 'Prof. B. Ravi', 
       title: 'Director, National Institute of Technology Karnataka, Surathkal',
-      image: 'https://www.nitk.ac.in/images/pictures/5509/content/Dir_Passport_size_photo.jpg'
+      image: raviImage
     }
   ],
   chairman: [
     { 
       name: 'Prof. I. Regupathi', 
       title: 'Head of the Department, Chemical Engineering',
-      image: 'https://chemical.nitk.ac.in/sites/default/files/regupathi.JPG'
+      image: regupathiImage
     }
   ],
   conveners: [
     { 
       name: 'Dr. Chinta Sankar Rao', 
-      title: 'Chemical Engineering',
-      image: 'https://chemical.nitk.ac.in/sites/default/files/CSRao_2.jpg'
+      title: 'Chemical Engineering, NITK Surathkal',
+      image: csraoImage
     },
     { 
       name: 'Dr. Vaishakh Nair', 
-      title: 'Chemical Engineering',
-      image: 'https://chemical.nitk.ac.in/sites/default/files/Vaishakh_nair_0.jpg'
+      title: 'Chemical Engineering, NITK Surathkal',
+      image: vaishakhImage
     },
     { 
       name: 'Dr. Ranjeet Kumar Sahu', 
-      title: 'Mechanical Engineering',
-      image: 'https://mech.nitk.ac.in/sites/default/files/Sahu.jpg'
+      title: 'Mechanical Engineering, NITK Surathkal',
+      image: sahuImage
     },
     { 
       name: 'Dr. Anupama Surenjan', 
-      title: 'Civil Engineering',
-      image: 'https://civil.nitk.ac.in/sites/default/files/Anupama%20Surenjan%20medium.jpg'
+      title: 'Civil Engineering, NITK Surathkal',
+      image: anupamaImage
     },
     { 
       name: 'Dr. Nikhil K S', 
-      title: 'Electronics and Communication Engg.',
-      image: 'https://ece.nitk.ac.in/sites/default/files/Untitled1.png'
+      title: 'Electronics and Communication Engg., NITK Surathkal',
+      image: nikhilImage
     },
     { 
       name: 'Dr. Sourav Kanti Addya', 
-      title: 'Computer Science & Engg.',
-      image: 'https://cse.nitk.ac.in/sites/default/files/saurav.jpg'
+      title: 'Computer Science & Engg., NITK Surathkal',
+      image: souravImage
     },
     { 
       name: 'Dr. Lipak Sahoo', 
-      title: 'Metallurgical and Materials Engg.',
-      image: 'https://mme.nitk.ac.in/sites/default/files/SAN_8059_40pct.JPG'
+      title: 'Metallurgical and Materials Engg., NITK Surathkal',
+      image: lipakImage
     }
   ],
   steeringCommittee: [
     {
       name: 'Prof. Basavaraju Manu',
-      title: 'Civil Engg',
-      image: 'https://civil.nitk.ac.in/sites/default/files/Dr.%20Basavaraju%20Manu%20Medium.jpg'
+      title: 'Civil Engg., NITK Surathkal',
+      image: basavarajuImage
     },
     {
       name: 'Prof. S. M. Murigendrappa',
-      title: 'Mechanical Engg',
-      image: 'https://mech.nitk.ac.in/sites/default/files/Murigendrappa%20%282%29.jpg'
+      title: 'Mechanical Engg., NITK Surathkal',
+      image: murigendrappImage
     },
     {
       name: 'Prof. Kumkum Banerjee',
-      title: 'MM Engg.',
-      image: 'https://mme.nitk.ac.in/sites/default/files/KB_0.jpg'
+      title: 'MM Engg., NITK Surathkal',
+      image: kumkumImage
     },
     {
       name: 'Prof. Harsha Vardhan',
-      title: 'Mining Engg',
-      image: 'https://mining.nitk.ac.in/sites/default/files/HV_2.jpg'
+      title: 'Mining Engg., NITK Surathkal',
+      image: harshaImage
     },
     {
       name: 'Dr. Manu Basavaraju',
-      title: 'CSE',
-      image: 'https://cse.nitk.ac.in/sites/default/files/dr-manu-basavaraju.jpg'
+      title: 'CSE, NITK Surathkal',
+      image: manuImage
     },
     {
       name: 'Prof. Ashvini Chaturvedi',
-      title: 'PIC - CE',
-      image: 'https://ece.nitk.ac.in/sites/default/files/ashvini1_0.jpg'
+      title: 'PIC - CE, NITK Surathkal',
+      image: ashviniImage
     },
     {
       name: 'Prof. Keyur Raval',
-      title: 'PIC - CRF',
-      image: 'https://chemical.nitk.ac.in/sites/default/files/keyur.JPG'
+      title: 'PIC - CRF, NITK Surathkal',
+      image: keyurImage
     },
     {
       name: 'Prof. Vidya Shetty',
-      title: 'Chemical Engg.',
-      image: 'https://chemical.nitk.ac.in/sites/default/files/CV%20pics.png'
+      title: 'Chemical Engg., NITK Surathkal',
+      image: vidyaImage
     },
     {
       name: 'Prof. Hari Prasad Dasari',
-      title: 'Chemical Engg.',
-      image: 'https://chemical.nitk.ac.in/sites/default/files/field/image/original_Hari%20Prasad%20Dasari.jpg'
+      title: 'Chemical Engg., NITK Surathkal',
+      image: hariImage
     },
     {
       name: 'Prof. Ram Mohana Reddy Guddeti',
-      title: 'IT',
-      image: 'https://infotech.nitk.ac.in/sites/default/files/grm-2024-image.png'
+      title: 'IT, NITK Surathkal',
+      image: ramImage
     },
     {
       name: 'Prof. B Venkatesa Perumal',
-      title: 'EEE',
-      image: 'https://eee.nitk.ac.in/sites/default/files/Dr.BVPerumal_0.jpg'
+      title: 'EEE, NITK Surathkal',
+      image: perumalImage
     },
     {
       name: 'Dr. Shyam Lal',
-      title: 'E&C Engg.',
-      image: 'https://ece.nitk.ac.in/sites/default/files/big.jpg'
+      title: 'E&C Engg., NITK Surathkal',
+      image: shyamImage
     },
     {
       name: 'Dr. Mohit P. Tahiliani',
-      title: 'CSE',
-      image: 'https://cse.nitk.ac.in/sites/default/files/mohit-p-tahiliani.jpg'
+      title: 'CSE, NITK Surathkal',
+      image: mohitImage
     },
     {
       name: 'Dr. Pruthviraj U.',
-      title: 'WROE',
-      image: 'https://appmech.nitk.ac.in/sites/default/files/Copy%20of%20PU.JPG'
+      title: 'WROE, NITK Surathkal',
+      image: pruthvirajImage
     },
     {
       name: 'Dr. Babloo Chaudhary',
-      title: 'Civil Engg',
-      image: 'https://civil.nitk.ac.in/sites/default/files/Babloo%20pic_4.jpg'
+      title: 'Civil Engg., NITK Surathkal',
+      image: bablooImage
     }
   ],
   advisoryCommittee: [
     {
       name: 'Prof. Subhash C. Yaragal',
       title: 'Deputy Director',
-      image: 'https://civil.nitk.ac.in/sites/default/files/subhas-yaragal-image.jpg'
+      image: subhashImage
     },
     {
       name: 'Prof. Udaya Bhat',
       title: 'Dean (R&C)',
-      image: 'https://www.nitk.ac.in/images/pictures/6924/content/Uday_Bhat.jpg'
+      image: udayaImage
     },
     {
       name: 'Prof. Dwarakish G S',
       title: 'Dean (Academics)',
-      image: 'https://www.nitk.ac.in/images/pictures/6199/content/IMG-20231110-WA0016.jpg'
+      image: dwarakishImage
     },
     {
       name: 'Prof. Gangadharan K V',
       title: 'Dean (P&D)',
-      image: 'https://mech.nitk.ac.in/sites/default/files/K%20V%20Gangadharan_Medium.jpg'
+      image: gangadharanImage
     },
     {
       name: 'Prof. T. Laxminidhi',
       title: 'Dean (FW)',
-      image: 'https://ece.nitk.ac.in/sites/default/files/tln-d.png'
+      image: laxminidhiImage
     },
     {
       name: 'Prof. A Chitharanjan Hegde',
       title: 'Dean (SW)',
-      image: 'https://www.nitk.ac.in/images/pictures/6255/content/A_C_Hegde.jpg'
+      image: acHegdeImage
     },
     {
-      name: 'Prof. Shreekantha S. Rao',
-      title: 'Dean (A & C)',
-      image: 'https://www.nitk.ac.in/images/pictures/4955/content/Shrikantha_S_Rao.jpg'
+      name: 'Prof. Shrikantha S. Rao',
+      title: 'Dean (ACR)',
+      image: shreetanthaImage
     }
   ],
   nationalAdvisoryCommittee: [
@@ -175,55 +210,112 @@ const committeeData = {
     { name: 'Prof. Uday Bhaskar Babu', title: 'NIT Warangal' },
     { name: 'Prof. Soumya K Ghosh', title: 'IIT Kharagpur' },
     { name: 'Prof. Viswanathan N. Nurni', title: 'IIT Bombay' },
-    { name: 'Dr. Abhilash', title: 'CSIR-NML Jamshedpur' }
+    { name: 'Dr. Abhilash', title: 'CSIR-NML Jamshedpur' },
+    { name: 'Dr. Dipin S. Pillai', title: 'IIT Kanpur' },
+    { name: 'Dr. Deepak Kumar Ojha', title: 'IIT Roorkee' },
+    { name: 'Dr. Hemanth Kumar Tanneru', title: 'IIPE Vishakhapatnam' }
   ]
 };
 
-const CommitteeMemberImage = ({ src, alt }) => {
-  const [error, setError] = React.useState(false);
+const MemberCard = ({ member, index, inView, isLeadership }) => {
+  const [imageError, setImageError] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const cardClass = isLeadership 
+    ? "bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 group w-96"
+    : "bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 group";
 
   return (
-    <div className="relative h-48 w-48 mx-auto mb-4 rounded-full overflow-hidden">
-      <img
-        src={error ? 'https://via.placeholder.com/200x200?text=Image+Not+Available' : src}
-        alt={alt}
-        onError={() => setError(true)}
-        className="w-full h-full object-cover object-center"
-        loading="lazy"
-      />
-    </div>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.8, delay: index * 0.1 }}
+      className={cardClass}
+    >
+      {member.image && (
+        <div className="p-6 flex justify-center">
+          <div className={`${isLeadership ? 'w-64 h-64' : 'w-48 h-48'} overflow-hidden relative rounded-lg`}>
+            {!imageLoaded && (
+              <div className="absolute inset-0 bg-gray-200 animate-pulse"></div>
+            )}
+            <img
+              src={imageError ? dummyMember : member.image}
+              alt={member.name}
+              onError={() => setImageError(true)}
+              onLoad={() => setImageLoaded(true)}
+              className={`w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 ${
+                !imageLoaded ? 'opacity-0' : 'opacity-100'
+              }`}
+            />
+          </div>
+        </div>
+      )}
+      <div className="p-6 bg-gradient-to-b from-white to-gray-50">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2 group-hover:text-green-700 transition-colors duration-300 text-center">
+          {member.name}
+        </h3>
+        <p className="text-green-600 font-medium text-center">{member.title}</p>
+      </div>
+    </motion.div>
   );
 };
 
-const CommitteeSection = ({ title, members }) => (
-  <motion.div
-    className="mb-8"
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5 }}
-  >
-    <h3 className="text-2xl font-bold mb-4 text-green-700">{title}</h3>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {members.map((member, index) => (
-        <motion.div
-          key={index}
-          className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow duration-300 text-center"
-          whileHover={{ scale: 1.05 }}
-        >
-          {member.image && <CommitteeMemberImage src={member.image} alt={member.name} />}
-          <h4 className="font-semibold text-gray-800">{member.name}</h4>
-          <p className="text-sm text-gray-600">{member.title}</p>
-        </motion.div>
-      ))}
-    </div>
-  </motion.div>
-);
+const CommitteeSection = ({ title, members }) => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1
+  });
+
+  const isLeadership = title === "Patron" || title === "Chairman";
+  const gridClass = isLeadership
+    ? "flex justify-center space-x-8"
+    : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8";
+
+  return (
+    <motion.div
+      ref={ref}
+      className="mb-16"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <h3 className="text-2xl font-bold mb-8 text-green-700 text-center">{title}</h3>
+      <div className={gridClass}>
+        {members.map((member, index) => (
+          <MemberCard
+            key={member.name}
+            member={member}
+            index={index}
+            inView={inView}
+            isLeadership={isLeadership}
+          />
+        ))}
+      </div>
+    </motion.div>
+  );
+};
 
 const Committee = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1
+  });
+
   return (
-    <section className="py-24 bg-green-50" id="committee">
+    <section ref={ref} className="py-24 bg-gray-50" id="committee">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Conference Committee</h2>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">Conference Committee</h2>
+          <p className="text-xl text-gray-600">
+            Meet our distinguished committee members
+          </p>
+        </motion.div>
+
         <CommitteeSection title="Patron" members={committeeData.patron} />
         <CommitteeSection title="Chairman" members={committeeData.chairman} />
         <CommitteeSection title="Conveners" members={committeeData.conveners} />

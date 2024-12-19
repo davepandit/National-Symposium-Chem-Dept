@@ -4,12 +4,12 @@ import { Facebook, Twitter, Instagram, Linkedin, Download } from 'react-feather'
 
 const Footer = () => {
   const handleDownloadFlyer = () => {
-    const flyerUrl = 'https://drive.google.com/file/d/1Ihot9ebhaJkCAla8fYyEZeM0KNRw0NtV/view?usp=sharing';
+    const flyerUrl = 'https://drive.google.com/file/d/1JUHoGtugiet3viuXjHuDypbwHlLZztMy/view?usp=sharing';
     window.open(flyerUrl, '_blank');
   };
 
   const handleDownloadBrochure = () => {
-    const brochureUrl = 'https://drive.google.com/file/d/1JTnSKERB4VcMz5muEK6uy5NVr7oXCUe1/view?usp=sharing';
+    const brochureUrl = 'https://drive.google.com/file/d/1AesHM2IqPo26ZOKvRdwtcMceMtuvvDiJ/view';
     window.open(brochureUrl, '_blank');
   };
 
@@ -20,12 +20,12 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-xl font-bold">NITK - CREST 2025</h3>
             <p className="text-sm">Empowering Sustainable Futures</p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <a href="#" className="hover:text-green-300"><Facebook size={20} /></a>
               <a href="#" className="hover:text-green-300"><Twitter size={20} /></a>
               <a href="#" className="hover:text-green-300"><Instagram size={20} /></a>
               <a href="#" className="hover:text-green-300"><Linkedin size={20} /></a>
-            </div>
+            </div> */}
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>

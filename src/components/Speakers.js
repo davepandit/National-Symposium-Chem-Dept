@@ -11,6 +11,7 @@ import chennaRao from '../img/chenna rao.jpeg';
 import venkata from '../img/Venkata Vanukuru.jpeg';
 import tcsmGupta from '../img/TCSM Gupta.jpeg';
 import somashekhar from '../img/Somashekhar.jpeg';
+import padmanandImage from '../committee/Padmanand Warrier.jpeg';
 
 const dummySpeaker = 'https://via.placeholder.com/200x200?text=Speaker';
 
@@ -52,12 +53,12 @@ const speakers = [
   },
   {
     name: 'Dr. T.C.S.M. Gupta',
-    title: 'Apar Industries Limited Mumbai',
+    title: 'Apar Industries Limited, Mumbai',
     image: tcsmGupta
   },
   {
     name: 'Dr. Venkata Vanukuru',
-    title: 'GLOBALFOUNDRIES',
+    title: 'GLOBALFOUNDRIES, Bangalore',
     image: venkata
   },
   {
@@ -67,8 +68,13 @@ const speakers = [
   },
   {
     name: 'Shri. Dilip Kumar Dalei',
-    title: 'DRDO',
+    title: 'DRDO, Bangalore',
     image: dummySpeaker
+  },
+  {
+    name: 'Padmanand Warrier',
+    title: 'Founder, Warrier H.E.A.R.T',
+    image: padmanandImage
   }
 ].filter(speaker => speaker.name !== 'Prof. Sanjeev Chaudhari');
 
@@ -81,26 +87,30 @@ const SpeakerCard = ({ speaker, index, inView }) => {
       initial={{ opacity: 0, y: 50 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, delay: index * 0.1 }}
-      className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 p-6 text-center"
+      className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 group"
     >
-      <div className="flex justify-center mb-4">
-        <div className="w-48 h-48 rounded-full overflow-hidden relative">
+      <div className="p-6 flex justify-center">
+        <div className="w-48 h-48 overflow-hidden relative rounded-lg">
           {!imageLoaded && (
-            <div className="absolute inset-0 bg-gray-200 animate-pulse rounded-full"></div>
+            <div className="absolute inset-0 bg-gray-200 animate-pulse"></div>
           )}
           <img
             src={imageError ? dummySpeaker : speaker.image}
             alt={speaker.name}
             onError={() => setImageError(true)}
             onLoad={() => setImageLoaded(true)}
-            className={`w-full h-full object-cover transform hover:scale-105 transition-transform duration-300 ${
+            className={`w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 ${
               !imageLoaded ? 'opacity-0' : 'opacity-100'
             }`}
           />
         </div>
       </div>
-      <h3 className="text-xl font-semibold text-gray-800 mb-2">{speaker.name}</h3>
-      <p className="text-green-600">{speaker.title}</p>
+      <div className="p-6 bg-gradient-to-b from-white to-gray-50">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2 group-hover:text-green-700 transition-colors duration-300">
+          {speaker.name}
+        </h3>
+        <p className="text-green-600 font-medium">{speaker.title}</p>
+      </div>
     </motion.div>
   );
 };
@@ -122,7 +132,7 @@ const Speakers = () => {
         >
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Distinguished Speakers</h2>
           <p className="text-xl text-gray-600">
-            Leading experts from various departments at NITK
+            Leading experts from the industry and academia
           </p>
         </motion.div>
 

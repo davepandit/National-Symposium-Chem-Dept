@@ -9,45 +9,55 @@ const About = () => {
   });
 
   return (
-    <section ref={ref} className="py-24 bg-gray-50" id="about">
+    <section ref={ref} className="py-24 bg-gradient-to-b from-gray-50 to-white" id="about">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* About CREST - Only title */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-green-700 mb-6">About CREST 2025</h2>
+          <h2 className="text-4xl font-bold text-green-700 mb-2">About CREST 2025</h2>
+          <div className="w-24 h-1 bg-green-600 mx-auto"></div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Conference Details */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="bg-white rounded-lg shadow-lg p-8"
+            className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300"
           >
-            <div className="prose prose-lg">
-              <h3 className="text-2xl font-semibold mb-4 text-gray-800">The Conference</h3>
-              <p className="text-gray-600 mb-6">
-                NITK The 1<sup>st</sup> National Conference on Climate Resilience and Environmentally Sustainable Technologies (NITK - CREST 2025) is a pioneering event that brings together experts, researchers, and professionals. NITK-CREST 2025 aims to foster interdisciplinary collaboration to address the pressing challenges of climate change and environmental sustainability. Through innovative technological approaches, the conference will explore cutting-edge solutions for building resilient communities and sustainable ecosystems. Participants will have the opportunity to engage in thought-provoking discussions, share groundbreaking research, and contribute to shaping a sustainable future for generations to come.
+            <div className="prose prose-lg text-justify">
+              <h3 className="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
+                <span className="w-2 h-8 bg-green-600 mr-3"></span>
+                The Conference
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                The 1<sup>st</sup> National Conference on Climate Resilience and Environmentally Sustainable Technologies (NITK - CREST 2025) is a pioneering event that unites experts, researchers, and professionals in the field. This conference serves as a platform for interdisciplinary collaboration, addressing critical challenges in climate change and environmental sustainability.
+              </p>
+              <p className="text-gray-600 leading-relaxed mt-4">
+                Through innovative technological approaches, CREST 2025 explores cutting-edge solutions for building resilient communities and sustainable ecosystems. Join us in engaging discussions, share groundbreaking research, and contribute to shaping a sustainable future for generations to come.
               </p>
             </div>
           </motion.div>
 
-          {/* About NITK */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="bg-white rounded-lg shadow-lg p-8"
+            className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300"
           >
-            <div className="prose prose-lg">
-              <h3 className="text-2xl font-semibold mb-4 text-gray-800">The Institution</h3>
-              <p className="text-gray-600">
-                National Institute of Technology Karnataka (NITK), Surathkal has established itself as a premier Institution engaged in imparting quality technological education and providing support to research and development activities. NITK is conferred the status of an Institution of National Importance vide NIT Act No.29 of 2007 by Govt. of India and is consistently ranked as one of the top ten technical institutions in India. NITK offers Undergraduate, Postgraduate, and Doctoral Degree programs. NITK is committed to enhancing the capabilities and potential of our human resources with the objective of transforming them into leaders in their chosen areas of interest. Our vision is to strive for excellence, be globally competitive in technical education, and focus on knowledge assimilation, generation, and dissemination.
+            <div className="prose prose-lg text-justify">
+              <h3 className="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
+                <span className="w-2 h-8 bg-green-600 mr-3"></span>
+                The Institution
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                National Institute of Technology Karnataka (NITK), Surathkal is a premier Institution of National Importance, as conferred by the NIT Act No.29 of 2007. Consistently ranked among India's top ten technical institutions, NITK excels in providing quality technological education and supporting cutting-edge research and development activities.
+              </p>
+              <p className="text-gray-600 leading-relaxed mt-4">
+                Offering comprehensive Undergraduate, Postgraduate, and Doctoral programs, NITK is dedicated to nurturing future leaders in technology and innovation. Our commitment to excellence, global competitiveness, and continuous knowledge advancement drives our vision of transforming students into pioneers in their chosen fields.
               </p>
             </div>
           </motion.div>

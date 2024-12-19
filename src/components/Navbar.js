@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { ChevronDown } from 'react-feather';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
   const handleDropdownLeave = () => {
     dropdownTimer = setTimeout(() => {
       setShowSubmissionDropdown(false);
-    }, 300); // Increased delay to 300ms
+    }, 300);
   };
 
   const handleDropdownEnter = () => {
@@ -33,9 +34,9 @@ const Navbar = () => {
 
   const mainNavItems = [
     'About',
-    'Speakers',
+    'Speakers', 
     'Committee',
-    { 
+    {
       name: 'Submission',
       subItems: ['Abstract', 'Timeline', 'Themes', 'Publications']
     },
@@ -83,34 +84,49 @@ const Navbar = () => {
                 ) : (
                   <div
                     key={item.name}
-                    className="relative"
+                    className="relative group"
                     onMouseEnter={handleDropdownEnter}
                     onMouseLeave={handleDropdownLeave}
                   >
-                    <button className="whitespace-nowrap text-sm font-medium text-gray-600 hover:text-green-600 transition-colors">
-                      {item.name}
+                    <button className="flex items-center space-x-1 whitespace-nowrap text-sm font-medium text-gray-600 hover:text-green-600 transition-colors">
+                      <span>{item.name}</span>
+                      <ChevronDown size={16} className={`transform transition-transform duration-200 ${showSubmissionDropdown ? 'rotate-180' : ''}`} />
                     </button>
-                    {showSubmissionDropdown && (
-                      <div 
-                        className="absolute top-full left-0 w-48 py-2 mt-1 bg-white rounded-lg shadow-lg"
-                        onMouseEnter={handleDropdownEnter}
-                        onMouseLeave={handleDropdownLeave}
-                      >
-                        {item.subItems.map((subItem) => (
-                          <Link
-                            key={subItem}
-                            to={`/${subItem.toLowerCase()}`}
-                            className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-green-600"
-                          >
-                            {subItem}
-                          </Link>
-                        ))}
-                      </div>
-                    )}
+                    <div 
+                      className={`absolute top-full left-0 w-48 py-2 mt-1 bg-white rounded-lg shadow-lg transition-all duration-300 ${
+                        showSubmissionDropdown ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
+                      }`}
+                    >
+                      {item.subItems.map((subItem) => (
+                        <Link
+                          key={subItem}
+                          to={`/${subItem.toLowerCase()}`}
+                          className="block px-4 py-2 text-sm text-gray-600 hover:bg-green-50 hover:text-green-600 transition-colors"
+                        >
+                          {subItem}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 )
               ))}
             </div>
+          </div>
+
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-2 rounded-md text-gray-600 hover:text-green-600 hover:bg-gray-100 focus:outline-none"
+            >
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                {isOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -136,21 +152,34 @@ const Navbar = () => {
                   </Link>
                 ) : (
                   <div key={item.name} className="py-2">
-                    <div className="px-3 py-2 text-base font-medium text-gray-600">
-                      {item.name}
-                    </div>
-                    <div className="pl-6">
-                      {item.subItems.map((subItem) => (
-                        <Link
-                          key={subItem}
-                          to={`/${subItem.toLowerCase()}`}
-                          className="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-green-600 hover:bg-gray-50"
-                          onClick={() => setIsOpen(false)}
+                    <button
+                      onClick={() => setShowSubmissionDropdown(!showSubmissionDropdown)}
+                      className="w-full flex items-center justify-between px-3 py-2 text-base font-medium text-gray-600"
+                    >
+                      <span>{item.name}</span>
+                      <ChevronDown size={20} className={`transform transition-transform duration-200 ${showSubmissionDropdown ? 'rotate-180' : ''}`} />
+                    </button>
+                    <AnimatePresence>
+                      {showSubmissionDropdown && (
+                        <motion.div
+                          initial={{ opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: 'auto' }}
+                          exit={{ opacity: 0, height: 0 }}
+                          className="pl-6"
                         >
-                          {subItem}
-                        </Link>
-                      ))}
-                    </div>
+                          {item.subItems.map((subItem) => (
+                            <Link
+                              key={subItem}
+                              to={`/${subItem.toLowerCase()}`}
+                              className="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-green-600 hover:bg-gray-50"
+                              onClick={() => setIsOpen(false)}
+                            >
+                              {subItem}
+                            </Link>
+                          ))}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                   </div>
                 )
               ))}

@@ -23,17 +23,19 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="space-y-8"
         >
-          <div className="text-4xl sm:text-5xl md:text-7xl font-bold text-gray-800 tracking-tight">
+          <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 tracking-tight">
             <TypeAnimation
               sequence={[
                 'NITK CREST-2025',
-                1000,
+                1500,
                 'Innovate. Sustain. Transform.',
-                500,
+                1500
               ]}
               wrapper="span"
-              speed={50}
+              speed={40}
+              repeat={Infinity}
               className="block"
+              cursor={true}
             />
           </div>
 
@@ -41,7 +43,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 3.8, duration: 0.8 }}
-            className="max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-gray-600"
+            className="max-w-2xl mx-auto text-base sm:text-lg text-gray-600"
           >
             Join experts, researchers, and professionals from diverse engineering disciplines to address the pressing challenges of climate change and environmental sustainability.
           </motion.p>
@@ -53,14 +55,14 @@ const Hero = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8"
           >
             <motion.div
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.02 }}
               className="flex items-center space-x-2 bg-white rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-md"
             >
               <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
               <span className="text-sm sm:text-base text-gray-800">27<sup>th</sup> Feb - 1<sup>st</sup> Mar 2025</span>
             </motion.div>
             <motion.div
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.02 }}
               className="flex items-center space-x-2 bg-white rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-md"
             >
               <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
@@ -75,9 +77,9 @@ const Hero = () => {
           >
             <Link to="/registration">
               <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-green-600 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all shadow-lg hover:bg-green-700 text-sm sm:text-base"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="bg-green-600 text-white font-medium px-6 sm:px-8 py-3 rounded-full shadow-md hover:bg-green-700 text-sm sm:text-base transition-colors"
               >
                 Register Now
               </motion.button>
