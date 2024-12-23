@@ -23,13 +23,20 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="space-y-8"
         >
-          <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 tracking-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 tracking-tight mb-4">
+            1<sup>st</sup> National Conference on Climate Resilience and Environmental Sustainability using Technology
+          </h1>
+          <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 tracking-tight">
             <TypeAnimation
               sequence={[
                 'NITK CREST-2025',
-                1500,
+                1000,
+                'Innovate.',
+                1000,
+                'Innovate. Sustain.',
+                1000,
                 'Innovate. Sustain. Transform.',
-                1500
+                1000,
               ]}
               wrapper="span"
               speed={40}
@@ -84,6 +91,22 @@ const Hero = () => {
                 Register Now
               </motion.button>
             </Link>
+          </motion.div>
+
+          {/* Animated Marquee Text */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 4.4, duration: 0.8 }}
+            className="mt-6"
+          >
+            <div className="relative overflow-hidden">
+              <div className="animate-scroll-right whitespace-nowrap">
+                <span className="text-black font-semibold text-lg inline-block">
+                  🔴 We are accepting Abstracts LIVE NOW!!! 🔴
+                </span>
+              </div>
+            </div>
           </motion.div>
         </motion.div>
       </div>

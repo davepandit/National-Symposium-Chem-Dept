@@ -12,6 +12,7 @@ import venkata from '../img/Venkata Vanukuru.jpeg';
 import tcsmGupta from '../img/TCSM Gupta.jpeg';
 import somashekhar from '../img/Somashekhar.jpeg';
 import padmanandImage from '../committee/Padmanand Warrier.jpeg';
+import dilip from '../img/Dilip.jpeg';
 
 const dummySpeaker = 'https://via.placeholder.com/200x200?text=Speaker';
 
@@ -69,7 +70,7 @@ const speakers = [
   {
     name: 'Shri. Dilip Kumar Dalei',
     title: 'DRDO, Bangalore',
-    image: dummySpeaker
+    image: dilip
   },
   {
     name: 'Padmanand Warrier',
@@ -105,7 +106,7 @@ const SpeakerCard = ({ speaker, index, inView }) => {
           />
         </div>
       </div>
-      <div className="p-6 bg-gradient-to-b from-white to-gray-50">
+      <div className="p-6 bg-gradient-to-b from-white to-gray-50 text-center">
         <h3 className="text-xl font-semibold text-gray-800 mb-2 group-hover:text-green-700 transition-colors duration-300">
           {speaker.name}
         </h3>

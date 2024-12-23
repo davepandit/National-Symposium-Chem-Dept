@@ -8,6 +8,15 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
       },
+      keyframes: {
+        scrollRight: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
+        }
+      },
+      animation: {
+        'scroll-right': 'scrollRight 15s linear infinite',
+      },
     },
   },
   plugins: [

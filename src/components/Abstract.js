@@ -18,7 +18,7 @@ const Abstract = () => {
               <p className="text-lg">
                 Authors must submit their abstracts using the {' '}
                 <a 
-                  href="https://cmt3.research.microsoft.com/NITKCREST2025" 
+                  href="https://cmt3.research.microsoft.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-800 underline"
@@ -58,7 +58,7 @@ const Abstract = () => {
 
             {/* Add CMT submission button */}
             <a 
-              href="https://cmt3.research.microsoft.com/NITKCREST2025"
+              href="https://cmt3.research.microsoft.com"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium inline-block ml-4"

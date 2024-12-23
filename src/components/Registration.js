@@ -36,16 +36,16 @@ const Registration = () => {
                 <thead className="bg-green-100">
                   <tr>
                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Category</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Early Bird Registration (INR)</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Regular Registration (INR)</th>
+                    <th className="px-6 py-3 text-center text-xs font-medium text-gray-700 uppercase tracking-wider">Early Bird Registration (INR)</th>
+                    <th className="px-6 py-3 text-center text-xs font-medium text-gray-700 uppercase tracking-wider">Regular Registration (INR)</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
                   {registrationFees.map((fee, index) => (
                     <tr key={index}>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">{fee.category}</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">{fee.earlyBird}</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">{fee.regular}</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 text-center">{fee.earlyBird}</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 text-center">{fee.regular}</td>
                     </tr>
                   ))}
                 </tbody>

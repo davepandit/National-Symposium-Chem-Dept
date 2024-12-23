@@ -47,7 +47,7 @@ const committeeData = {
   chairman: [
     { 
       name: 'Prof. I. Regupathi', 
-      title: 'Head of the Department, Chemical Engineering',
+      title: 'Head of the Department, Chemical Engineering, NITK, Surathkal',
       image: regupathiImage
     }
   ],
@@ -168,37 +168,37 @@ const committeeData = {
   advisoryCommittee: [
     {
       name: 'Prof. Subhash C. Yaragal',
-      title: 'Deputy Director',
+      title: 'Deputy Director, NITK Surathkal',
       image: subhashImage
     },
     {
       name: 'Prof. Udaya Bhat',
-      title: 'Dean (R&C)',
+      title: 'Dean (R&C), NITK Surathkal',
       image: udayaImage
     },
     {
       name: 'Prof. Dwarakish G S',
-      title: 'Dean (Academics)',
+      title: 'Dean (Academics), NITK Surathkal',
       image: dwarakishImage
     },
     {
       name: 'Prof. Gangadharan K V',
-      title: 'Dean (P&D)',
+      title: 'Dean (P&D), NITK Surathkal',
       image: gangadharanImage
     },
     {
       name: 'Prof. T. Laxminidhi',
-      title: 'Dean (FW)',
+      title: 'Dean (FW), NITK Surathkal',
       image: laxminidhiImage
     },
     {
       name: 'Prof. A Chitharanjan Hegde',
-      title: 'Dean (SW)',
+      title: 'Dean (SW), NITK Surathkal',
       image: acHegdeImage
     },
     {
       name: 'Prof. Shrikantha S. Rao',
-      title: 'Dean (ACR)',
+      title: 'Dean (ACR), NITK Surathkal',
       image: shreetanthaImage
     }
   ],
