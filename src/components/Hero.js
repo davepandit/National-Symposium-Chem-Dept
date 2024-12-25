@@ -24,7 +24,7 @@ const Hero = () => {
           className="space-y-8"
         >
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 tracking-tight mb-4">
-            1<sup>st</sup> National Conference on Climate Resilience and Environmental Sustainability using Technology
+            1<sup>st</sup> National Conference on Climate Resilience and Environmental Sustainability using Technologies
           </h1>
           <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 tracking-tight">
             <TypeAnimation
