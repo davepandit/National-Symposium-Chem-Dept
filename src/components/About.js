@@ -32,7 +32,9 @@ const About = () => {
             <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">About Conference</h2>
             <div className="prose prose-lg mx-auto">
               <p className="text-gray-600 mb-6">
-                1<sup>st</sup> National Conference on Climate Resilience and Environmental Sustainability using Technologies (NITK - CREST 2025) is a pioneering event that brings together experts, researchers, and professionals. NITK-CREST 2025 aims to foster interdisciplinary collaboration to address the pressing challenges of climate change and environmental sustainability. Through innovative technological approaches, the conference will explore cutting-edge solutions for building resilient communities and sustainable ecosystems. Participants will have the opportunity to engage in thought-provoking discussions, share groundbreaking research, and contribute to shaping a sustainable future for generations to come.
+                1<sup>st</sup> National Conference on
+Climate Resilience and Environmentally Sustainable
+Technologies (NITK-CREST 2025) is a pioneering event that brings together experts, researchers, and professionals. NITK-CREST 2025 aims to foster interdisciplinary collaboration to address the pressing challenges of climate change and environmental sustainability. Through innovative technological approaches, the conference will explore cutting-edge solutions for building resilient communities and sustainable ecosystems. Participants will have the opportunity to engage in thought-provoking discussions, share groundbreaking research, and contribute to shaping a sustainable future for generations to come.
               </p>
             </div>
           </motion.div>
