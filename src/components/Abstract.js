@@ -48,7 +48,7 @@ const Abstract = () => {
           <div className="mt-8 text-center space-y-4">
             {/* Existing template button */}
             <a 
-              href="https://docs.google.com/document/d/1JyM6HvGLOPve2QhhGxWpQgrXz3RKI4Ni/edit?usp=sharing&ouid=108533967560820556863&rtpof=true&sd=true"
+              href="https://docs.google.com/document/d/1JyM6HvGLOPve2QhhGxWpQgrXz3RKI4Ni/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors font-medium inline-block"
