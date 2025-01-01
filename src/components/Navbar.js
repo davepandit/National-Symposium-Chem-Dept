@@ -41,6 +41,7 @@ const Navbar = () => {
       subItems: ['Abstract', 'Timeline', 'Themes', 'Publications']
     },
     'Accommodation',
+    'Sightseeing',
     'Sponsors',
     'Registration',
     'Venue',

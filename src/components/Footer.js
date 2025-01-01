@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Linkedin, Download } from 'react-feather';
+import { Download } from 'react-feather';
 
 const Footer = () => {
   const handleDownloadFlyer = () => {

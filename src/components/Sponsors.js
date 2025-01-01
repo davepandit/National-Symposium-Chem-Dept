@@ -1,16 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import sponsorshipImage from '../img/Add a heading (210 x 297 mm) (2)_page-0001.jpg';
-import qrCodeImage from '../img/WhatsApp Image 2024-12-31 at 21.23.03.jpeg';
+import qrCodeImage from '../img/WhatsApp Image 2025-01-01 at 11.35.47.jpeg';
 
 const Sponsors = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1
   });
-
-  const [showQRModal, setShowQRModal] = useState(false);
 
   const platinumSponsors = Array(2).fill({
     name: 'Platinum Sponsor',
@@ -44,29 +42,6 @@ const Sponsors = () => {
         ))}
       </div>
     </div>
-  );
-
-  const QRCodeModal = () => (
-    showQRModal && (
-      <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-        <div className="bg-white rounded-lg p-6 max-w-md w-full">
-          <div className="flex justify-between items-center mb-4">
-            <h3 className="text-xl font-semibold">Payment QR Code</h3>
-            <button
-              onClick={() => setShowQRModal(false)}
-              className="text-gray-500 hover:text-gray-700"
-            >
-              <span className="text-2xl">&times;</span>
-            </button>
-          </div>
-          <img
-            src={qrCodeImage}
-            alt="Payment QR Code"
-            className="w-full h-auto rounded-lg"
-          />
-        </div>
-      </div>
-    )
   );
 
   return (
@@ -105,54 +80,62 @@ const Sponsors = () => {
 
             <div className="text-left mt-8 bg-gray-50 p-8 rounded-lg">
               <p className="text-gray-600 mb-6">
-                However, if you wish to sponsor  you can contribute using the payment options shown above.
+                The contribution from the other sponsors will also be accepted.
               </p>
               
-              <button
-                onClick={() => setShowQRModal(true)}
-                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors mb-6"
-              >
-                Pay Here
-              </button>
+              <h3 className="text-xl font-semibold mb-4">Payment Options</h3>
+              
+              <div className="mb-6">
+                <h4 className="font-semibold mb-2">Account Details for NEFT/RTGS Transfer</h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li>Account: The Director, NITK Surathkal</li>
+                  <li>Account No.: 37772503911</li>
+                  <li>Bank Name: SBI, NITK</li>
+                  <li>IFSC Code: SBIN0002273</li>
+                  <li>MICR Code: 575002013</li>
+                  <li>SWIFT Code: SBININBB146</li>
+                </ul>
+              </div>
 
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                After the payment, please send an email to{' '}
-                <a href="mailto:nitk-crest2025@nitk.edu.in" className="text-blue-600 hover:underline">
-                  nitk-crest2025@nitk.edu.in
+              <div className="mb-6">
+                <h4 className="font-semibold mb-2">UPI Payment</h4>
+                <div className="max-w-xs mx-auto">
+                  <img
+                    src={qrCodeImage}
+                    alt="UPI Payment QR Code"
+                    className="w-full h-auto rounded-lg shadow-md"
+                  />
+                </div>
+              </div>
+
+              <p className="text-gray-600 mb-4">
+                After payment, send the details as requested in the form -{' '}
+                <a 
+                  href="/documents/Format_details of funder.docx"
+                  download="Format_details of funder.docx"
+                  className="text-blue-600 hover:underline"
+                >
+                  Download Word Document
                 </a>
-                , with the following details:
-              </h3>
-              
-              <p className="text-gray-600 mb-2 italic">Please use the subject "Sponsorship towards NITK-CREST 2025"</p>
-              
-              <ul className="list-disc list-inside space-y-2 text-gray-600 ml-4 mb-6">
-                <li>Name of the Organization and address</li>
-                <li>Name of the contact Person</li>
-                <li>Email ID of the contact person</li>
-                <li>Mobile Number</li>
-                <li>Amount Paid</li>
-                <li>Date of Payment</li>
-                <li>Screenshot of the payment details (it must include Transaction Number/UTR Number)</li>
-                <li>Name on which the receipt has to be generated</li>
-                <li>GST Number (if any)</li>
-              </ul>
-
-              <p className="text-gray-600 mb-6">
-                You will be acknowledged with the payment receipt upon verifying your transaction details.
+                {' '}or{' '}
+                <a 
+                  href="/documents/Format_details of funder.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  View PDF
+                </a>
+                {' '}and send to nitk-crest2025@nitk.edu.in
               </p>
 
               <p className="text-gray-600">
-                For further details, please write to us:{' '}
-                <a href="mailto:nitk-crest2025@nitk.edu.in" className="text-blue-600 hover:underline">
-                  nitk-crest2025@nitk.edu.in
-                </a>
+                Payments will be acknowledged with receipt, after the confirmation of transaction details.
               </p>
             </div>
           </div>
         </motion.div>
       </div>
-
-      <QRCodeModal />
     </section>
   );
 };
