@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import sponsorshipImage from '../img/NITK-CREST2025 Sponsorship_page-0001.jpg';
+import sponsorshipImage from '../img/Add a heading (210 x 297 mm) (2)_page-0001.jpg';
+import qrCodeImage from '../img/WhatsApp Image 2024-12-31 at 21.23.03.jpeg';
 
 const Sponsors = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1
   });
+
+  const [showQRModal, setShowQRModal] = useState(false);
 
   const platinumSponsors = Array(2).fill({
     name: 'Platinum Sponsor',
@@ -41,6 +44,29 @@ const Sponsors = () => {
         ))}
       </div>
     </div>
+  );
+
+  const QRCodeModal = () => (
+    showQRModal && (
+      <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+        <div className="bg-white rounded-lg p-6 max-w-md w-full">
+          <div className="flex justify-between items-center mb-4">
+            <h3 className="text-xl font-semibold">Payment QR Code</h3>
+            <button
+              onClick={() => setShowQRModal(false)}
+              className="text-gray-500 hover:text-gray-700"
+            >
+              <span className="text-2xl">&times;</span>
+            </button>
+          </div>
+          <img
+            src={qrCodeImage}
+            alt="Payment QR Code"
+            className="w-full h-auto rounded-lg"
+          />
+        </div>
+      </div>
+    )
   );
 
   return (
@@ -79,8 +105,15 @@ const Sponsors = () => {
 
             <div className="text-left mt-8 bg-gray-50 p-8 rounded-lg">
               <p className="text-gray-600 mb-6">
-                However, if you wish to sponsor a custom amount, you can also contribute using the payment options shown above.
+                However, if you wish to sponsor  you can contribute using the payment options shown above.
               </p>
+              
+              <button
+                onClick={() => setShowQRModal(true)}
+                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors mb-6"
+              >
+                Pay Here
+              </button>
 
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
                 After the payment, please send an email to{' '}
@@ -118,6 +151,8 @@ const Sponsors = () => {
           </div>
         </motion.div>
       </div>
+
+      <QRCodeModal />
     </section>
   );
 };
