@@ -127,6 +127,7 @@ const Sponsors = () => {
                   View PDF
                 </a>
                 {' '}and send to nitk-crest2025@nitk.edu.in
+                with the subject "Sponsorship towards NITK-CREST 2025”
               </p>
 
               <p className="text-gray-600">
