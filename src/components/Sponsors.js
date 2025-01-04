@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import sponsorshipImage from '../img/Add a heading (210 x 297 mm) (2)_page-0001.jpg';
+import sponsorshipImage from '../img/Sponsor Flyer_page-0001.jpg';
 import qrCodeImage from '../img/WhatsApp Image 2025-01-01 at 11.35.47.jpeg';
 
 const Sponsors = () => {
@@ -79,9 +79,14 @@ const Sponsors = () => {
             />
 
             <div className="text-left mt-8 bg-gray-50 p-8 rounded-lg">
-              <p className="text-gray-600 mb-6">
-                The contribution from the other sponsors will also be accepted.
-              </p>
+              <div className="mb-8 text-center">
+                <a href="https://forms.gle/xmxaFxhUyGJvQEt27" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg inline-block">
+                  Sponsor Registration Form
+                </a>
+              </div>
               
               <h3 className="text-xl font-semibold mb-4">Payment Options</h3>
               

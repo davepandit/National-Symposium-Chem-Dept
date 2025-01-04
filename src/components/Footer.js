@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Download } from 'react-feather';
+import { Download, Linkedin } from 'react-feather';
 
 const Footer = () => {
   const handleDownloadFlyer = () => {
@@ -20,12 +20,11 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-xl font-bold">NITK - CREST 2025</h3>
             <p className="text-sm">Empowering Sustainable Futures</p>
-            {/* <div className="flex space-x-4">
-              <a href="#" className="hover:text-green-300"><Facebook size={20} /></a>
-              <a href="#" className="hover:text-green-300"><Twitter size={20} /></a>
-              <a href="#" className="hover:text-green-300"><Instagram size={20} /></a>
-              <a href="#" className="hover:text-green-300"><Linkedin size={20} /></a>
-            </div> */}
+            <div className="flex space-x-4">
+              <a href="https://www.linkedin.com/in/nitk-crest2025" className="hover:text-green-300" target="_blank" rel="noopener noreferrer">
+                <Linkedin size={20} />
+              </a>
+            </div>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>

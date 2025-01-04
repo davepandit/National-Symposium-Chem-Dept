@@ -3,23 +3,23 @@ import React from 'react';
 const registrationFees = [
   {
     category: 'Industry Delegates',
-    earlyBird: 6000,
-    regular: 7000
+    earlyBird: 7080,
+    regular: 8260
   },
   {
     category: 'Academia/ R & D Centres',
-    earlyBird: 4000,
-    regular: 5000
+    earlyBird: 4720,
+    regular: 5900
   },
   {
     category: 'Research Scholar/PG/UG',
-    earlyBird: 2500,
-    regular: 3000
+    earlyBird: 2950,
+    regular: 3540
   },
   {
     category: 'Non-participant/Accompany',
-    earlyBird: 1500,
-    regular: 2000
+    earlyBird: 1770,
+    regular: 2360
   }
 ];
 
@@ -53,7 +53,16 @@ const Registration = () => {
             </div>
           </div>
 
-          <p className="text-sm text-gray-500 mb-4">*Excluding GST charges</p>
+          <p className="text-sm text-gray-500 mb-4">The Registration Fee mentioned for all the categories includes 18% GST.</p>
+
+          <div className="my-8 text-center">
+            <a href="https://forms.gle/4kpcXZ8SJVYWXCeu5" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg inline-block">
+              Early Bird Registration Form
+            </a>
+          </div>
 
           <p className="mb-6 text-gray-600">
             The conference registration fee includes kit, proceedings, and admission to all technical sessions, lunch, tea/coffee, and snacks. It does not include accommodation. Limited accommodation is available for participants in the NITK Guest House. On prior request, they may be provided accommodation based on the availability on a payment basis. A list of nearby Hotels and their tariff will be updated on the conference website for the benefit of outstation participants.
