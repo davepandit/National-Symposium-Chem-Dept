@@ -79,37 +79,36 @@ const Sponsors = () => {
             />
 
             <div className="text-left mt-8 bg-gray-50 p-8 rounded-lg">
-              <div className="mb-8 text-center">
-                <a href="https://forms.gle/xmxaFxhUyGJvQEt27" 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg inline-block">
-                  Sponsor Registration Form
-                </a>
-              </div>
-              
-              <h3 className="text-xl font-semibold mb-4">Payment Options</h3>
-              
-              <div className="mb-6">
-                <h4 className="font-semibold mb-2">Account Details for NEFT/RTGS Transfer</h4>
-                <ul className="space-y-2 text-gray-600">
-                  <li>Account: The Director, NITK Surathkal</li>
-                  <li>Account No.: 37772503911</li>
-                  <li>Bank Name: SBI, NITK</li>
-                  <li>IFSC Code: SBIN0002273</li>
-                  <li>MICR Code: 575002013</li>
-                  <li>SWIFT Code: SBININBB146</li>
-                </ul>
-              </div>
+              <div className="space-y-8">
+                <div className="text-center">
+                  <a href="https://forms.gle/xmxaFxhUyGJvQEt27" 
+                     target="_blank" 
+                     rel="noopener noreferrer"
+                     className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg inline-block">
+                    Sponsor Registration Form
+                  </a>
+                </div>
 
-              <div className="mb-6">
-                <h4 className="font-semibold mb-2">UPI Payment</h4>
-                <div className="max-w-xs mx-auto">
-                  <img
-                    src={qrCodeImage}
-                    alt="UPI Payment QR Code"
-                    className="w-full h-auto rounded-lg shadow-md"
-                  />
+                <div className="flex flex-col md:flex-row gap-8 items-start">
+                  <div className="md:w-1/2">
+                    <h4 className="font-semibold mb-2">Account Details for NEFT/RTGS Transfer</h4>
+                    <ul className="space-y-2 text-gray-600">
+                      <li>Account: The Director, NITK Surathkal</li>
+                      <li>Account No.: 37772503911</li>
+                      <li>Bank Name: SBI, NITK</li>
+                      <li>IFSC Code: SBIN0002273</li>
+                      <li>MICR Code: 575002013</li>
+                      <li>SWIFT Code: SBININBB146</li>
+                    </ul>
+                  </div>
+                  <div className="md:w-1/2 flex flex-col items-center">
+                    <h4 className="font-semibold mb-2">UPI Details</h4>
+                    <img
+                      src={qrCodeImage}
+                      alt="UPI Payment QR Code"
+                      className="w-40 h-auto rounded-lg shadow-md"
+                    />
+                  </div>
                 </div>
               </div>
 

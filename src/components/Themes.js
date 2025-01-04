@@ -4,6 +4,22 @@ import { useInView } from 'react-intersection-observer';
 
 const themes = [
   {
+    title: 'Earth (Materials)',
+    description: 'Sustainable materials and waste management',
+    icon: '🌱', 
+    image: 'https://images.unsplash.com/photo-1470115636492-6d2b56f9146d',
+    color: 'from-green-600 to-green-800',
+    points: [
+      'Advanced Materials (Nanomaterials, Biomaterials, Green lubricants)',
+      'Circular Economy and Waste Management',
+      'Soil Engineering and Natural Hazards (Foundation, Dynamics, Landslides)',
+      'Sustainable Mining and Resource Management',
+      'Smart Agriculture and IoT Applications',
+      'Environmental Pollution Control and Remediation',
+      'Processing of Waste Materials and Sludge'
+    ]
+  },
+  {
     title: 'Water',
     description: 'Sustainable water management and conservation',
     icon: '💧',
@@ -21,19 +37,17 @@ const themes = [
     ]
   },
   {
-    title: 'Earth (Materials)',
-    description: 'Sustainable materials and waste management',
-    icon: '🌱', 
-    image: 'https://images.unsplash.com/photo-1470115636492-6d2b56f9146d',
-    color: 'from-green-600 to-green-800',
+    title: 'Fire (Energy)',
+    description: 'Renewable energy and sustainable technologies',
+    icon: '🔥',
+    image: 'https://images.unsplash.com/photo-1496483353456-90997957cf99',
+    color: 'from-orange-500 to-red-600',
     points: [
-      'Advanced Materials (Nanomaterials, Biomaterials, Green lubricants)',
-      'Circular Economy and Waste Management',
-      'Soil Engineering and Natural Hazards (Foundation, Dynamics, Landslides)',
-      'Sustainable Mining and Resource Management',
-      'Smart Agriculture and IoT Applications',
-      'Environmental Pollution Control and Remediation',
-      'Processing of Waste Materials and Sludge'
+      'Hydrogen production and storage',
+      'Renewable energy',
+      'Thermochemical conversion',
+      'Batteries, fuel cells, Supercapacitors',
+      'AI and ML applications in Energy'
     ]
   },
   {
@@ -48,20 +62,6 @@ const themes = [
       'Particulate matter', 
       'Air monitoring and emission research',
       'Air quality modeling'
-    ]
-  },
-  {
-    title: 'Fire (Energy)',
-    description: 'Renewable energy and sustainable technologies',
-    icon: '🔥',
-    image: 'https://images.unsplash.com/photo-1496483353456-90997957cf99',
-    color: 'from-orange-500 to-red-600',
-    points: [
-      'Hydrogen production and storage',
-      'Renewable energy',
-      'Thermochemical conversion',
-      'Batteries, fuel cells, Supercapacitors',
-      'AI and ML applications in Energy'
     ]
   },
   {
