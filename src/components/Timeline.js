@@ -7,7 +7,7 @@ const timelineEvents = [
   { date: '20/1/2025', event: 'Last date for Abstract Submission' },
   { date: '10/02/2025', event: 'Notification of Acceptance' },
   { date: '12/02/2025', event: 'Early Bird Registration closes' },
-  { date: '22/02/2025', event: 'Registration Deadline' },
+  { date: '20/02/2025', event: 'Registration Deadline' },
   { date: '27/02/2025', event: 'Conference Begins' },
 ];
 
