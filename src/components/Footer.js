@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Download, Linkedin } from 'react-feather';
+import { Download, Linkedin, Instagram } from 'react-feather';
 
 const Footer = () => {
   const handleDownloadFlyer = () => {
@@ -21,6 +21,9 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a href="https://www.linkedin.com/in/nitk-crest2025" className="hover:text-green-300" target="_blank" rel="noopener noreferrer">
                 <Linkedin size={20} />
+              </a>
+              <a href="https://www.instagram.com/nitkcrest2025?igsh=a2M4M3VrbTZranV3&utm_source=qr" className="hover:text-green-300" target="_blank" rel="noopener noreferrer">
+                <Instagram size={20} />
               </a>
             </div>
           </div>
