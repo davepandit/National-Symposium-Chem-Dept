@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { Calendar, MapPin } from 'react-feather';
 import { TypeAnimation } from 'react-type-animation';
 import { Link } from 'react-router-dom';
+import nitkLogo from '../img/image copy 2.png';
+import backgroundImage from '../img/WhatsApp Image 2025-01-18 at 20.45.37.jpeg';
 
 const Hero = () => {
   return (
@@ -28,6 +30,7 @@ const Hero = () => {
 Climate Resilience and Environmentally Sustainable
 Technologies (NITK-CREST 2025)
           </h1>
+
           <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 tracking-tight">
             <TypeAnimation
               sequence={[
@@ -54,7 +57,6 @@ Technologies (NITK-CREST 2025)
             transition={{ delay: 3.8, duration: 0.8 }}
             className="max-w-2xl mx-auto text-base sm:text-lg text-gray-600"
           >
-            Join experts, researchers, and professionals from diverse engineering disciplines to address the pressing challenges of climate change and environmental sustainability.
           </motion.p>
 
           <motion.div
@@ -95,6 +97,30 @@ Technologies (NITK-CREST 2025)
             </Link>
           </motion.div>
 
+          {/* Organized By Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 4.4, duration: 0.8 }}
+            className="flex flex-col items-center justify-center space-y-4"
+          >
+            <h2 className="text-xl font-semibold text-green-700">Organized By</h2>
+            <div className="flex items-center justify-center space-x-8">
+              <motion.div 
+                whileHover={{ scale: 1.05 }}
+                className="w-16 h-16 rounded-full overflow-hidden border-2 border-green-600 shadow-lg"
+              >
+                <img src={nitkLogo} alt="NITK Logo" className="w-full h-full object-cover" />
+              </motion.div>
+              <motion.div 
+                whileHover={{ scale: 1.05 }}
+                className="w-16 h-16 rounded-full overflow-hidden border-2 border-green-600 shadow-lg"
+              >
+                <img src={backgroundImage} alt="Department Image" className="w-full h-full object-cover" />
+              </motion.div>
+            </div>
+          </motion.div>
+
           {/* Animated Marquee Text */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -105,7 +131,7 @@ Technologies (NITK-CREST 2025)
             <div className="relative overflow-hidden">
               <div className="animate-scroll-right whitespace-nowrap">
                 <span className="text-black font-semibold text-lg inline-block">
-                  🔴 We are accepting Abstracts LIVE NOW!!! 🔴
+                  🔴 We are accepting Abstracts LIVE NOW!!! | Selected papers will be published in Material Science and Engineering Technology (SCIE, IF-1.2), Wiley Publication as special issue 🔴
                 </span>
               </div>
             </div>
