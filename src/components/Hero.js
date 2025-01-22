@@ -141,9 +141,6 @@ const Hero = () => {
                 <span className="text-green-700 font-semibold px-4">
                   🔴 The abstract submission date extended to 30 January 2025
                 </span>
-                <span className="text-green-700 font-semibold px-4">
-                  🔴 Early bird registration is now open
-                </span>
               </div>
               <div className="animate-marquee2 inline-block absolute">
                 <span className="text-green-700 font-semibold px-4">
@@ -151,9 +148,6 @@ const Hero = () => {
                 </span>
                 <span className="text-green-700 font-semibold px-4">
                   🔴 The abstract submission date extended to 30 January 2025
-                </span>
-                <span className="text-green-700 font-semibold px-4">
-                  🔴 Early bird registration is now open
                 </span>
               </div>
             </motion.div>
