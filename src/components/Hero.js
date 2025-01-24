@@ -10,7 +10,6 @@ import anrfLogo from '../img/PHOTO-2025-01-24-19-36-23.jpg';
 import aparLogo from '../img/image copy 5.png';
 import durgaChemicalsLogo from '../img/image copy 4.png';
 import wileyLogo from '../img/WhatsApp Image 2025-01-18 at 20.38.57.jpeg';
-import springerNatureLogo from '../img/PHOTO-2025-01-24-21-02-40.jpg';
 
 const Hero = () => {
   return (
@@ -150,19 +149,13 @@ const Hero = () => {
               </motion.div>
             </div>
 
-            <h2 className="text-xl font-semibold text-green-700 mt-8">Publication Partners</h2>
+            <h2 className="text-xl font-semibold text-green-700 mt-8">Publication Partner</h2>
             <div className="flex flex-wrap justify-center gap-8 mt-4">
               <motion.div 
                 whileHover={{ scale: 1.05 }}
                 className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center"
               >
                 <img src={wileyLogo} alt="Wiley Publication Logo" className="w-full h-full object-contain" />
-              </motion.div>
-              <motion.div 
-                whileHover={{ scale: 1.05 }}
-                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center"
-              >
-                <img src={springerNatureLogo} alt="Springer Nature Logo" className="w-full h-full object-contain" />
               </motion.div>
             </div>
           </motion.div>
@@ -181,7 +174,7 @@ const Hero = () => {
               <div className="animate-marquee inline-block">
                 <span className="text-green-700 font-semibold px-4">
                   🔴 Selected papers will be published in Material Science and Engineering Technology (SCIE, IF-1.2), Wiley Publication as special issue
-                </span>
+                </span>{' '}
                 <span className="text-green-700 font-semibold px-4">
                   🔴 The abstract submission date extended to 30 January 2025
                 </span>
@@ -189,7 +182,7 @@ const Hero = () => {
               <div className="animate-marquee2 inline-block absolute">
                 <span className="text-green-700 font-semibold px-4">
                   🔴 Selected papers will be published in Material Science and Engineering Technology (SCIE, IF-1.2), Wiley Publication as special issue
-                </span>
+                </span>{' '}
                 <span className="text-green-700 font-semibold px-4">
                   🔴 The abstract submission date extended to 30 January 2025
                 </span>

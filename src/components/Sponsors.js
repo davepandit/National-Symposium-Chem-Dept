@@ -62,7 +62,7 @@ const Sponsors = () => {
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Sponsors</h2>
         </motion.div>
 
-        <SponsorTier title="Platinum Sponsor" sponsors={platinumSponsors} gridCols="grid-cols-1" logoSize="w-48 h-32" />
+        <SponsorTier title="Platinum Sponsor" sponsors={platinumSponsors} gridCols="grid-cols-1" logoSize="w-96 h-64" />
         <SponsorTier title="Other Sponsors" sponsors={otherSponsors} gridCols="grid-cols-2 md:grid-cols-3" logoSize="w-32 h-20" />
 
         <motion.div
@@ -136,7 +136,7 @@ const Sponsors = () => {
                   View PDF
                 </a>
                 {' '}and send to nitk-crest2025@nitk.edu.in
-                with the subject "Sponsorship towards NITK-CREST 2025”
+                with the subject "Sponsorship towards NITK-CREST 2025"
               </p>
 
               <p className="text-gray-600">

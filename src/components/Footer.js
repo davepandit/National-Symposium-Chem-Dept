@@ -4,11 +4,21 @@ import { Download, Linkedin, Instagram } from 'react-feather';
 
 const Footer = () => {
   const handleDownloadFlyer = () => {
-    window.open('/documents/NITK-CREST - 2025 Brochure New.pdf', '_blank');
+    const link = document.createElement('a');
+    link.href = '/documents/CREST 2025 Flyer New.pdf';
+    link.download = 'NITK-CREST 2025 Flyer.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const handleDownloadBrochure = () => {
-    window.open('/documents/NITK-CREST - 2025 Brochure New.pdf', '_blank');
+    const link = document.createElement('a');
+    link.href = '/documents/NITK-CREST - 2025  Brochure New.pdf';
+    link.download = 'NITK-CREST - 2025 Brochure.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
