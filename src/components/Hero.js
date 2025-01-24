@@ -5,6 +5,12 @@ import { TypeAnimation } from 'react-type-animation';
 import { Link } from 'react-router-dom';
 import nitkLogo from '../img/image copy 2.png';
 import backgroundImage from '../img/WhatsApp Image 2025-01-18 at 20.45.37.jpeg';
+import kspcbLogo from '../img/WhatsApp Image 2025-01-18 at 20.45.37.jpeg';
+import anrfLogo from '../img/PHOTO-2025-01-24-19-36-23.jpg';
+import aparLogo from '../img/image copy 5.png';
+import durgaChemicalsLogo from '../img/image copy 4.png';
+import wileyLogo from '../img/WhatsApp Image 2025-01-18 at 20.38.57.jpeg';
+import springerNatureLogo from '../img/PHOTO-2025-01-24-21-02-40.jpg';
 
 const Hero = () => {
   return (
@@ -109,18 +115,56 @@ const Hero = () => {
               <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-green-600 shadow-lg mb-2">
                 <img src={nitkLogo} alt="NITK Logo" className="w-full h-full object-cover" />
               </div>
-              <span className="text-sm text-gray-800 max-w-[150px] text-center">National Institute of Technology Karnataka, Surathkal</span>
+              <span className="text-sm text-gray-800 max-w-[150px] text-center">NITK, Surathkal</span>
             </motion.div>
             <h2 className="text-xl font-semibold text-green-700">In association with</h2>
             <motion.div 
               whileHover={{ scale: 1.05 }}
               className="flex flex-col items-center"
             >
-              <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-green-600 shadow-lg mb-2">
-                <img src={backgroundImage} alt="KSPCB Logo" className="w-full h-full object-cover" />
+              <div className="w-16 h-16 rounded-full overflow-hidden shadow-lg mb-2">
+                <img src={kspcbLogo} alt="KSPCB Logo" className="w-full h-full object-cover" />
               </div>
               <span className="text-sm text-gray-800 max-w-[150px] text-center">Karnataka State Pollution Control Board</span>
             </motion.div>
+
+            <h2 className="text-xl font-semibold text-green-700">Sponsored By</h2>
+            <div className="flex flex-wrap justify-center gap-8 mt-4">
+              <motion.div 
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center"
+              >
+                <img src={anrfLogo} alt="ANRF Logo" className="w-full h-full object-contain" />
+              </motion.div>
+              <motion.div 
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center"
+              >
+                <img src={aparLogo} alt="APAR Logo" className="w-full h-full object-contain" />
+              </motion.div>
+              <motion.div 
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center"
+              >
+                <img src={durgaChemicalsLogo} alt="Durga Chemicals Logo" className="w-full h-full object-contain" />
+              </motion.div>
+            </div>
+
+            <h2 className="text-xl font-semibold text-green-700 mt-8">Publication Partners</h2>
+            <div className="flex flex-wrap justify-center gap-8 mt-4">
+              <motion.div 
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center"
+              >
+                <img src={wileyLogo} alt="Wiley Publication Logo" className="w-full h-full object-contain" />
+              </motion.div>
+              <motion.div 
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center"
+              >
+                <img src={springerNatureLogo} alt="Springer Nature Logo" className="w-full h-full object-contain" />
+              </motion.div>
+            </div>
           </motion.div>
         </motion.div>
       </div>

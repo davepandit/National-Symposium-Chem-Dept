@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import sponsorshipImage from '../img/Sponsor Flyer_page-0001.jpg';
 import qrCodeImage from '../img/WhatsApp Image 2025-01-01 at 11.35.47.jpeg';
+import anrfLogo from '../img/PHOTO-2025-01-24-19-36-23.jpg';
+import aparLogo from '../img/image copy 5.png';
+import durgaChemicalsLogo from '../img/image copy 4.png';
 
 const Sponsors = () => {
   const [ref, inView] = useInView({
@@ -10,25 +13,28 @@ const Sponsors = () => {
     threshold: 0.1
   });
 
-  const platinumSponsors = Array(2).fill({
-    name: 'Platinum Sponsor',
-    logo: 'https://via.placeholder.com/300x150?text=Platinum+Sponsor'
-  });
+  const platinumSponsors = [
+    {
+      name: 'ANRF',
+      logo: anrfLogo
+    }
+  ];
 
-  const goldSponsors = Array(3).fill({
-    name: 'Gold Sponsor',
-    logo: 'https://via.placeholder.com/250x125?text=Gold+Sponsor'
-  });
+  const otherSponsors = [
+    {
+      name: 'APAR',
+      logo: aparLogo
+    },
+    {
+      name: 'Durga Chemicals',
+      logo: durgaChemicalsLogo
+    }
+  ];
 
-  const silverSponsors = Array(4).fill({
-    name: 'Silver Sponsor',
-    logo: 'https://via.placeholder.com/200x100?text=Silver+Sponsor'
-  });
-
-  const SponsorTier = ({ title, sponsors, gridCols }) => (
+  const SponsorTier = ({ title, sponsors, gridCols, logoSize }) => (
     <div className="mb-16">
       <h3 className="text-2xl font-semibold text-gray-700 mb-8 text-center">{title}</h3>
-      <div className={`grid ${gridCols} gap-8`}>
+      <div className={`flex justify-center ${gridCols} gap-8`}>
         {sponsors.map((sponsor, index) => (
           <motion.div
             key={index}
@@ -37,7 +43,7 @@ const Sponsors = () => {
             transition={{ delay: index * 0.1 }}
             className="bg-white rounded-lg shadow-md p-6 flex items-center justify-center hover:shadow-lg transition-shadow"
           >
-            <img src={sponsor.logo} alt={sponsor.name} className="max-w-full h-auto" />
+            <img src={sponsor.logo} alt={sponsor.name} className={`object-contain ${logoSize}`} />
           </motion.div>
         ))}
       </div>
@@ -56,9 +62,8 @@ const Sponsors = () => {
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Sponsors</h2>
         </motion.div>
 
-        <SponsorTier title="Platinum Sponsors" sponsors={platinumSponsors} gridCols="grid-cols-1 md:grid-cols-2" />
-        <SponsorTier title="Gold Sponsors" sponsors={goldSponsors} gridCols="grid-cols-2 md:grid-cols-3" />
-        <SponsorTier title="Silver Sponsors" sponsors={silverSponsors} gridCols="grid-cols-2 md:grid-cols-4" />
+        <SponsorTier title="Platinum Sponsor" sponsors={platinumSponsors} gridCols="grid-cols-1" logoSize="w-48 h-32" />
+        <SponsorTier title="Other Sponsors" sponsors={otherSponsors} gridCols="grid-cols-2 md:grid-cols-3" logoSize="w-32 h-20" />
 
         <motion.div
           initial={{ opacity: 0, y: 50 }}

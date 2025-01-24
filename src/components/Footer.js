@@ -4,11 +4,11 @@ import { Download, Linkedin, Instagram } from 'react-feather';
 
 const Footer = () => {
   const handleDownloadFlyer = () => {
-    window.open('/documents/NITK-CREST 2025 Flyer.pdf', '_blank');
+    window.open('/documents/NITK-CREST - 2025 Brochure New.pdf', '_blank');
   };
 
   const handleDownloadBrochure = () => {
-    window.open('/documents/NITK-CREST - 2025 Brochure.pdf', '_blank');
+    window.open('/documents/NITK-CREST - 2025 Brochure New.pdf', '_blank');
   };
 
   return (
