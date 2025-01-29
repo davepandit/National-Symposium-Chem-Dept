@@ -1,15 +1,15 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Calendar, MapPin } from 'react-feather';
-import { TypeAnimation } from 'react-type-animation';
-import { Link } from 'react-router-dom';
-import nitkLogo from '../img/image copy 2.png';
-import backgroundImage from '../img/WhatsApp Image 2025-01-18 at 20.45.37.jpeg';
-import kspcbLogo from '../img/WhatsApp Image 2025-01-18 at 20.45.37.jpeg';
-import anrfLogo from '../img/PHOTO-2025-01-24-19-36-23.jpg';
-import aparLogo from '../img/image copy 5.png';
-import durgaChemicalsLogo from '../img/image copy 4.png';
-import wileyLogo from '../img/WhatsApp Image 2025-01-18 at 20.38.57.jpeg';
+import React from "react";
+import { motion } from "framer-motion";
+import { Calendar, MapPin } from "react-feather";
+import { TypeAnimation } from "react-type-animation";
+import { Link } from "react-router-dom";
+import nitkLogo from "../img/image copy 2.png";
+import backgroundImage from "../img/WhatsApp Image 2025-01-18 at 20.45.37.jpeg";
+import kspcbLogo from "../img/WhatsApp Image 2025-01-18 at 20.45.37.jpeg";
+import anrfLogo from "../img/PHOTO-2025-01-24-19-36-23.jpg";
+import aparLogo from "../img/image copy 5.png";
+import durgaChemicalsLogo from "../img/image copy 4.png";
+import wileyLogo from "../img/WhatsApp Image 2025-01-18 at 20.38.57.jpeg";
 
 const Hero = () => {
   return (
@@ -43,13 +43,13 @@ const Hero = () => {
           <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 tracking-tight">
             <TypeAnimation
               sequence={[
-                'NITK CREST-2025',
+                "NITK CREST-2025",
                 1000,
-                'Innovate.',
+                "Innovate.",
                 1000,
-                'Innovate. Sustain.',
+                "Innovate. Sustain.",
                 1000,
-                'Innovate. Sustain. Transform.',
+                "Innovate. Sustain. Transform.",
                 1000,
               ]}
               wrapper="span"
@@ -71,14 +71,18 @@ const Hero = () => {
               className="flex items-center space-x-2 bg-white rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-md"
             >
               <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
-              <span className="text-sm sm:text-base text-gray-800">27<sup>th</sup> Feb - 1<sup>st</sup> Mar 2025</span>
+              <span className="text-sm sm:text-base text-gray-800">
+                27<sup>th</sup> Feb - 1<sup>st</sup> Mar 2025
+              </span>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.02 }}
               className="flex items-center space-x-2 bg-white rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-md"
             >
               <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
-              <span className="text-sm sm:text-base text-gray-800">NITK, Surathkal</span>
+              <span className="text-sm sm:text-base text-gray-800">
+                NITK, Surathkal
+              </span>
             </motion.div>
           </motion.div>
 
@@ -106,56 +110,92 @@ const Hero = () => {
             transition={{ delay: 4.4, duration: 0.8 }}
             className="flex flex-col items-center justify-center space-y-4 mt-8"
           >
-            <h2 className="text-xl font-semibold text-green-700">Organized By</h2>
-            <motion.div 
+            <h2 className="text-xl font-semibold text-green-700">
+              Organized By
+            </h2>
+            <motion.div
               whileHover={{ scale: 1.05 }}
               className="flex flex-col items-center"
             >
               <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-green-600 shadow-lg mb-2">
-                <img src={nitkLogo} alt="NITK Logo" className="w-full h-full object-cover" />
+                <img
+                  src={nitkLogo}
+                  alt="NITK Logo"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <span className="text-sm text-gray-800 max-w-[150px] text-center">NITK, Surathkal</span>
+              <span className="text-sm text-gray-800 max-w-[150px] text-center">
+                NITK, Surathkal
+              </span>
             </motion.div>
-            <h2 className="text-xl font-semibold text-green-700">In association with</h2>
-            <motion.div 
+            <h2 className="text-xl font-semibold text-green-700">
+              In association with
+            </h2>
+            <motion.div
               whileHover={{ scale: 1.05 }}
               className="flex flex-col items-center"
             >
               <div className="w-16 h-16 rounded-full overflow-hidden shadow-lg mb-2">
-                <img src={kspcbLogo} alt="KSPCB Logo" className="w-full h-full object-cover" />
+                <img
+                  src={kspcbLogo}
+                  alt="KSPCB Logo"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <span className="text-sm text-gray-800 max-w-[150px] text-center">Karnataka State Pollution Control Board</span>
+              <span className="text-sm text-gray-800 max-w-[150px] text-center">
+                Karnataka State Pollution Control Board
+              </span>
             </motion.div>
 
-            <h2 className="text-xl font-semibold text-green-700">Sponsored By</h2>
+            <h2 className="text-xl font-semibold text-green-700">
+              Sponsored By
+            </h2>
             <div className="flex flex-wrap justify-center gap-8 mt-4">
-              <motion.div 
+              <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center"
               >
-                <img src={anrfLogo} alt="ANRF Logo" className="w-full h-full object-contain" />
+                <img
+                  src={anrfLogo}
+                  alt="ANRF Logo"
+                  className="w-full h-full object-contain"
+                />
               </motion.div>
-              <motion.div 
+              <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center"
               >
-                <img src={aparLogo} alt="APAR Logo" className="w-full h-full object-contain" />
+                <img
+                  src={aparLogo}
+                  alt="APAR Logo"
+                  className="w-full h-full object-contain"
+                />
               </motion.div>
-              <motion.div 
+              <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center"
               >
-                <img src={durgaChemicalsLogo} alt="Durga Chemicals Logo" className="w-full h-full object-contain" />
+                <img
+                  src={durgaChemicalsLogo}
+                  alt="Durga Chemicals Logo"
+                  className="w-full h-full object-contain"
+                />
               </motion.div>
             </div>
 
-            <h2 className="text-xl font-semibold text-green-700 mt-8">Publication Partner</h2>
+            <h2 className="text-xl font-semibold text-green-700 mt-8">
+              Publication Partner
+            </h2>
             <div className="flex flex-wrap justify-center gap-8 mt-4">
-              <motion.div 
+              <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center"
               >
-                <img src={wileyLogo} alt="Wiley Publication Logo" className="w-full h-full object-contain" />
+                <img
+                  src={wileyLogo}
+                  alt="Wiley Publication Logo"
+                  className="w-full h-full object-contain"
+                />
               </motion.div>
             </div>
           </motion.div>
@@ -173,19 +213,39 @@ const Hero = () => {
             >
               <div className="animate-marquee inline-block">
                 <span className="text-green-700 font-semibold px-4">
-                  🔴 Selected papers will be published in Material Science and Engineering Technology (SCIE, IF-1.2), Wiley Publication as special issue
-                </span>{' '}
-                <span className="text-green-700 font-semibold px-4">
-                  🔴 The abstract submission date extended to 30 January 2025
+                  🔴 Registration Start date: 15th Feb 2025.
                 </span>
+                <span className="text-green-700 font-semibold px-4">
+                  🔴 Deadline for Abstract Submission: 15th April 2025
+                </span>
+                <span className="text-green-700 font-semibold px-4">
+                  🔴 Abstract acceptance notification: 20th April 2025
+                </span>
+                <span className="text-green-700 font-semibold px-4">
+                  🔴 Registration End Date: 31st April 2025.
+                </span>
+                <span className="text-green-700 font-semibold px-4">
+                  🔴 Accommodation will be provided on prior request in
+                  registration form.
+                </span>{" "}
               </div>
               <div className="animate-marquee2 inline-block absolute">
                 <span className="text-green-700 font-semibold px-4">
-                  🔴 Selected papers will be published in Material Science and Engineering Technology (SCIE, IF-1.2), Wiley Publication as special issue
-                </span>{' '}
-                <span className="text-green-700 font-semibold px-4">
-                  🔴 The abstract submission date extended to 30 January 2025
+                  🔴 Registration Start date: 15th Feb 2025.
                 </span>
+                <span className="text-green-700 font-semibold px-4">
+                  🔴 Deadline for Abstract Submission: 15th April 2025
+                </span>
+                <span className="text-green-700 font-semibold px-4">
+                  🔴 Abstract acceptance notification: 20th April 2025
+                </span>
+                <span className="text-green-700 font-semibold px-4">
+                  🔴 Registration End Date: 31st April 2025.
+                </span>
+                <span className="text-green-700 font-semibold px-4">
+                  🔴 Accommodation will be provided on prior request in
+                  registration form.
+                </span>{" "}
               </div>
             </motion.div>
           </div>

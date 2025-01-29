@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
       },
+      colors: {
+        accent_blue: "#3B82F6",
+      },
       keyframes: {
         scrollRight: {
           '0%': { transform: 'translateX(-100%)' },

@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -11,45 +11,120 @@ const About = () => {
   return (
     <section ref={ref} className="py-24 bg-gray-50" id="about">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* About CREST - Only title */}
+        {/* About AFMECA - Only title */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-green-700 mb-6">About CREST 2025</h2>
+          <h2 className="text-4xl font-bold text-green-600 mb-6">
+            About AFMECA-2025
+          </h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Conference Details */}
+          {/* About NITK */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="bg-white rounded-lg shadow-lg p-8 text-center"
           >
-            <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">About Conference</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
+              About NITK
+            </h2>
             <div className="prose prose-lg mx-auto">
               <p className="text-gray-600 mb-6">
-                1<sup>st</sup> National Conference on
-Climate Resilience and Environmentally Sustainable
-Technologies (NITK-CREST 2025) is a pioneering event that brings together experts, researchers, and professionals. NITK-CREST 2025 aims to foster interdisciplinary collaboration to address the pressing challenges of climate change and environmental sustainability. Through innovative technological approaches, the conference will explore cutting-edge solutions for building resilient communities and sustainable ecosystems. Participants will have the opportunity to engage in thought-provoking discussions, share groundbreaking research, and contribute to shaping a sustainable future for generations to come.
+                National Institute of Technology Karnataka (NITK), Surathkal,
+                has established itself as one of the top technological
+                institutions in India and richly deserved recognition as an
+                Institute of National Importance under the NIT Act 2007 with the
+                vision of facilitating the transformation of students into good
+                human beings, responsible citizens and competent professionals,
+                focusing on the assimilation, generation and dissemination of
+                knowledge. NITK-Surathkal, located in Mangalore, Karnataka,
+                India, was established as Karnataka Regional Engineering College
+                (KREC) in 1960 and upgraded as the National Institute of
+                Technology Karnataka in 2002. Sri. U. Srinivasa Mallya, a
+                visionary and philanthropist, contributed immensely to the
+                development of the coastal region of Karnataka, and his effort
+                towards establishing KREC (now NITK) is the most significant
+                one. In recognition of his role as the founder and architect of
+                the institute, the campus premises is named after him as
+                Srinivasnagar.
               </p>
             </div>
           </motion.div>
 
-          {/* About NITK */}
+          {/* About Chem Dept */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="bg-white rounded-lg shadow-lg p-8 text-center"
           >
-            <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">About NITK</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
+              About Chemistry Department
+            </h2>
             <div className="prose prose-lg mx-auto">
               <p className="text-gray-600">
-                National Institute of Technology Karnataka (NITK), Surathkal has established itself as a premier Institution engaged in imparting quality technological education and providing support to research and development activities. NITK is conferred the status of an Institution of National Importance vide NIT Act No.29 of 2007 by Govt. of India and is consistently ranked as one of the top ten technical institutions in India. NITK offers Undergraduate, Postgraduate, and Doctoral Degree programs. NITK is committed to enhancing the capabilities and potential of our human resources with the objective of transforming them into leaders in their chosen areas of interest. Our vision is to strive for excellence, be globally competitive in technical education, and focus on knowledge assimilation, generation, and dissemination.
+                The Department of Chemistry, established in 1960, has grown with
+                a reputation as a centre of academic and research activities.
+                The department offers an M.Sc. degree in chemistry and a Ph.D.
+                degree in the different areas of chemistry. The department
+                caters basic science courses in chemistry to all undergraduate
+                programs. The department's research activities are well evident
+                from the large number of research articles published in
+                peer-reviewed journals, research projects undertaken by external
+                funding agencies, and conferences, workshops, and short-term
+                programs organized. The research activities taken up by the
+                faculty in the department include areas such as Biophysical
+                Chemistry, Biosensors, Catalysis, Computational Chemistry,
+                Coordination Chemistry, Corrosion Science, Crystal Engineering,
+                Drug Discovery, Electrochemistry, Functional Materials, Green
+                Chemistry, Medicinal Chemistry, Membrane Technology,
+                Nanomaterials, Organic Electronics, Photo-Chemistry, Polymers,
+                Reaction Kinetics, Supercapacitors, Supramolecular Chemistry,
+                Polyoxometalates, etc. The department features a dedicated
+                library and two sophisticated instrument laboratories, enabling
+                students to gain hands-on experience with equipment such as
+                UV-Vis, Fluorescence Spectroscopy, Contact angle analyzer, Zeta
+                potential analyzer, Cyclic Voltammetry, etc.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+
+        <div className="mt-[48px]">
+          {/* About Symposium */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="bg-white rounded-lg shadow-lg p-8 text-center"
+          >
+            <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
+              About the Symposium
+            </h2>
+            <div className="prose prose-lg mx-auto">
+              <p className="text-gray-600">
+                The symposium provides an engaging platform for researchers,
+                students, and industry professionals to explore cutting-edge
+                advancements in functional materials. The event emphasizes
+                innovations in energy storage, batteries, supercapacitors,
+                conversion technologies, and catalytic processes, fostering
+                knowledge exchange. The event includes hands-on training
+                sessions on characterization techniques using instruments such
+                as UV-Vis, FTIR, TGA, and NMR, ensuring a practical learning
+                experience. Featuring expert talks, technical sessions, and
+                interactive discussions, this Symposium serves as an excellent
+                opportunity to stay updated on the latest trends and research in
+                interdisciplinary fields along with the real-world applications
+                and emerging challenges, driving progress in the field of
+                functional materials. Additionally, it provides a platform for
+                networking and collaboration, paving the way for future research
+                partnerships and innovative projects.
               </p>
             </div>
           </motion.div>
