@@ -10,6 +10,7 @@ import anrfLogo from "../img/PHOTO-2025-01-24-19-36-23.jpg";
 import aparLogo from "../img/image copy 5.png";
 import durgaChemicalsLogo from "../img/image copy 4.png";
 import wileyLogo from "../img/WhatsApp Image 2025-01-18 at 20.38.57.jpeg";
+import hero from "../img/hero.jpg"
 
 const Hero = () => {
   return (
@@ -17,11 +18,11 @@ const Hero = () => {
       {/* Fixed background with overlay */}
       <div className="absolute inset-0">
         <img
-          src="https://www.nitk.ac.in/images/b1.jpg"
+          src={hero}
           alt="NITK Campus"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-green-50/80" />
+        <div className="absolute inset-0 bg-green-50/50" />
       </div>
 
       {/* Main content */}
@@ -33,17 +34,17 @@ const Hero = () => {
           className="space-y-6"
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 tracking-tight">
-            1<sup>st</sup> National Conference on
+            5-days National Symposium On
             <br />
-            Climate Resilience and Environmentally Sustainable
+            Advances in Functional Materials for Energy and
             <br />
-            Technologies (NITK-CREST 2025)
+            Catalytic Applications
           </h1>
 
           <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 tracking-tight">
             <TypeAnimation
               sequence={[
-                "NITK CREST-2025",
+                "AFMECA-2025",
                 1000,
                 "Innovate.",
                 1000,
@@ -72,7 +73,7 @@ const Hero = () => {
             >
               <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
               <span className="text-sm sm:text-base text-gray-800">
-                27<sup>th</sup> Feb - 1<sup>st</sup> Mar 2025
+                7<sup>th</sup> May - 11<sup>th</sup> May 2025
               </span>
             </motion.div>
             <motion.div
