@@ -61,7 +61,7 @@ const Navbar = () => {
                 className="h-10 w-10 rounded-full shadow-md"
                 whileHover={{ scale: 1.05 }}
               />
-              <span className="text-2xl font-bold text-green-600">
+              <span className="text-2xl font-bold text-blue-500">
                 AFMECA-2025
               </span>
             </Link>
@@ -74,7 +74,7 @@ const Navbar = () => {
                   <Link
                     key={item}
                     to={`/${item.toLowerCase()}`}
-                    className="whitespace-nowrap text-sm font-medium text-gray-600 hover:text-green-600 transition-colors"
+                    className="whitespace-nowrap text-sm font-medium text-gray-600 hover:text-blue-500 transition-colors"
                   >
                     {item}
                   </Link>

@@ -16,6 +16,7 @@ import Accommodation from './components/Accommodation';
 import Sightseeing from './components/Sightseeing';
 import Sponsors from './components/Sponsors';
 import Abstract from './components/Abstract';
+import UpdatedHero from './components/UpdatedHero'
 
 function App() {
   return (
@@ -26,9 +27,9 @@ function App() {
           <Routes>
             <Route path="/" element={
               <>
-                <Hero />
+                <UpdatedHero />
                 <About />
-                <Themes />
+                {/* <Themes /> */}
                 <Timeline />
                 <Abstract />
                 <Speakers />

@@ -3,12 +3,11 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 const timelineEvents = [
-  { date: '15/11/2024', event: 'Abstract Submission begins' },
-  { date: <><s>20/1/2025</s>&nbsp;&nbsp;&nbsp;30/01/2025</>, event: 'Last date for Abstract Submission' },
-  { date: '10/02/2025', event: 'Notification of Acceptance' },
-  { date: '12/02/2025', event: 'Early Bird Registration closes' },
-  { date: '20/02/2025', event: 'Registration Deadline' },
-  { date: '27/02/2025', event: 'Conference Begins' },
+  { date: '15/2/2025', event: 'Registration Start date' },
+  { date: '15/04/2025', event: 'Deadline for Abstract Submission' },
+  { date: '20/04/2025', event: 'Abstract Acceptance Notification' },
+  { date: '31/04/2025', event: 'Registration End Date' },
+  
 ];
 
 const TimelineItem = ({ event, index, isLeft }) => {
@@ -25,16 +24,16 @@ const TimelineItem = ({ event, index, isLeft }) => {
     >
       <div className={`md:w-1/2 w-full ${isLeft ? 'md:pl-8' : 'md:pr-8'} px-4 flex ${isLeft ? 'md:justify-start' : 'md:justify-end'} justify-center`}>
         <motion.div 
-          className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl shadow-lg p-6 max-w-md hover:bg-green-50 transition-all duration-300 border border-green-200 backdrop-blur-sm w-full md:w-auto"
+          className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl shadow-lg p-6 max-w-md hover:bg-blue-50 transition-all duration-300 border border-blue-200 backdrop-blur-sm w-full md:w-auto"
           whileHover={{ 
             scale: 1.03, 
             boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1)",
-            background: "linear-gradient(to bottom right, #f0fdf4, #dcfce7)"
+            background: "linear-gradient(to bottom right, #d5e6f7, #cae2fa)"
           }}
         >
           <div className="md:block flex items-start gap-4">
             <motion.div 
-              className="flex-shrink-0 flex md:hidden items-center justify-center bg-gradient-to-br from-green-500 to-green-600 w-12 h-12 rounded-full shadow-xl mb-4"
+              className="flex-shrink-0 flex md:hidden items-center justify-center bg-gradient-to-br from-blue-300 to-blue-500 w-12 h-12 rounded-full shadow-xl mb-4"
               initial={{ scale: 0 }}
               animate={isInView ? { scale: 1 } : { scale: 0 }}
               transition={{ duration: 0.4, delay: 0.3 }}
@@ -48,7 +47,7 @@ const TimelineItem = ({ event, index, isLeft }) => {
             </motion.div>
             <div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">{event.event}</h3>
-              <p className="text-green-700 font-semibold flex items-center">
+              <p className="text-blue-600 font-semibold flex items-center">
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
@@ -62,7 +61,7 @@ const TimelineItem = ({ event, index, isLeft }) => {
       <div className="flex flex-col items-center w-8 relative my-4 md:my-0">
         <div className="h-full w-1 bg-gradient-to-b from-green-300 to-green-500"></div>
         <motion.div 
-          className="absolute top-0 z-10 md:flex hidden items-center justify-center bg-gradient-to-br from-green-500 to-green-600 w-12 h-12 rounded-full shadow-xl"
+          className="absolute top-0 z-10 md:flex hidden items-center justify-center bg-gradient-to-br from-blue-300 to-blue-500 w-12 h-12 rounded-full shadow-xl"
           initial={{ scale: 0 }}
           animate={isInView ? { scale: 1 } : { scale: 0 }}
           transition={{ duration: 0.4, delay: 0.3 }}
@@ -86,7 +85,7 @@ const Timeline = () => {
   const headerInView = useInView(headerRef, { once: true });
 
   return (
-    <section className="py-24 bg-gradient-to-b from-white to-green-50" id="timeline">
+    <section className="py-24 bg-gradient-to-b from-white to-blue-50" id="timeline">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           ref={headerRef}
@@ -95,13 +94,13 @@ const Timeline = () => {
           animate={headerInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl font-bold text-green-700 mb-4">Important Dates</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-green-600 mx-auto rounded-full"></div>
+          <h2 className="text-4xl font-bold text-blue-500 mb-4">Important Dates</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto rounded-full"></div>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">Mark your calendar for these key dates to ensure you don't miss any important deadlines.</p>
         </motion.div>
 
         <div className="relative">
-          <div className="absolute top-0 bottom-0 left-1/2 -ml-[2px] w-1 bg-gradient-to-b from-green-300 to-green-500 hidden md:block"></div>
+          <div className="absolute top-0 bottom-0 left-1/2 -ml-[2px] w-1 bg-gradient-to-b from-blue-400 to-blue-600 hidden md:block"></div>
           {timelineEvents.map((event, index) => (
             <TimelineItem 
               key={index} 

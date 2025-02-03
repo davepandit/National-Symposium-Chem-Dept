@@ -11,6 +11,10 @@ html, body {
   overflow-y: scroll;
 }
 
+.glow {
+  filter: drop-shadow(0 0 5px currentColor);
+}
+
 body {
   position: relative;
   -webkit-overflow-scrolling: touch;
