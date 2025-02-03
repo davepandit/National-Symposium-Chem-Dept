@@ -31,12 +31,12 @@ const Registration = () => {
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
           Registration
         </h2>
-        <div className="bg-green-50 rounded-lg shadow-lg p-8">
+        <div className="bg-blue-50 rounded-lg shadow-lg p-8">
           <div className="mb-8">
             <h3 className="text-2xl font-bold mb-4">Registration Fees</h3>
             <div className="overflow-x-auto">
               <table className="min-w-full divide-y divide-gray-200">
-                <thead className="bg-green-100">
+                <thead className="bg-blue-100">
                   <tr>
                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">
                       Category
@@ -85,11 +85,12 @@ const Registration = () => {
               </div>
               <div className="md:w-1/2 flex flex-col items-center">
                 <h3 className="text-2xl font-bold mb-4">UPI Details</h3>
-                <img
+                {/* <img
                   src={registrationQR}
                   alt="Registration Payment QR Code"
                   className="w-40 h-auto rounded-lg shadow-md"
-                />
+                /> */}
+                <span>scanner will be uploaded soon..</span>
               </div>
             </div>
           </div>

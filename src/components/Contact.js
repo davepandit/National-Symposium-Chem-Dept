@@ -22,7 +22,7 @@ const Contact = () => {
             </p>
             <div className="space-y-4">
               <div className="flex items-center">
-                <MapPin className="w-6 h-6 text-green-600 mr-4" />
+                <MapPin className="w-6 h-6 text-blue-600 mr-4" />
                 <p className="text-gray-700">
                   Department of Chemistry, NITK - <br />
                   Surathkal, Mangalore, Karnataka - 575025
@@ -30,13 +30,13 @@ const Contact = () => {
                 </p>
               </div>
               <div className="flex items-center">
-                <Phone className="w-6 h-6 text-green-600 mr-4" />
+                <Phone className="w-6 h-6 text-blue-600 mr-4" />
                 <div className="text-gray-700">
                   <p>9550257221</p>
                 </div>
               </div>
               <div className="flex items-center">
-                <Mail className="w-6 h-6 text-green-600 mr-4" />
+                <Mail className="w-6 h-6 text-blue-600 mr-4" />
                 <p className="text-gray-700">afmeca2025@nitk.edu.in</p>
               </div>
             </div>
@@ -58,7 +58,7 @@ const Contact = () => {
                   type="text"
                   id="name"
                   name="name"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                 />
               </div>
               <div>
@@ -72,7 +72,7 @@ const Contact = () => {
                   type="email"
                   id="email"
                   name="email"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                 />
               </div>
               <div>
@@ -86,13 +86,13 @@ const Contact = () => {
                   id="message"
                   name="message"
                   rows="4"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                 ></textarea>
               </div>
               <div>
                 <button
                   type="submit"
-                  className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                  className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                 >
                   Send Message
                 </button>

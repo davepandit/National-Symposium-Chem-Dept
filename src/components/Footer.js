@@ -4,25 +4,25 @@ import { Download, Linkedin, Instagram } from "react-feather";
 
 const Footer = () => {
   const handleDownloadFlyer = () => {
-    const link = document.createElement("a");
-    link.href = "/documents/CREST 2025 Flyer New.pdf";
-    link.download = "NITK-CREST 2025 Flyer.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // const link = document.createElement("a");
+    // link.href = "/documents/CREST 2025 Flyer New.pdf";
+    // link.download = "NITK-CREST 2025 Flyer.pdf";
+    // document.body.appendChild(link);
+    // link.click();
+    // document.body.removeChild(link);
   };
 
   const handleDownloadBrochure = () => {
-    const link = document.createElement("a");
-    link.href = "/documents/NITK-CREST - 2025  Brochure New.pdf";
-    link.download = "NITK-CREST - 2025 Brochure.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // const link = document.createElement("a");
+    // link.href = "/documents/NITK-CREST - 2025  Brochure New.pdf";
+    // link.download = "NITK-CREST - 2025 Brochure.pdf";
+    // document.body.appendChild(link);
+    // link.click();
+    // document.body.removeChild(link);
   };
 
   return (
-    <footer className="bg-green-800 text-white">
+    <footer className="bg-blue-800 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
@@ -31,7 +31,7 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a
                 href="https://www.linkedin.com/in/nitk-crest2025"
-                className="hover:text-green-300"
+                className="hover:text-blue-300"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -39,7 +39,7 @@ const Footer = () => {
               </a>
               <a
                 href="https://www.instagram.com/nitkcrest2025?igsh=a2M4M3VrbTZranV3&utm_source=qr"
-                className="hover:text-green-300"
+                className="hover:text-blue-300"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -51,27 +51,27 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/about" className="hover:text-green-300">
+                <Link to="/about" className="hover:text-blue-300">
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/themes" className="hover:text-green-300">
+                <Link to="/themes" className="hover:text-blue-300">
                   Themes
                 </Link>
               </li>
               <li>
-                <Link to="/committee" className="hover:text-green-300">
+                <Link to="/committee" className="hover:text-blue-300">
                   Committee
                 </Link>
               </li>
               <li>
-                <Link to="/speakers" className="hover:text-green-300">
+                <Link to="/speakers" className="hover:text-blue-300">
                   Speakers
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-green-300">
+                <Link to="/contact" className="hover:text-blue-300">
                   Contact
                 </Link>
               </li>
@@ -95,14 +95,14 @@ const Footer = () => {
             <div className="space-y-4">
               <button
                 onClick={handleDownloadFlyer}
-                className="flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full"
+                className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"
               >
                 <Download size={20} />
                 <span>Download Flyer</span>
               </button>
               <button
                 onClick={handleDownloadBrochure}
-                className="flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full"
+                className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"
               >
                 <Download size={20} />
                 <span>Download Brochure</span>
@@ -110,7 +110,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-green-700 text-center">
+        <div className="mt-8 pt-8 border-t border-blue-700 text-center">
           <p>
             &copy; {new Date().getFullYear()} AFMECA-2025. All rights reserved.
           </p>

@@ -35,14 +35,14 @@ function App() {
                 <Speakers />
                 <Committee />
                 <Registration />
-                <Sponsors />
+                {/* <Sponsors /> */}
                 <Contact />
               </>
             } />
             <Route path="/about" element={<About />} />
-            <Route path="/themes" element={<Themes />} />
+            {/* <Route path="/themes" element={<Themes />} /> */}
             <Route path="/timeline" element={<Timeline />} />
-            <Route path="/proceedings" element={<Publications />} />
+            {/* <Route path="/proceedings" element={<Publications />} /> */}
             <Route path="/speakers" element={<Speakers />} />
             <Route path="/committee" element={<Committee />} />
             <Route path="/contact" element={<Contact />} />
@@ -51,8 +51,8 @@ function App() {
             <Route path="/accommodation" element={<Accommodation />} />
             <Route path="/sightseeing" element={<Sightseeing />} />
             <Route path="/abstract" element={<Abstract />} />
-            <Route path="/publications" element={<Publications />} />
-            <Route path="/sponsors" element={<Sponsors />} />
+            {/* <Route path="/publications" element={<Publications />} /> */}
+            {/* <Route path="/sponsors" element={<Sponsors />} /> */}
           </Routes>
         </main>
         <Footer />
