@@ -55,12 +55,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div>
             <Link to="/" className="flex items-center space-x-3 flex-shrink-0">
-              <motion.img
+              {/* <motion.img
                 src="/favicon.png"
                 alt="AFMECA-2025"
                 className="h-10 w-10 rounded-full shadow-md"
                 whileHover={{ scale: 1.05 }}
-              />
+              /> */}
               <span className="text-2xl font-bold text-blue-500">
                 AFMECA-2025
               </span>
