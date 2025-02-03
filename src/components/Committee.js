@@ -39,181 +39,107 @@ const dummyMember = 'https://via.placeholder.com/200x200?text=Member';
 const committeeData = {
   patron: [
     { 
-      name: 'Prof. B. Ravi', 
+      name: 'Prof. Bhallamudi Ravi', 
       title: 'Director, National Institute of Technology Karnataka, Surathkal',
       image: raviImage
     }
   ],
   chairman: [
     { 
-      name: 'Prof. I. Regupathi', 
-      title: 'Head of the Department, Chemical Engineering, NITK, Surathkal',
-      image: regupathiImage
+      name: 'Prof. Darshak R. Trivedi', 
+      title: 'Head, Department of Chemistry, NITK',
+      image: null
     }
   ],
   conveners: [
-    { 
-      name: 'Dr. Chinta Sankar Rao', 
-      title: 'Chemical Engineering, NITK Surathkal',
-      image: csraoImage
-    },
-    { 
-      name: 'Dr. Vaishakh Nair', 
-      title: 'Chemical Engineering, NITK Surathkal',
-      image: vaishakhImage
-    },
-    { 
-      name: 'Dr. Ranjeet Kumar Sahu', 
-      title: 'Mechanical Engineering, NITK Surathkal',
-      image: sahuImage
-    },
-    { 
-      name: 'Dr. Anupama Surenjan', 
-      title: 'Civil Engineering, NITK Surathkal',
-      image: anupamaImage
-    },
-    { 
-      name: 'Dr. Nikhil K S', 
-      title: 'Electronics and Communication Engg., NITK Surathkal',
-      image: nikhilImage
-    },
-    { 
-      name: 'Dr. Sourav Kanti Addya', 
-      title: 'Computer Science & Engg., NITK Surathkal',
-      image: souravImage
-    },
-    { 
-      name: 'Dr. Lipak Sahoo', 
-      title: 'Metallurgical and Materials Engg., NITK Surathkal',
-      image: lipakImage
-    }
+    {
+      name: 'Dr. Sib Sankar Mal',
+      title: 'Department of Chemistry, NITK',
+      image: null
+      },
+      {
+      name: 'Dr. Lakshmi Vellanki',
+      title: 'Department of Chemistry, NITK',
+      image: null
+      }
   ],
-  steeringCommittee: [
+  organizingCommittee: [
     {
-      name: 'Prof. Basavaraju Manu',
-      title: 'Civil Engg., NITK Surathkal',
-      image: basavarajuImage
-    },
-    {
-      name: 'Prof. S. M. Murigendrappa',
-      title: 'Mechanical Engg., NITK Surathkal',
-      image: murigendrappImage
-    },
-    {
-      name: 'Prof. Kumkum Banerjee',
-      title: 'MM Engg., NITK Surathkal',
-      image: kumkumImage
-    },
-    {
-      name: 'Prof. Harsha Vardhan',
-      title: 'Mining Engg., NITK Surathkal',
-      image: harshaImage
-    },
-    {
-      name: 'Dr. Manu Basavaraju',
-      title: 'CSE, NITK Surathkal',
-      image: manuImage
-    },
-    {
-      name: 'Prof. Ashvini Chaturvedi',
-      title: 'PIC - CE, NITK Surathkal',
-      image: ashviniImage
-    },
-    {
-      name: 'Prof. Keyur Raval',
-      title: 'PIC - CRF, NITK Surathkal',
-      image: keyurImage
-    },
-    {
-      name: 'Prof. Vidya Shetty',
-      title: 'Chemical Engg., NITK Surathkal',
-      image: vidyaImage
-    },
-    {
-      name: 'Prof. Hari Prasad Dasari',
-      title: 'Chemical Engg., NITK Surathkal',
-      image: hariImage
-    },
-    {
-      name: 'Prof. Ram Mohana Reddy Guddeti',
-      title: 'IT, NITK Surathkal',
-      image: ramImage
-    },
-    {
-      name: 'Prof. B Venkatesa Perumal',
-      title: 'EEE, NITK Surathkal',
-      image: perumalImage
-    },
-    {
-      name: 'Dr. Shyam Lal',
-      title: 'E&C Engg., NITK Surathkal',
-      image: shyamImage
-    },
-    {
-      name: 'Dr. Mohit P. Tahiliani',
-      title: 'CSE, NITK Surathkal',
-      image: mohitImage
-    },
-    {
-      name: 'Dr. Pruthviraj U.',
-      title: 'WROE, NITK Surathkal',
-      image: pruthvirajImage
-    },
-    {
-      name: 'Dr. Babloo Chaudhary',
-      title: 'Civil Engg., NITK Surathkal',
-      image: bablooImage
-    }
+      name: 'Prof. A. Nityananda Shetty',
+      title: 'Department of Chemistry, NITK',
+      image: null
+      },
+      {
+      name: 'Prof. B. Ramachandra Bhat',
+      title: 'Department of Chemistry, NITK',
+      image: null
+      },
+      {
+      name: 'Prof. D. Krishna Bhat',
+      title: 'Department of Chemistry, NITK',
+      image: null
+      },
+      {
+      name: 'Prof. Udayakumar Dalimba',
+      title: 'Department of Chemistry, NITK',
+      image: null
+      },
+      {
+      name: 'Dr. Beneesh P. B.',
+      title: 'Department of Chemistry, NITK',
+      image: null
+      },
+      {
+      name: 'Dr. Debashree Chakraborty',
+      title: 'Department of Chemistry, NITK',
+      image: null
+      },
+      {
+      name: 'Dr. Saikat Dutta',
+      title: 'Department of Chemistry, NITK',
+      image: null
+      },
+      {
+      name: 'Dr. Vijayendra Shetti',
+      title: 'Department of Chemistry, NITK',
+      image: null
+      }
   ],
   advisoryCommittee: [
     {
-      name: 'Prof. Subhash C. Yaragal',
-      title: 'Deputy Director, NITK Surathkal',
-      image: subhashImage
-    },
-    {
-      name: 'Prof. Udaya Bhat',
-      title: 'Dean (R&C), NITK Surathkal',
-      image: udayaImage
-    },
-    {
       name: 'Prof. Dwarakish G S',
-      title: 'Dean (Academics), NITK Surathkal',
-      image: dwarakishImage
-    },
-    {
+      title: 'Dean (Academic), NITK',
+      image: null
+      },
+      {
+      name: 'Prof. Udaya Bhat K',
+      title: 'Dean (Research & Consultancy), NITK',
+      image: null
+      },
+      {
       name: 'Prof. Gangadharan K V',
-      title: 'Dean (P&D), NITK Surathkal',
-      image: gangadharanImage
-    },
-    {
+      title: 'Dean (Planning & Development), NITK',
+      image: null
+      },
+      {
       name: 'Prof. T. Laxminidhi',
-      title: 'Dean (FW), NITK Surathkal',
-      image: laxminidhiImage
-    },
-    {
-      name: 'Prof. A Chitharanjan Hegde',
-      title: 'Dean (SW), NITK Surathkal',
-      image: acHegdeImage
-    },
-    {
-      name: 'Prof. Shrikantha S. Rao',
-      title: 'Dean (ACR), NITK Surathkal',
-      image: shreetanthaImage
-    }
+      title: 'Dean (Faculty Welfare), NITK',
+      image: null
+      },
+      {
+      name: 'Prof. A. Chitharanjan Hegde',
+      title: 'Dean (Students Welfare), NITK',
+      image: null
+      },
+      {
+      name: 'Prof. Keyur Raval',
+      title: 'Professor-In-Charge, CRF, NITK',
+      image: null
+      }
   ],
-  nationalAdvisoryCommittee: [
-    { name: 'Prof. Tanmay Basak', title: 'IIT Madras' },
-    { name: 'Prof. R. Vinu', title: 'IIT Madras' },
-    { name: 'Prof. B. C. Meikap', title: 'IIT Kharagpur' },
-    { name: 'Prof. V. Sivasubramanian', title: 'NIT Calicut' },
-    { name: 'Prof. Uday Bhaskar Babu', title: 'NIT Warangal' },
-    { name: 'Prof. Soumya K Ghosh', title: 'IIT Kharagpur' },
-    { name: 'Prof. Viswanathan N. Nurni', title: 'IIT Bombay' },
-    { name: 'Dr. Abhilash', title: 'CSIR-NML Jamshedpur' },
-    { name: 'Dr. Dipin S. Pillai', title: 'IIT Kanpur' },
-    { name: 'Dr. Deepak Kumar Ojha', title: 'IIT Roorkee' },
-    { name: 'Dr. Hemanth Kumar Tanneru', title: 'IIPE Vishakhapatnam' }
+  secretary: [
+    { name: 'Prof. Arun M. Isloor', title: 'Department of Chemistry, NITK' },
+    
   ]
 };
 
@@ -251,10 +177,10 @@ const MemberCard = ({ member, index, inView, isLeadership }) => {
         </div>
       )}
       <div className="p-6 bg-gradient-to-b from-white to-gray-50">
-        <h3 className="text-xl font-semibold text-gray-800 mb-2 group-hover:text-green-700 transition-colors duration-300 text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2 group-hover:text-blue-700 transition-colors duration-300 text-center">
           {member.name}
         </h3>
-        <p className="text-green-600 font-medium text-center">{member.title}</p>
+        <p className="text-blue-600 font-medium text-center">{member.title}</p>
       </div>
     </motion.div>
   );
@@ -266,7 +192,7 @@ const CommitteeSection = ({ title, members }) => {
     threshold: 0.1
   });
 
-  const isLeadership = title === "Patron" || title === "Chairman";
+  const isLeadership = title === "Patron" || title === "Chairman" || title === "Secretary";
   const gridClass = isLeadership
     ? "flex justify-center space-x-8"
     : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8";
@@ -279,7 +205,7 @@ const CommitteeSection = ({ title, members }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <h3 className="text-2xl font-bold mb-8 text-green-700 text-center">{title}</h3>
+      <h3 className="text-2xl font-bold mb-8 text-blue-700 text-center">{title}</h3>
       <div className={gridClass}>
         {members.map((member, index) => (
           <MemberCard
@@ -319,9 +245,9 @@ const Committee = () => {
         <CommitteeSection title="Patron" members={committeeData.patron} />
         <CommitteeSection title="Chairman" members={committeeData.chairman} />
         <CommitteeSection title="Conveners" members={committeeData.conveners} />
-        <CommitteeSection title="Advisory Committee" members={committeeData.advisoryCommittee} />
-        <CommitteeSection title="Steering Committee" members={committeeData.steeringCommittee} />
-        <CommitteeSection title="National Advisory Committee" members={committeeData.nationalAdvisoryCommittee} />
+        <CommitteeSection title="Advisory Board" members={committeeData.advisoryCommittee} />
+        <CommitteeSection title="Organizing Committee" members={committeeData.organizingCommittee} />
+        <CommitteeSection title="Secretary" members={committeeData.secretary} />
       </div>
     </section>
   );
