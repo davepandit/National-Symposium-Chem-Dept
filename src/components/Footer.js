@@ -86,7 +86,7 @@ const Footer = () => {
                 <p>Karnataka - 575025</p>
               </div>
 
-              <p>Website: www.nitk-afmeca-2025.nitk.ac.in</p>
+              <p>Website: http://afmeca2025.nitk.ac.in</p>
               <p>Email: afmeca2025@nitk.edu.in</p>
             </address>
           </div>

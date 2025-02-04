@@ -80,7 +80,7 @@ const Registration = () => {
                   <li>IFSC Code: SBIN0002273</li>
                   <li>MICR Code: 575002013</li>
                   <li>SWIFT Code: SBININBB146</li>
-                  <li>UPI ID: xyz3911948@sbi</li>
+                  <li>UPI ID: xyz3911.948@sbi</li>
                 </ul>
               </div>
               <div className="md:w-1/2 flex flex-col items-center">
