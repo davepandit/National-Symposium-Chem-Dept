@@ -10,7 +10,7 @@ const About = () => {
 
   return (
     <section ref={ref} className="py-24 bg-gray-50" id="about">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* About AFMECA - Only title */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -23,7 +23,7 @@ const About = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="mt-[48px]">
           {/* About NITK */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -35,7 +35,7 @@ const About = () => {
               About NITK
             </h2>
             <div className="prose prose-lg mx-auto">
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-6 text-justify">
                 National Institute of Technology Karnataka (NITK), Surathkal,
                 has established itself as one of the top technological
                 institutions in India and richly deserved recognition as an
@@ -56,7 +56,9 @@ const About = () => {
               </p>
             </div>
           </motion.div>
+        </div>
 
+        <div className="mt-[48px]">
           {/* About Chem Dept */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
@@ -68,7 +70,7 @@ const About = () => {
               About Chemistry Department
             </h2>
             <div className="prose prose-lg mx-auto">
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 The Department of Chemistry, established in 1960, has grown with
                 a reputation as a centre of academic and research activities.
                 The department offers an M.Sc. degree in chemistry and a Ph.D.
@@ -108,7 +110,7 @@ const About = () => {
               About the Symposium
             </h2>
             <div className="prose prose-lg mx-auto">
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 The symposium provides an engaging platform for researchers,
                 students, and industry professionals to explore cutting-edge
                 advancements in functional materials. The event emphasizes
