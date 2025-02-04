@@ -53,7 +53,7 @@ const Publications = () => {
                 <img src={wileyImage} alt="Wiley Publication" className="h-16 object-contain" />
               </div>
               <p className="text-gray-600 mb-4">
-                Selected papers presented at NITK-CREST 2025 will be published in Material Science and Engineering Technology (SCIE, IF-1.2), Wiley Publication as special issue.
+                Selected papers presented at AFMECA-2025 will be published in Material Science and Engineering Technology (SCIE, IF-1.2), Wiley Publication as special issue.
               </p>
             </motion.div>
           </div>

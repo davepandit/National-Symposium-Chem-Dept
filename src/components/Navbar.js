@@ -85,7 +85,7 @@ const Navbar = () => {
                     onMouseEnter={handleDropdownEnter}
                     onMouseLeave={handleDropdownLeave}
                   >
-                    <button className="flex items-center space-x-1 whitespace-nowrap text-sm font-medium text-gray-600 hover:text-green-600 transition-colors">
+                    <button className="flex items-center space-x-1 whitespace-nowrap text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">
                       <span>{item.name}</span>
                       <ChevronDown
                         size={16}
@@ -105,7 +105,7 @@ const Navbar = () => {
                         <Link
                           key={subItem}
                           to={`/${subItem.toLowerCase()}`}
-                          className="block px-4 py-2 text-sm text-gray-600 hover:bg-green-50 hover:text-green-600 transition-colors"
+                          className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                         >
                           {subItem}
                         </Link>
@@ -121,7 +121,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md text-gray-600 hover:text-green-600 hover:bg-gray-100 focus:outline-none"
+              className="p-2 rounded-md text-gray-600 hover:text-blue-600 hover:bg-gray-100 focus:outline-none"
             >
               <svg
                 className="h-6 w-6"
@@ -164,7 +164,7 @@ const Navbar = () => {
                   <Link
                     key={item}
                     to={`/${item.toLowerCase()}`}
-                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-green-600 hover:bg-gray-50"
+                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50"
                     onClick={() => setIsOpen(false)}
                   >
                     {item}
@@ -197,7 +197,7 @@ const Navbar = () => {
                             <Link
                               key={subItem}
                               to={`/${subItem.toLowerCase()}`}
-                              className="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-green-600 hover:bg-gray-50"
+                              className="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50"
                               onClick={() => setIsOpen(false)}
                             >
                               {subItem}

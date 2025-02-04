@@ -30,7 +30,7 @@ const Footer = () => {
             <p className="text-sm">Empowering Sustainable Futures</p>
             <div className="flex space-x-4">
               <a
-                href="https://www.linkedin.com/in/nitk-crest2025"
+                href="/"
                 className="hover:text-blue-300"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -38,7 +38,7 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="https://www.instagram.com/nitkcrest2025?igsh=a2M4M3VrbTZranV3&utm_source=qr"
+                href="/"
                 className="hover:text-blue-300"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -86,7 +86,7 @@ const Footer = () => {
                 <p>Karnataka - 575025</p>
               </div>
 
-              <p>Website: www.nitk-crest2025.nitk.ac.in</p>
+              <p>Website: www.nitk-afmeca-2025.nitk.ac.in</p>
               <p>Email: afmeca2025@nitk.edu.in</p>
             </address>
           </div>
