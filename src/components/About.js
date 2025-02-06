@@ -1,6 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import NITK from "../img/NITK.jpeg";
+import Chem from "../img/chem5.webp"
+import symposium from '../img/conference.jpeg'
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -29,13 +32,19 @@ const About = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="bg-white rounded-lg shadow-lg p-8 text-center"
+            className="bg-white rounded-lg shadow-lg p-8 text-center relative overflow-hidden"
           >
-            <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
+            {/* Background Image */}
+            <div
+              className="absolute inset-0 bg-cover bg-center opacity-20"
+              style={{ backgroundImage: `url(${NITK})` }}
+            ></div>
+
+            <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center ">
               About NITK
             </h2>
             <div className="prose prose-lg mx-auto">
-              <p className="text-gray-600 mb-6 text-justify">
+              <p className="text-gray-800 mb-6 text-justify">
                 National Institute of Technology Karnataka (NITK), Surathkal,
                 has established itself as one of the top technological
                 institutions in India and richly deserved recognition as an
@@ -64,13 +73,18 @@ const About = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="bg-white rounded-lg shadow-lg p-8 text-center"
+            className="bg-white rounded-lg shadow-lg p-8 text-center relative overflow-hidden"
           >
+            {/* Background Image */}
+            <div
+              className="absolute inset-0 bg-cover bg-center opacity-30"
+              style={{ backgroundImage: `url(${Chem})` }}
+            ></div>
             <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
               About Chemistry Department
             </h2>
             <div className="prose prose-lg mx-auto">
-              <p className="text-gray-600 text-justify">
+              <p className="text-gray-800 text-justify">
                 The Department of Chemistry, established in 1960, has grown with
                 a reputation as a centre of academic and research activities.
                 The department offers an M.Sc. degree in chemistry and a Ph.D.
@@ -104,13 +118,18 @@ const About = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="bg-white rounded-lg shadow-lg p-8 text-center"
+            className="bg-white rounded-lg shadow-lg p-8 text-center relative overflow-hidden"
           >
+            {/* Background Image */}
+            <div
+              className="absolute inset-0 bg-cover bg-center opacity-20"
+              style={{ backgroundImage: `url(${symposium})` }}
+            ></div>
             <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
               About the Symposium
             </h2>
             <div className="prose prose-lg mx-auto">
-              <p className="text-gray-600 text-justify">
+              <p className="text-gray-800 text-justify">
                 The symposium provides an engaging platform for researchers,
                 students, and industry professionals to explore cutting-edge
                 advancements in functional materials. The event emphasizes
