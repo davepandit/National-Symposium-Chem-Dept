@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import guestHouseImage from '../img/guest-house.jpeg'
 
-const hotels = [
+const stays = [
   {
     name: 'Vikram Sarabhai Guest House',
     image: guestHouseImage,
@@ -47,7 +47,7 @@ const Accommodation = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {hotels.map((hotel, index) => (
+          {stays.map((hotel, index) => (
             <motion.div
               key={hotel.name}
               initial={{ opacity: 0, y: 20 }}
