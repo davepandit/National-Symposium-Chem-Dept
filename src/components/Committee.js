@@ -3,36 +3,25 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 import acHegdeImage from '../committee/A_C_Hegde.jpg';
-import ashviniImage from '../committee/Ashvini Chaturvedi.jpg';
-import perumalImage from '../committee/B Venkatesa Perumal.jpg';
 import raviImage from '../committee/B. Ravi.jpg';
-import bablooImage from '../committee/Babloo Chaudhary.jpg';
-import csraoImage from '../committee/Chinta Sankar Rao.jpg';
-import anupamaImage from '../committee/Dr. Anupama Surenjan.jpg';
-import basavarajuImage from '../committee/Dr. Basavaraju Manu.jpg';
-import dwarakishImage from '../committee/Dwarakish G S.jpg';
-import hariImage from '../committee/Hari Prasad Dasari.jpg';
-import harshaImage from '../committee/Harsha Vardhan.jpg';
-import regupathiImage from '../committee/I. Regupathi.jpeg';
-import gangadharanImage from '../committee/K V Gangadharan.jpg';
-import keyurImage from '../committee/keyur.jpeg';
-import kumkumImage from '../committee/Kumkum Banerjee.jpg';
-import lipakImage from '../committee/Lipak Sahoo.jpeg';
-import manuImage from '../committee/manu-basavaraju.jpg';
-import mohitImage from '../committee/mohit-p-tahiliani.jpg';
-import murigendrappImage from '../committee/Murigendrappa .jpg';
-import nikhilImage from '../committee/Nikhil K S.png';
-import pruthvirajImage from '../committee/Pruthviraj U..jpeg';
-import ramImage from '../committee/Ram Mohana Reddy Guddeti.png';
-import sahuImage from '../committee/Ranjeet Kumar Sahu.jpg';
-import shreetanthaImage from '../committee/Shrikantha_S_Rao.jpg';
-import shyamImage from '../committee/Shyam Lal.jpg';
-import souravImage from '../committee/Sourav Kanti Addya.jpg';
-import subhashImage from '../committee/subhas-yaragal.jpg';
-import laxminidhiImage from '../committee/T. Laxminidhi.png';
-import udayaImage from '../committee/Uday_Bhat.jpg';
-import vaishakhImage from '../committee/Vaishakh Nair.jpg';
-import vidyaImage from '../committee/Vidya Shetty.png';
+import darshakImage from '../img/darshak-trivedi.jpg'
+import sibshankarImage from '../img/sib-shankar-mal.jpg'
+import lakshmiImage from '../img/Lakshmi-Vellanki.jpg'
+import nityanadImage from '../img/Nityananda-shetty.jpg'
+import ramchandraImage from '../img/B-Ramchandra-Bhat.jpg'
+import krishnaImage from '../img/Krishna-Bhat.jpg'
+import udayImage from '../img/udaya-kumar-d.jpg'
+import beneeshImage from '../img/Beeneesh-P-B.jpg'
+import debashreeImage from '../img/debashree-chakroborty.jpg'
+import saikatImage from '../img/Saikit-Dutta.jpg'
+import vijayendraImage from '../img/Vijayendra-shetty.jpg'
+import dwarkishImage from '../img/Dwarkish-GS.jpg'
+import udayBhatImage from '../img/Uday Bhat.jpg'
+import gangadharanImage from '../img/K V Gangadharan_Medium.jpg'
+import laxminidhiImage from '../img/T-Laxminidhi.png'
+import keyurImage from '../img/keyur-raval.jpg'
+import arunImage from '../img/arun-m-isloor.jpg'
+import { image } from 'framer-motion/client';
 
 const dummyMember = 'https://via.placeholder.com/200x200?text=Member';
 
@@ -48,97 +37,97 @@ const committeeData = {
     { 
       name: 'Prof. Darshak R. Trivedi', 
       title: 'Head, Department of Chemistry, NITK',
-      image: null
+      image: darshakImage
     }
   ],
   conveners: [
     {
       name: 'Dr. Sib Sankar Mal',
       title: 'Department of Chemistry, NITK',
-      image: null
+      image: sibshankarImage
       },
       {
       name: 'Dr. Lakshmi Vellanki',
       title: 'Department of Chemistry, NITK',
-      image: null
+      image: lakshmiImage
       }
   ],
   organizingCommittee: [
     {
       name: 'Prof. A. Nityananda Shetty',
       title: 'Department of Chemistry, NITK',
-      image: null
+      image: nityanadImage
       },
       {
       name: 'Prof. B. Ramachandra Bhat',
       title: 'Department of Chemistry, NITK',
-      image: null
+      image: ramchandraImage
       },
       {
       name: 'Prof. D. Krishna Bhat',
       title: 'Department of Chemistry, NITK',
-      image: null
+      image: krishnaImage
       },
       {
       name: 'Prof. Udayakumar Dalimba',
       title: 'Department of Chemistry, NITK',
-      image: null
+      image: udayImage
       },
       {
       name: 'Dr. Beneesh P. B.',
       title: 'Department of Chemistry, NITK',
-      image: null
+      image: beneeshImage
       },
       {
       name: 'Dr. Debashree Chakraborty',
       title: 'Department of Chemistry, NITK',
-      image: null
+      image: debashreeImage
       },
       {
       name: 'Dr. Saikat Dutta',
       title: 'Department of Chemistry, NITK',
-      image: null
+      image: saikatImage
       },
       {
       name: 'Dr. Vijayendra Shetti',
       title: 'Department of Chemistry, NITK',
-      image: null
+      image: vijayendraImage
       }
   ],
   advisoryCommittee: [
     {
       name: 'Prof. Dwarakish G S',
       title: 'Dean (Academic), NITK',
-      image: null
+      image: dwarkishImage
       },
       {
       name: 'Prof. Udaya Bhat K',
       title: 'Dean (Research & Consultancy), NITK',
-      image: null
+      image: udayBhatImage
       },
       {
       name: 'Prof. Gangadharan K V',
       title: 'Dean (Planning & Development), NITK',
-      image: null
+      image: gangadharanImage
       },
       {
       name: 'Prof. T. Laxminidhi',
       title: 'Dean (Faculty Welfare), NITK',
-      image: null
+      image: lakshmiImage
       },
       {
       name: 'Prof. A. Chitharanjan Hegde',
       title: 'Dean (Students Welfare), NITK',
-      image: null
+      image: acHegdeImage
       },
       {
       name: 'Prof. Keyur Raval',
       title: 'Professor-In-Charge, CRF, NITK',
-      image: null
+      image: keyurImage
       }
   ],
   secretary: [
-    { name: 'Prof. Arun M. Isloor', title: 'Department of Chemistry, NITK' },
+    { name: 'Prof. Arun M. Isloor', title: 'Department of Chemistry, NITK', image: arunImage },
     
   ]
 };
@@ -192,7 +181,7 @@ const CommitteeSection = ({ title, members }) => {
     threshold: 0.1
   });
 
-  const isLeadership = title === "Patron" || title === "Chairman" || title === "Secretary";
+  const isLeadership = title === "Patron" || title === "Chairman" || title === "Secretary" || title === "Conveners";
   const gridClass = isLeadership
     ? "flex justify-center space-x-8"
     : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8";
