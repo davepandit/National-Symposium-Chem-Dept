@@ -113,7 +113,7 @@ const committeeData = {
       {
       name: 'Prof. T. Laxminidhi',
       title: 'Dean (Faculty Welfare), NITK',
-      image: lakshmiImage
+      image: laxminidhiImage
       },
       {
       name: 'Prof. A. Chitharanjan Hegde',

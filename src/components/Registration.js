@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import registrationQR from "../img/upi-scanner.jpg";
+import registrationQR from "../img/updated-scanner.jpg";
 import { FlaskConical, Atom, FlaskRound, Dna, Beaker } from "lucide-react";
 import reg_bg from "../img/reg_bg_03.webp";
 

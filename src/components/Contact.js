@@ -29,12 +29,7 @@ const Contact = () => {
                   <br />
                 </p>
               </div>
-              <div className="flex items-center">
-                <Phone className="w-6 h-6 text-blue-600 mr-4" />
-                <div className="text-gray-700">
-                  <p>9550257221</p>
-                </div>
-              </div>
+
               <div className="flex items-center">
                 <Mail className="w-6 h-6 text-blue-600 mr-4" />
                 <p className="text-gray-700">afmeca2025@nitk.edu.in</p>
