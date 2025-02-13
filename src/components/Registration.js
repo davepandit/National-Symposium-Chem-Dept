@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import registrationQR from "../img/updated-scanner.jpg";
+import registrationQR from "../img/updatedScanner.jpg";
 import { FlaskConical, Atom, FlaskRound, Dna, Beaker } from "lucide-react";
 import reg_bg from "../img/reg_bg_03.webp";
 
@@ -50,7 +50,7 @@ const Registration = () => {
       <div className="absolute inset-0 z-10">
         <ChemistryIcons />
       </div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-30">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="text-4xl font-bold text-center text-gray-800">
           Registration
         </h2>

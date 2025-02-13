@@ -27,10 +27,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <h3 className="text-xl font-bold">AFMECA-2025</h3>
-            <p className="text-sm">Empowering Sustainable Futures</p>
             <div className="flex space-x-4">
               <a
-                href="/"
+                href="https://www.linkedin.com/school/nitk-surathkal/posts/?feedView=all"
                 className="hover:text-blue-300"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -38,7 +37,7 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="/"
+                href="https://www.instagram.com/nitk.surathkal/?hl=en"
                 className="hover:text-blue-300"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -86,7 +85,7 @@ const Footer = () => {
                 <p>Karnataka - 575025</p>
               </div>
 
-              <p>Website: http://afmeca2025.nitk.ac.in</p>
+              <p>Website: https://afmeca2025.nitk.ac.in</p>
               <p>Email: afmeca2025@nitk.edu.in</p>
             </address>
           </div>
