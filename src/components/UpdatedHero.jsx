@@ -95,7 +95,7 @@ const HeroSection = () => {
             <h2 className="text-xl font-semibold text-blue-300">
               Organized By
             </h2>
-            <div className="flex gap-12 justify-center items-center">
+            <div className="flex gap-12">
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="flex flex-col items-center"
@@ -108,7 +108,7 @@ const HeroSection = () => {
                   />
                 </div>
                 <span className="text-sm text-white max-w-[150px] text-center">
-                  NITK, Surathkal
+                  Department of Chemistry, NITK, Surathkal
                 </span>
               </motion.div>
               <motion.div

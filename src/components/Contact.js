@@ -6,17 +6,17 @@ const Contact = () => {
   return (
     <section className="py-24 bg-white" id="contact">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
+        <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
           Contact Us
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="flex justify-center items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="text-2xl font-semibold mb-4">Get in Touch</h3>
-            <p className="text-gray-600 mb-6">
+            {/* <h3 className="text-2xl font-semibold mb-4 text-center">Get in Touch</h3> */}
+            <p className="text-gray-600 mb-6 text-center">
               For any inquiries regarding AFMECA-2025, please don't hesitate to
               contact us.
             </p>
@@ -30,13 +30,13 @@ const Contact = () => {
                 </p>
               </div>
 
-              <div className="flex items-center">
+              <div className="flex items-center text-justify">
                 <Mail className="w-6 h-6 text-blue-600 mr-4" />
                 <p className="text-gray-700">afmeca2025@nitk.edu.in</p>
               </div>
             </div>
           </motion.div>
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
@@ -93,7 +93,7 @@ const Contact = () => {
                 </button>
               </div>
             </form>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>
