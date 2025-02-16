@@ -13,12 +13,12 @@ const Footer = () => {
   };
 
   const handleDownloadBrochure = () => {
-    // const link = document.createElement("a");
-    // link.href = "/documents/NITK-CREST - 2025  Brochure New.pdf";
-    // link.download = "NITK-CREST - 2025 Brochure.pdf";
-    // document.body.appendChild(link);
-    // link.click();
-    // document.body.removeChild(link);
+    const link = document.createElement("a");
+    link.href = "/documents/AFMECA_2025_broucher.pdf";
+    link.download = "AFMECA-2025 Brochure.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -55,11 +55,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/themes" className="hover:text-blue-300">
-                  Themes
-                </Link>
-              </li>
-              <li>
                 <Link to="/committee" className="hover:text-blue-300">
                   Committee
                 </Link>
@@ -92,13 +87,13 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Downloads</h4>
             <div className="space-y-4">
-              <button
+              {/* <button
                 onClick={handleDownloadFlyer}
                 className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"
               >
                 <Download size={20} />
                 <span>Download Flyer</span>
-              </button>
+              </button> */}
               <button
                 onClick={handleDownloadBrochure}
                 className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"

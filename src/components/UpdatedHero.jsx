@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { Calendar, MapPin } from "react-feather";
 import AtomModel from "./AtomModel";
 import { Link } from "react-router-dom";
+import nitkLogo from "../img/image copy 2.png";
+import crfLogo from "../img/crf03.png";
 
 const HeroSection = () => {
   return (
@@ -81,6 +83,51 @@ const HeroSection = () => {
               </Link>
             </motion.div>
           </motion.div>
+
+          {/* here goes the organised section  */}
+          {/* Organized By Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 4.4, duration: 0.8 }}
+            className="flex flex-col items-center justify-center space-y-4 mt-8"
+          >
+            <h2 className="text-xl font-semibold text-blue-300">
+              Organized By
+            </h2>
+            <div className="flex gap-12 justify-center items-center">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="flex flex-col items-center"
+              >
+                <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-blue-300 shadow-lg mb-2">
+                  <img
+                    src={nitkLogo}
+                    alt="NITK Logo"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <span className="text-sm text-white max-w-[150px] text-center">
+                  NITK, Surathkal
+                </span>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="flex flex-col items-center"
+              >
+                <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-blue-300 shadow-lg mb-2">
+                  <img
+                    src={crfLogo}
+                    alt="crf Logo"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <span className="text-sm text-white max-w-[150px] text-center">
+                  CRF NITK
+                </span>
+              </motion.div>
+            </div>
+          </motion.div>
         </div>
       </section>
       {/* Scrolling News Section */}
@@ -94,7 +141,7 @@ const HeroSection = () => {
             >
               <div className="animate-marquee inline-block">
                 <span className="text-blue-700 font-semibold px-4">
-                  🔴 Registration Start date: 15th Feb 2025.
+                  🔴 Registration Start date: 20th Feb 2025.
                 </span>
                 <span className="text-blue-700 font-semibold px-4">
                   🔴 Deadline for Abstract Submission: 15th April 2025
