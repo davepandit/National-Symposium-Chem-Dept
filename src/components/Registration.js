@@ -92,7 +92,7 @@ const Registration = () => {
               Registration Deadline: 31<sup>st</sup> April 2025
             </p>
             <a
-              href=""
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeEzZk_FmeVuxC_N10pSxFjWr2ZY5LkrA2l1QuOlYVFN2NeKQ/viewform"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg inline-block"

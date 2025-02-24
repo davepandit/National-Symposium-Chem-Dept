@@ -2,8 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import NITK from "../img/NITK.jpeg";
-import Chem from "../img/chem5.webp"
-import symposium from '../img/conference.jpeg'
+import CRF from "../img/crf.png";
+import Chem from "../img/chem5.webp";
+import symposium from "../img/conference.jpeg";
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -107,6 +108,41 @@ const About = () => {
                 students to gain hands-on experience with equipment such as
                 UV-Vis, Fluorescence Spectroscopy, Contact angle analyzer, Zeta
                 potential analyzer, Cyclic Voltammetry, etc.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+
+        <div className="mt-[48px]">
+          {/* About CRF */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="bg-white rounded-lg shadow-lg p-8 text-center relative overflow-hidden"
+          >
+            {/* Background Image */}
+            <div
+              className="absolute inset-0 bg-cover bg-center opacity-20"
+              style={{ backgroundImage: `url(${CRF})` }}
+            ></div>
+
+            <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center ">
+              About CRF
+            </h2>
+            <div className="prose prose-lg mx-auto">
+              <p className="text-gray-800 mb-6 text-justify">
+                The Central Research Facility (CRF) at NITK, equipped with
+                advanced instruments, ensures a stable and efficient research
+                environment through its 100% power backup, centralized HVAC, and
+                fiber optic connectivity. This infrastructure enables the
+                facility to handle complex analytical tasks with ease.
+                Researchers can conduct in-depth studies and analyses with high
+                precision, making the CRF an invaluable asset for examining a
+                wide range of compounds and outcomes across various scientific
+                fields. This setup fosters cutting-edge research, allowing for
+                accurate measurements and results that are crucial for
+                breakthroughs in diverse domains of study.
               </p>
             </div>
           </motion.div>
