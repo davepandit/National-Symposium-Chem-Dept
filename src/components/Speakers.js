@@ -33,11 +33,6 @@ const speakers = [
     image: null,
   },
   {
-    name: "Prof. Chanchal Chakraborty",
-    title: "BITS Hyderabad",
-    image: null,
-  },
-  {
     name: "Prof. Nagaraj Shetti",
     title: "KLE Tech Dharwad",
     image: null,
