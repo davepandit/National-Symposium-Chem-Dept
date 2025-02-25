@@ -78,16 +78,6 @@ const speakers = [
     image: null,
   },
   {
-    name: "Dr. Seraj Ahmad Ansari",
-    title: "BARC Mumbai",
-    image: null,
-  },
-  {
-    name: "Dr. Kathiresan Murugavel",
-    title: "CSIR-CECRI",
-    image: null,
-  },
-  {
     name: "Dr. Manash Sarmah",
     title: "Syngene International Ltd Bangalore",
     image: null,
