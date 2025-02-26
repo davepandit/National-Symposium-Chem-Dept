@@ -37,6 +37,7 @@ const Navbar = () => {
     "Speakers",
     "Committee",
     "Accommodation",
+    "Sightseeing",
     "Registration",
     "Venue",
     "Contact",

@@ -31,12 +31,16 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-tight text-white">
-              5 days National Symposium on
+            <h1 className="text-lg md:text-xl lg:text-2xl text-white mb-4">
+              5 day National Symposium on
             </h1>
-            <p className="text-lg md:text-xl lg:text-2xl text-blue-300 mb-8">
-              Advances in Functional Materials for Energy and Catalytic
+            <p className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 tracking-tight text-white">
+              Advances in Functional Materials for Energy <br /> and Catalytic
               Applications
+            </p>
+
+            <p className="text-3xl md:text-5xl lg:text-7xl font-bold mb-4 tracking-tight text-white">
+              AFMECA-2025
             </p>
 
             {/* deadline thing  */}
@@ -100,7 +104,7 @@ const HeroSection = () => {
                 whileHover={{ scale: 1.05 }}
                 className="flex flex-col items-center"
               >
-                <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-blue-300 shadow-lg mb-2">
+                <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-blue-300 shadow-lg mb-2">
                   <img
                     src={nitkLogo}
                     alt="NITK Logo"
@@ -115,15 +119,15 @@ const HeroSection = () => {
                 whileHover={{ scale: 1.05 }}
                 className="flex flex-col items-center"
               >
-                <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-blue-300 shadow-lg mb-2">
+                <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-blue-300 shadow-lg mb-2">
                   <img
                     src={crfLogo}
-                    alt="crf Logo"
+                    alt="CRF Logo"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <span className="text-sm text-white max-w-[150px] text-center">
-                  CRF NITK
+                  Central Research Facility, NITK, Surathkal
                 </span>
               </motion.div>
             </div>

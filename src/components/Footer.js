@@ -14,7 +14,7 @@ const Footer = () => {
 
   const handleDownloadBrochure = () => {
     const link = document.createElement("a");
-    link.href = "/documents/AFMECA_2025_broucher.pdf";
+    link.href = "/documents/AFMECA-2025_Brochure.pdf";
     link.download = "AFMECA-2025 Brochure.pdf";
     document.body.appendChild(link);
     link.click();

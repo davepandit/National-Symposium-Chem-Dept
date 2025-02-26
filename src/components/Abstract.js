@@ -18,7 +18,7 @@ const Abstract = () => {
             {/* Add CMT submission info */}
             <div className="mb-8 p-4 bg-blue-50 rounded-lg">
               <p className="text-lg">
-                Abstracts should be sent to{" "}
+                For poster presentation abstract should be sent to{" "}
                 <a
                   href="mailto:afmeca2025@nitk.edu.in"
                   rel="noopener noreferrer"

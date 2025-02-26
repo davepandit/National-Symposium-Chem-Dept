@@ -34,6 +34,13 @@ const Contact = () => {
                 <Mail className="w-6 h-6 text-blue-600 mr-4" />
                 <p className="text-gray-700">afmeca2025@nitk.edu.in</p>
               </div>
+
+              <div className="flex items-center">
+                <Phone className="w-6 h-6 text-blue-600 mr-4" />
+                <div className="text-gray-700">
+                  <p>+91 9775459541 || +91 7899504769</p>
+                </div>
+              </div>
             </div>
           </motion.div>
           {/* <motion.div
