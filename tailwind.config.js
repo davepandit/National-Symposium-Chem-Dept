@@ -1,12 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        llg: "1025px", // Example: Custom breakpoint for extra small screens
+      },
+
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ["Inter", "sans-serif"],
+        baskerville: ["'Libre Baskerville'", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -57,17 +60,17 @@ module.exports = {
       },
       keyframes: {
         scrollRight: {
-          '0%': { transform: 'translateX(-100%)' },
-          '100%': { transform: 'translateX(100%)' },
-        }
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
       },
       animation: {
-        'scroll-right': 'scrollRight 15s linear infinite',
+        "scroll-right": "scrollRight 15s linear infinite",
       },
     },
   },
   plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/aspect-ratio'),
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/aspect-ratio"),
   ],
-}
+};

@@ -68,7 +68,7 @@ const Navbar = () => {
             </a>
           </div>
 
-          <div className="hidden md:flex items-center justify-center ml-auto">
+          <div className="hidden llg:flex items-center justify-center ml-auto">
             <div className="flex items-center space-x-8">
               {mainNavItems.map((item) =>
                 typeof item === "string" ? (
@@ -119,7 +119,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="llg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-md text-gray-600 hover:text-blue-600 hover:bg-gray-100 focus:outline-none"
@@ -157,7 +157,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t"
+            className="llg:hidden bg-white border-t"
           >
             <div className="px-2 pt-2 pb-3 space-y-1">
               {mainNavItems.map((item) =>

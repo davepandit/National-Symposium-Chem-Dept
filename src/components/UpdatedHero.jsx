@@ -32,14 +32,14 @@ const HeroSection = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-lg md:text-xl lg:text-2xl text-white mb-4">
-              5 day National Symposium on
+              5-day National Symposium on
             </h1>
-            <p className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 tracking-tight text-white">
+            <p className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 tracking-tight text-blue-300">
               Advances in Functional Materials for Energy <br /> and Catalytic
               Applications
             </p>
 
-            <p className="text-3xl md:text-5xl lg:text-7xl font-bold mb-4 tracking-tight text-white">
+            <p className="text-3xl md:text-5xl lg:text-7xl font-bold mb-4 tracking-tight text-white font-baskerville">
               AFMECA-2025
             </p>
 
