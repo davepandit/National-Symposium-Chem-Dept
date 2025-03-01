@@ -14,7 +14,7 @@ const Footer = () => {
 
   const handleDownloadBrochure = () => {
     const link = document.createElement("a");
-    link.href = "/documents/AFMECA-2025_Brochure.pdf";
+    link.href = "https://iris.nitk.ac.in/tk/afmeca2025";
     link.download = "AFMECA-2025 Brochure.pdf";
     document.body.appendChild(link);
     link.click();
@@ -75,9 +75,10 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <address className="not-italic flex flex-col gap-y-3">
               <div>
-                <p>Department of Chemistry, NITK -</p>
-                <p>Surathkal, Mangalore,</p>
-                <p>Karnataka - 575025</p>
+                <p>Department of Chemistry &</p>
+                <p>Central Research Facility(CRF),</p>
+                <p>National Institute of Technology</p>
+                <p>Karnataka, Surathkal</p>
               </div>
 
               <p>Website: https://afmeca2025.nitk.ac.in</p>

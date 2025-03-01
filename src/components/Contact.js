@@ -24,8 +24,9 @@ const Contact = () => {
               <div className="flex items-center">
                 <MapPin className="w-6 h-6 text-blue-600 mr-4" />
                 <p className="text-gray-700">
-                  Department of Chemistry, NITK - <br />
-                  Surathkal, Mangalore, Karnataka - 575025
+                  Department of Chemistry & <br />
+                  Central Research Facility(CRF), <br /> National Institute of
+                  Technology Karnataka, Surathkal
                   <br />
                 </p>
               </div>

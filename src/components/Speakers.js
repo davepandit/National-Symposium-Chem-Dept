@@ -87,11 +87,6 @@ const speakers = [
     title: "Syngenta Biosciences Pvt. Ltd. Goa",
     image: null,
   },
-  {
-    name: "Ms. Veena",
-    title: "Forensic Science Laboratory Mangalore",
-    image: null,
-  },
 ].filter((speaker) => speaker.name !== "Prof. Sanjeev Chaudhari");
 
 const SpeakerCard = ({ speaker, index, inView }) => {
