@@ -241,7 +241,7 @@ const Hero = () => {
                   🔴 Abstract acceptance notification: 20th April 2025
                 </span>
                 <span className="text-green-700 font-semibold px-4">
-                  🔴 Registration End Date: 31st April 2025.
+                  🔴 Registration End Date: 5th May 2025.
                 </span>
                 <span className="text-green-700 font-semibold px-4">
                   🔴 Accommodation will be provided on prior request in
