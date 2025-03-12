@@ -89,7 +89,7 @@ const Registration = () => {
 
           <div className="text-center mt-8">
             <p className="text-red-600 font-semibold mb-4">
-              Registration Deadline: 31<sup>st</sup> April 2025
+              Registration Deadline: 5<sup>th</sup> May 2025
             </p>
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSeEzZk_FmeVuxC_N10pSxFjWr2ZY5LkrA2l1QuOlYVFN2NeKQ/viewform"
