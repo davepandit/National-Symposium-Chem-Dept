@@ -21,6 +21,7 @@ import gangadharanImage from "../img/K V Gangadharan_Medium.jpg";
 import laxminidhiImage from "../img/T-Laxminidhi.png";
 import keyurImage from "../img/keyur-raval.jpg";
 import arunImage from "../img/arun-m-isloor.jpg";
+import prasanaImage from "../img/prasanaimage.jpg";
 import { image } from "framer-motion/client";
 
 const dummyMember = "https://via.placeholder.com/200x200?text=Member";
@@ -126,6 +127,11 @@ const committeeData = {
       name: "Prof. A. Chitharanjan Hegde",
       title: "Dean (Students Welfare), NITK",
       image: acHegdeImage,
+    },
+    {
+      name: "Prof. Prasanna Belur D",
+      title: "Dean (Alumni and Corporate Relations)",
+      image: prasanaImage,
     },
   ],
   secretary: [
