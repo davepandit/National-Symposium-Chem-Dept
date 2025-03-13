@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      textShadow: {
+        glow: "0 0 5px #00eaff, 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 40px #00eaff",
+      },
       screens: {
         llg: "1025px", // Example: Custom breakpoint for extra small screens
       },

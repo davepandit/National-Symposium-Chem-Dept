@@ -132,6 +132,12 @@ const HeroSection = () => {
               </motion.div>
             </div>
           </motion.div>
+          <div
+            className="relative text-3xl mt-6 lg:mt-3 text-center hacker-glitch-text"
+            data-text="Best Poster Awards by ACS"
+          >
+            Best Poster Awards by ACS
+          </div>
         </div>
       </section>
       {/* Scrolling News Section */}
