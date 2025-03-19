@@ -16,7 +16,7 @@ const Abstract = () => {
 
           <div className="prose max-w-none">
             {/* Add CMT submission info */}
-            <div className="mb-8 p-4 bg-blue-50 rounded-lg">
+            <div className="mb-5 p-4 bg-blue-50 rounded-lg">
               <p className="text-lg">
                 For poster presentation abstract should be sent to{" "}
                 <a
@@ -30,7 +30,11 @@ const Abstract = () => {
                 abstract.
               </p>
             </div>
-
+            <div className="text-center mb-8 text-red-600">
+              Registration is mandatory for accepted abstracts for poster
+              presentation. Please do register after recieving
+              confirmation of acceptance.
+            </div>
             <h3 className="text-xl font-semibold mb-4">Guidelines:</h3>
             <p className="mb-6">
               Please follow these formatting guidelines for your abstract
