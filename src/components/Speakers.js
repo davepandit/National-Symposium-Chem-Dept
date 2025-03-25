@@ -18,6 +18,11 @@ const dummySpeaker = "https://via.placeholder.com/200x200?text=Speaker";
 
 const speakers = [
   {
+    name: "Dr. Kannan Srinivasan",
+    title: "Director, CSIR-CSMCRI Bhavnagar",
+    image: null,
+  },
+  {
     name: "Prof. M. Ravikanth",
     title: "Indian Institute of Technology Bombay",
     image: null,
@@ -85,6 +90,21 @@ const speakers = [
   {
     name: "Dr. Mukul Lal",
     title: "Syngenta Biosciences Pvt. Ltd. Goa",
+    image: null,
+  },
+  {
+    name: "Dr. Debaprasad Mandal",
+    title: "Indian Institute of Technology Ropar",
+    image: null,
+  },
+  {
+    name: "Dr. Kathiresan Murugavel",
+    title: "CSIR-CECRI",
+    image: null,
+  },
+  {
+    name: "Dr. Jince Sebastian",
+    title: "Süd-Chemie India Pvt. Ltd.",
     image: null,
   },
 ].filter((speaker) => speaker.name !== "Prof. Sanjeev Chaudhari");
