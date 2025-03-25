@@ -4,8 +4,8 @@ import { useRef } from "react";
 
 const timelineEvents = [
   { date: "20/2/2025", event: "Registration Start date" },
-  { date: "15/04/2025", event: "Deadline for Abstract Submission" },
-  { date: "20/04/2025", event: "Abstract Acceptance Notification" },
+  { date: "30/04/2025", event: "Deadline for Abstract Submission" },
+  { date: "01/05/2025", event: "Abstract Acceptance Notification" },
   { date: "5/05/2025", event: "Registration End Date" },
 ];
 

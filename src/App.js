@@ -15,6 +15,7 @@ import Venue from './components/Venue';
 import Accommodation from './components/Accommodation';
 import Sightseeing from './components/Sightseeing';
 import Sponsors from './components/Sponsors';
+import Hotels from './components/Hotels'
 import Abstract from './components/Abstract';
 import UpdatedHero from './components/UpdatedHero'
 
@@ -49,6 +50,7 @@ function App() {
             <Route path="/registration" element={<Registration />} />
             <Route path="/venue" element={<Venue />} />
             <Route path="/accommodation" element={<Accommodation />} />
+            <Route path="/hotels" element={<Hotels />} />
             <Route path="/sightseeing" element={<Sightseeing />} />
             <Route path="/abstract" element={<Abstract />} />
             {/* <Route path="/publications" element={<Publications />} /> */}
