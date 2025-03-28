@@ -221,10 +221,10 @@ const HeroSection = () => {
                   🔴 Registration Start date: 20th Feb 2025.
                 </span>
                 <span className="text-blue-700 font-semibold px-4">
-                  🔴 Deadline for Abstract Submission: 15th April 2025
+                  🔴 Deadline for Abstract Submission: 30th April 2025
                 </span>
                 <span className="text-blue-700 font-semibold px-4">
-                  🔴 Abstract acceptance notification: 20th April 2025
+                  🔴 Abstract acceptance notification: 1st May 2025
                 </span>
                 <span className="text-blue-700 font-semibold px-4">
                   🔴 Registration End Date: 5th May 2025.
@@ -239,10 +239,10 @@ const HeroSection = () => {
                   🔴 Registration Start date: 15th Feb 2025.
                 </span>
                 <span className="text-blue-700 font-semibold px-4">
-                  🔴 Deadline for Abstract Submission: 15th April 2025
+                  🔴 Deadline for Abstract Submission: 30th April 2025
                 </span>
                 <span className="text-blue-700 font-semibold px-4">
-                  🔴 Abstract acceptance notification: 20th April 2025
+                  🔴 Abstract acceptance notification: 1st May 2025
                 </span>
                 <span className="text-blue-700 font-semibold px-4">
                   🔴 Registration End Date: 5th May 2025.
