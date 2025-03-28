@@ -4,11 +4,17 @@ import AtomModel from "./AtomModel";
 import { Link } from "react-router-dom";
 import nitkLogo from "../img/image copy 2.png";
 import crfLogo from "../img/crf03.png";
+import anrfLogo from "../img/PHOTO-2025-01-24-19-36-23.jpg";
+import acsLogo from "../img/acsLogo.webp";
+import genNextLogo from "../img/genNextLogo.webp";
+import royalLogo from "../img/royalLogo.png";
+import aparLogo from "../img/image copy 5.png";
+import aromazenLogo from "../img/aromazen.jpg";
 
 const HeroSection = () => {
   return (
     <>
-      <section className="relative h-screen overflow-hidden bg-deep-blue">
+      <section className="relative h-[1200px] md:h-[1000px] overflow-hidden bg-deep-blue">
         {/* Atom Background */}
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
@@ -131,12 +137,73 @@ const HeroSection = () => {
                 </span>
               </motion.div>
             </div>
+
+            {/* sponsors part  */}
+            <h2 className="text-xl font-semibold text-blue-300 mt-8">
+              Sponsored By
+            </h2>
+            <div className="flex flex-wrap justify-center gap-8 mt-4">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
+              >
+                <img
+                  src={anrfLogo}
+                  alt="ANRF Logo"
+                  className="w-full h-full object-contain"
+                />
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
+              >
+                <img
+                  src={acsLogo}
+                  alt="APAR Logo"
+                  className="w-full h-full object-contain"
+                />
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
+              >
+                <img
+                  src={royalLogo}
+                  alt="Cezen Tech Logo"
+                  className="w-full h-full 
+                object-contain"
+                />
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
+              >
+                <img
+                  src={genNextLogo}
+                  alt="Durga Chemicals Logo"
+                  className="w-full h-full object-contain"
+                />
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
+              >
+                <img
+                  src={aromazenLogo}
+                  alt="New Sponsor Logo"
+                  className="w-full h-full object-contain"
+                />
+              </motion.div>
+            </div>
           </motion.div>
-          <div
+          {/* <div
             className="relative text-3xl mt-6 lg:mt-3 text-center hacker-glitch-text"
             data-text="Best Poster Awards by ACS"
           >
-            Best Poster Awards by ACS
+            Best Poster Awards by ACS and RSC
+          </div> */}
+          <div class="mt-4 lg:mt-11 text-center text-blue-300 text-2xl font-bold animate-pulse-text">
+            🏆Best Poster Awards by ACS and RSC
           </div>
         </div>
       </section>

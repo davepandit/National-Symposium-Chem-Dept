@@ -97,6 +97,31 @@ body {
         0 0 15px rgba(0, 234, 255, 0.6);
     }
   }
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animate-blink {
+    animation: blink 1s infinite;
+  }
+
+  @keyframes pulseText {
+    0% { color: #93c5fd; } /* Tailwind blue-300 */
+    50% { color: #1e40af; } /* Dark blue */
+    100% { color: #93c5fd; }
+  }
+  
+  .animate-pulse-text {
+    animation: pulseText 1.5s infinite ease-in-out;
+  }
 
   @keyframes hacker-glitch-lines {
     0% {
