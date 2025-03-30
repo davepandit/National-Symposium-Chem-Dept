@@ -114,9 +114,9 @@ body {
   }
 
   @keyframes pulseText {
-    0% { color: #93c5fd; } /* Tailwind blue-300 */
-    50% { color: #1e40af; } /* Dark blue */
-    100% { color: #93c5fd; }
+    0% { color: #FFFFFF; } /* Tailwind blue-300 */
+    50% { color: #93c5fd; } /* Dark blue */
+    100% { color: #FFFFFF; }
   }
   
   .animate-pulse-text {

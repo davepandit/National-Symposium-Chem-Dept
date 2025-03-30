@@ -102,7 +102,7 @@ const HeroSection = () => {
             transition={{ delay: 4.4, duration: 0.8 }}
             className="flex flex-col items-center justify-center space-y-4 mt-8"
           >
-            <h2 className="text-xl font-semibold text-blue-300">
+            <h2 className="text-xl font-semibold text-white">
               Organized By
             </h2>
             <div className="flex gap-12">
@@ -139,7 +139,7 @@ const HeroSection = () => {
             </div>
 
             {/* sponsors part  */}
-            <h2 className="text-xl font-semibold text-blue-300 mt-8">
+            <h2 className="text-xl font-semibold text-white mt-8">
               Sponsored By
             </h2>
             <div className="flex flex-wrap justify-center gap-8 mt-4">
@@ -202,8 +202,8 @@ const HeroSection = () => {
           >
             Best Poster Awards by ACS and RSC
           </div> */}
-          <div class="mt-4 lg:mt-11 text-center text-blue-300 text-2xl font-bold animate-pulse-text">
-            🏆Best Poster Awards by ACS and RSC
+          <div class="mt-4 lg:mt-11 text-center text-white text-2xl font-bold animate-pulse-text">
+            🏆Best Poster Awards by ACS and RSC publishers
           </div>
         </div>
       </section>
