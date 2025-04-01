@@ -64,10 +64,10 @@ const Registration = () => {
             <table className="min-w-full divide-y divide-gray-200 relative z-20">
               <thead className="bg-transparent">
                 <tr>
-                  <th className="px-6 py-3 text-left font-bold text-sm text-gray-900  uppercase">
+                  <th className="px-6 py-3 text-left font-bold text-xl text-gray-900  uppercase">
                     Category
                   </th>
-                  <th className="px-6 py-3 text-center font-bold text-sm text-gray-900 uppercase">
+                  <th className="px-6 py-3 text-center font-bold text-xl text-gray-900 uppercase">
                     Fee (INR)
                   </th>
                 </tr>
@@ -75,10 +75,10 @@ const Registration = () => {
               <tbody className="bg-transaparent divide-y divide-gray-200">
                 {registrationFees.map((fee, index) => (
                   <tr key={index}>
-                    <td className="px-6 py-4 text-sm text-gray-700">
+                    <td className="px-6 py-4 text-lg text-gray-700">
                       {fee.category}
                     </td>
-                    <td className="px-6 py-4 text-sm text-gray-700 text-center">
+                    <td className="px-6 py-4 text-lg text-gray-700 text-center">
                       {fee.fee}
                     </td>
                   </tr>

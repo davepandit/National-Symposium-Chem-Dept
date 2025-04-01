@@ -4,12 +4,12 @@ import { Download, Linkedin, Instagram } from "react-feather";
 
 const Footer = () => {
   const handleDownloadFlyer = () => {
-    // const link = document.createElement("a");
-    // link.href = "/documents/CREST 2025 Flyer New.pdf";
-    // link.download = "NITK-CREST 2025 Flyer.pdf";
-    // document.body.appendChild(link);
-    // link.click();
-    // document.body.removeChild(link);
+    const link = document.createElement("a");
+    link.href = "https://iris.nitk.ac.in/tk/afmecaflyer";
+    link.download = "AFMECA-2025 Flyer.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const handleDownloadBrochure = () => {
@@ -88,13 +88,13 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Downloads</h4>
             <div className="space-y-4">
-              {/* <button
+              <button
                 onClick={handleDownloadFlyer}
                 className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"
               >
                 <Download size={20} />
                 <span>Download Flyer</span>
-              </button> */}
+              </button>
               <button
                 onClick={handleDownloadBrochure}
                 className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"
