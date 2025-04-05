@@ -196,7 +196,7 @@ const Speakers = () => {
           <h2 className="text-4xl font-bold text-gray-800 mb-2">Event Dignitaries</h2>
         </motion.div>
         
-        <div className="flex justify-center space-x-16 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-center space-x-16 mb-20">
           {/* Chief Guest Block */}
           <div className="flex flex-col items-center">
             <h3 className="text-2xl font-semibold text-gray-700 mb-4">Chief Guest</h3>
