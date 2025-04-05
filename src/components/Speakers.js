@@ -198,7 +198,7 @@ const Speakers = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 justify-center space-x-16 mb-20">
           {/* Chief Guest Block */}
-          <div className="flex flex-col items-center">
+          <div className="grid grid-cols-1 items-center">
             <h3 className="text-2xl font-semibold text-gray-700 mb-4">Chief Guest</h3>
             <SpeakerCard
               key={chiefGuest.name}
@@ -209,7 +209,7 @@ const Speakers = () => {
           </div>
         
           {/* Guest of Honor Block */}
-          <div className="flex flex-col items-center">
+          <div className="grid grid-cols-1 items-center">
             <h3 className="text-2xl font-semibold text-gray-700 mb-4">Guest of Honor</h3>
             <SpeakerCard
               key={guestOfHonor.name}
