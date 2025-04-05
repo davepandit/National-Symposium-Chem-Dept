@@ -59,7 +59,7 @@ const Registration = () => {
         </div>
 
         <div className="bg-transparent rounded-lg shadow-lg p-8 relative z-20">
-          <h3 className="text-2xl font-bold mb-4">Registration Fees</h3>
+          <h3 className="text-2xl font-bold mb-4">Registration Fees*</h3>
           <div className="overflow-x-auto">
             <table className="min-w-full divide-y divide-gray-200 relative z-20">
               <thead className="bg-transparent">
@@ -86,7 +86,9 @@ const Registration = () => {
               </tbody>
             </table>
           </div>
-
+          <div className="px-6 py-4 font-semibold mb-2 space-y-2 text-gray-600">
+            <sup>*</sup>An additional 18% GST will be added.
+          </div>
           <div className="text-center mt-8">
             <p className="text-red-600 font-semibold mb-4">
               Registration Deadline: 5<sup>th</sup> May 2025

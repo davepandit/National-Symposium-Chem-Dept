@@ -14,7 +14,7 @@ import aromazenLogo from "../img/aromazen.jpg";
 const HeroSection = () => {
   return (
     <>
-      <section className="relative h-[1200px] md:h-[1000px] overflow-hidden bg-deep-blue">
+      <section className="relative h-[1270px] md:h-[1080px] overflow-hidden bg-deep-blue">
         {/* Atom Background */}
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
@@ -102,9 +102,7 @@ const HeroSection = () => {
             transition={{ delay: 4.4, duration: 0.8 }}
             className="flex flex-col items-center justify-center space-y-4 mt-8"
           >
-            <h2 className="text-xl font-semibold text-white">
-              Organized By
-            </h2>
+            <h2 className="text-xl font-semibold text-white">Organized By</h2>
             <div className="flex gap-12">
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -204,6 +202,10 @@ const HeroSection = () => {
           </div> */}
           <div class="mt-4 lg:mt-11 text-center text-white text-2xl font-bold animate-pulse-text">
             🏆Best Poster Awards by ACS and RSC publishers
+          </div>
+
+          <div class="mt-2 text-center text-white text-2xl font-bold animate-pulse-text">
+            📕Book proceedings by Springer
           </div>
         </div>
       </section>

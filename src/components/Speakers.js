@@ -13,99 +13,130 @@ import tcsmGupta from "../img/TCSM Gupta.jpeg";
 import somashekhar from "../img/Somashekhar.jpeg";
 import padmanandImage from "../committee/Padmanand Warrier.jpeg";
 import dilip from "../img/Dilip.jpeg";
+import chief_guest from "../img/chief_guest.jpeg";
+import one from "../img/1st.png";
+import two from "../img/2nd.png";
+import three from "../img/3rd.png";
+import four from "../img/4th.png";
+import six from "../img/6th.png";
+import seven from "../img/7th.png";
+import eight from "../img/8th.png";
+import ten from "../img/10th.png";
+import eleven from "../img/11th.png";
+import twelve from "../img/12th.png";
+import thirteen from "../img/13th.png";
+import fourteen from "../img/14th.png";
+import fifteen from "../img/15th.png";
+import sixteen from "../img/16th.png";
+import seventeen from "../img/17th.png";
+import eighteen from "../img/18th.png";
+import nineteen from "../img/19th.png";
+import twenty from "../img/20th.jpg";
 
 const dummySpeaker = "https://via.placeholder.com/200x200?text=Speaker";
+
+const chiefGuest = {
+  name: "Ajay Mehta",
+  title: "Vice President Engineering Technology at Shell",
+  image: chief_guest,
+};
 
 const speakers = [
   {
     name: "Dr. Kannan Srinivasan",
     title: "Director, CSIR-CSMCRI Bhavnagar",
-    image: null,
+    image: one,
   },
   {
     name: "Prof. M. Ravikanth",
     title: "Indian Institute of Technology Bombay",
-    image: null,
+    image: two,
   },
   {
     name: "Prof. Pratap Vishnoi",
     title: "JNCASR Bengaluru",
-    image: null,
+    image: three,
   },
   {
     name: "Prof. Tarun K. Panda",
     title: "Indian Institute of Technology Hyderabad",
-    image: null,
+    image: four,
   },
-  {
-    name: "Prof. Nagaraj Shetti",
-    title: "KLE Tech Dharwad",
-    image: null,
-  },
+
   {
     name: "Prof. Firasat Hussain",
     title: "Delhi University",
-    image: null,
+    image: six,
   },
   {
     name: "Prof. Manja Naik",
     title: "College of Fisheries Mangalore",
-    image: null,
+    image: seven,
   },
   {
     name: "Dr. M. Rajeswara Rao",
     title: "Indian Institute of Technology Dharwad",
-    image: null,
+    image: eight,
   },
   {
     name: "Dr. Animikh Roy",
     title: "Father Muller Medical College Mangalore",
-    image: null,
+    image: "",
   },
   {
     name: "Dr. Chinna Ayya Swami P.",
     title: "National Institute of Technology Calicut",
-    image: null,
+    image: ten,
   },
   {
     name: "Dr. Debaprasad Shee",
     title: "Indian Institute of Technology Hyderabad",
-    image: null,
+    image: eleven,
   },
   {
     name: "Dr. Chandan Maity",
     title: "Vellore Institute of Technology",
-    image: null,
+    image: twelve,
   },
   {
     name: "Dr. Hussain B.",
     title: "IISER Tirupathi",
-    image: null,
+    image: thirteen,
   },
   {
     name: "Dr. Manash Sarmah",
     title: "Syngene International Ltd Bangalore",
-    image: null,
+    image: fourteen,
   },
   {
     name: "Dr. Mukul Lal",
     title: "Syngenta Biosciences Pvt. Ltd. Goa",
-    image: null,
+    image: fifteen,
   },
   {
     name: "Dr. Debaprasad Mandal",
     title: "Indian Institute of Technology Ropar",
-    image: null,
+    image: sixteen,
   },
   {
     name: "Dr. Kathiresan Murugavel",
     title: "CSIR-CECRI",
-    image: null,
+    image: seventeen,
   },
   {
     name: "Dr. Jince Sebastian",
     title: "Süd-Chemie India Pvt. Ltd.",
-    image: null,
+    image: eighteen,
+  },
+  {
+    name: "Dr. Mallikarjun Angadi",
+    title: "Librarian, Central Library, NITK",
+    image: nineteen,
+  },
+  {
+    name: "Prof. Ramaswamy Murugavel",
+    title: "Indian Institute of Technology Bombay",
+    image: twenty,
   },
 ].filter((speaker) => speaker.name !== "Prof. Sanjeev Chaudhari");
 
@@ -155,13 +186,32 @@ const Speakers = () => {
   return (
     <section ref={ref} className="py-24 bg-gray-50" id="speakers">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* chief guest  */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="text-4xl font-bold text-gray-800 mb-2">Chief Guest</h2>
+        </motion.div>
+        <div className="flex justify-center space-x-8 mb-20">
+          <SpeakerCard
+            key={chiefGuest.name}
+            speaker={chiefGuest}
+            index={1}
+            inView={inView}
+          />
+        </div>
+
+        {/* list of speakers  */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl font-bold text-gray-800 mb-2">
             List of Speakers
           </h2>
         </motion.div>

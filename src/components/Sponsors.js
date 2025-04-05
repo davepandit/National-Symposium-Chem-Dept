@@ -125,7 +125,7 @@ const Sponsors = () => {
                 <div className="flex flex-col md:flex-row gap-8 items-start">
                   <div className="md:w-1/2">
                     <h4 className="font-semibold mb-2">
-                      Regular donations: as per the brochure
+                      Regular donations: as per the brochure*
                     </h4>
                     <ul className="space-y-2 text-gray-600">
                       <li>Account : NITK SURATHKAL</li>
@@ -150,7 +150,7 @@ const Sponsors = () => {
 
                   <div className="md:w-1/2">
                     <h4 className="font-semibold mb-2">
-                      CSR funds with 80G certificate:
+                      CSR funds with 80G certificate:*
                     </h4>
                     <ul className="space-y-2 text-gray-600">
                       <li>
@@ -201,6 +201,10 @@ const Sponsors = () => {
                 Payments will be acknowledged with receipt, after the
                 confirmation of transaction details.
               </p> */}
+            </div>
+            <div className="font-semibold mb-2 space-y-2 text-gray-600">
+              <sup>*</sup>An additional 18% GST will be added regular donations
+              and For CSR fund there won't be any GST.
             </div>
           </div>
         </motion.div>
