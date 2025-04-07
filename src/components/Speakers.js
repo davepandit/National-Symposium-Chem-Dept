@@ -36,17 +36,18 @@ import twenty from "../img/20th.jpg";
 const dummySpeaker = "https://via.placeholder.com/200x200?text=Speaker";
 
 const chiefGuest = {
-  name: "Ajay Mehta",
-  title: "Vice President Engineering Technology at Shell",
-  image: chief_guest,
-};
-
-const speakers = [
-  {
     name: "Dr. Kannan Srinivasan",
     title: "Director, CSIR-CSMCRI Bhavnagar",
     image: one,
-  },
+};
+
+const guestOfHonor = {
+    name: "Ajay Mehta",
+    title: "Vice President Engineering Technology at Shell",
+    image: chief_guest,
+};
+
+const speakers = [
   {
     name: "Prof. M. Ravikanth",
     title: "Indian Institute of Technology Bombay",
@@ -62,21 +63,25 @@ const speakers = [
     title: "Indian Institute of Technology Hyderabad",
     image: four,
   },
-
+    {
+    name: "Prof. Ramaswamy Murugavel",
+    title: "Indian Institute of Technology Bombay",
+    image: twenty,
+  },
   {
     name: "Prof. Firasat Hussain",
     title: "Delhi University",
     image: six,
   },
   {
-    name: "Prof. Manja Naik",
-    title: "College of Fisheries Mangalore",
-    image: seven,
-  },
-  {
     name: "Dr. M. Rajeswara Rao",
     title: "Indian Institute of Technology Dharwad",
     image: eight,
+  },
+  {
+    name: "Dr. Debaprasad Shee",
+    title: "Indian Institute of Technology Hyderabad",
+    image: eleven,
   },
   {
     name: "Dr. Animikh Roy",
@@ -89,19 +94,24 @@ const speakers = [
     image: ten,
   },
   {
-    name: "Dr. Debaprasad Shee",
-    title: "Indian Institute of Technology Hyderabad",
-    image: eleven,
-  },
-  {
-    name: "Dr. Chandan Maity",
-    title: "Vellore Institute of Technology",
-    image: twelve,
+    name: "Prof. Manja Naik",
+    title: "College of Fisheries Mangalore",
+    image: seven,
   },
   {
     name: "Dr. Hussain B.",
     title: "IISER Tirupathi",
     image: thirteen,
+  },
+  {
+    name: "Dr. Debaprasad Mandal",
+    title: "Indian Institute of Technology Ropar",
+    image: sixteen,
+  },
+  {
+    name: "Dr. Chandan Maity",
+    title: "Vellore Institute of Technology",
+    image: twelve,
   },
   {
     name: "Dr. Manash Sarmah",
@@ -112,11 +122,6 @@ const speakers = [
     name: "Dr. Mukul Lal",
     title: "Syngenta Biosciences Pvt. Ltd. Goa",
     image: fifteen,
-  },
-  {
-    name: "Dr. Debaprasad Mandal",
-    title: "Indian Institute of Technology Ropar",
-    image: sixteen,
   },
   {
     name: "Dr. Kathiresan Murugavel",
@@ -133,11 +138,7 @@ const speakers = [
     title: "Librarian, Central Library, NITK",
     image: nineteen,
   },
-  {
-    name: "Prof. Ramaswamy Murugavel",
-    title: "Indian Institute of Technology Bombay",
-    image: twenty,
-  },
+
 ].filter((speaker) => speaker.name !== "Prof. Sanjeev Chaudhari");
 
 const SpeakerCard = ({ speaker, index, inView }) => {
@@ -186,23 +187,39 @@ const Speakers = () => {
   return (
     <section ref={ref} className="py-24 bg-gray-50" id="speakers">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* chief guest  */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-gray-800 mb-2">Chief Guest</h2>
+          <h2 className="text-4xl font-bold text-gray-800 mb-2">Event Dignitaries</h2>
         </motion.div>
-        <div className="flex justify-center space-x-8 mb-20">
-          <SpeakerCard
-            key={chiefGuest.name}
-            speaker={chiefGuest}
-            index={1}
-            inView={inView}
-          />
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-center space-x-16 mb-20">
+          {/* Chief Guest Block */}
+          <div className="grid grid-cols-1 items-center">
+            <h3 className="text-2xl font-semibold text-gray-700 mb-4">Chief Guest</h3>
+            <SpeakerCard
+              key={chiefGuest.name}
+              speaker={chiefGuest}
+              index={1}
+              inView={inView}
+            />
+          </div>
+        
+          {/* Guest of Honor Block */}
+          <div className="grid grid-cols-1 items-center">
+            <h3 className="text-2xl font-semibold text-gray-700 mb-4">Guest of Honor</h3>
+            <SpeakerCard
+              key={guestOfHonor.name}
+              speaker={guestOfHonor}
+              index={2}
+              inView={inView}
+            />
+          </div>
         </div>
+
 
         {/* list of speakers  */}
         <motion.div
