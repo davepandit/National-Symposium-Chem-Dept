@@ -84,7 +84,7 @@ const speakers = [
     image: "",
   },
   {
-    name: "Dr. Chinna Ayya Swami P.",
+    name: "Dr. Chinna Ayya Swamy P.",
     title: "National Institute of Technology Calicut",
     image: ten,
   },
