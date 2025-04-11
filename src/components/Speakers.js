@@ -69,11 +69,6 @@ const speakers = [
     image: twenty,
   },
   {
-    name: "Prof. Firasat Hussain",
-    title: "Delhi University",
-    image: six,
-  },
-  {
     name: "Dr. M. Rajeswara Rao",
     title: "Indian Institute of Technology Dharwad",
     image: eight,
@@ -117,11 +112,6 @@ const speakers = [
     name: "Dr. Manash Sarmah",
     title: "Syngene International Ltd Bangalore",
     image: fourteen,
-  },
-  {
-    name: "Dr. Mukul Lal",
-    title: "Syngenta Biosciences Pvt. Ltd. Goa",
-    image: fifteen,
   },
   {
     name: "Dr. Kathiresan Murugavel",
