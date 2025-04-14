@@ -32,6 +32,7 @@ import seventeen from "../img/17th.png";
 import eighteen from "../img/18th.png";
 import nineteen from "../img/19th.png";
 import twenty from "../img/20th.jpg";
+import animikh from "../img/animikh.jpeg";
 
 const dummySpeaker = "https://via.placeholder.com/200x200?text=Speaker";
 
@@ -81,7 +82,7 @@ const speakers = [
   {
     name: "Dr. Animikh Roy",
     title: "Father Muller Medical College Mangalore",
-    image: "",
+    image: animikh,
   },
   {
     name: "Dr. Chinna Ayya Swamy P.",
