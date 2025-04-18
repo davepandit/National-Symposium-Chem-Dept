@@ -204,9 +204,9 @@ const HeroSection = () => {
             🏆Best Poster Awards by ACS and RSC publishers
           </div>
 
-          <div class="mt-2 text-center text-white text-2xl font-bold animate-pulse-text">
+{/*           <div class="mt-2 text-center text-white text-2xl font-bold animate-pulse-text">
             📕Book proceedings by Springer
-          </div>
+          </div> */}
         </div>
       </section>
       {/* Scrolling News Section */}
