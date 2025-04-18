@@ -91,6 +91,8 @@ const Abstract = () => {
               Download Abstract Template
             </a>
           </div>
+
+          <div className="text-center mt-5 text-gray-800 font-bold">Poster size should be: 4(height) x 3(width)</div>
         </motion.div>
       </div>
     </section>
