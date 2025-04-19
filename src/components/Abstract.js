@@ -74,6 +74,18 @@ const Abstract = () => {
                 image is allowed(accepted formats are TIFF, JPEG, PNG and a
                 figure caption is mandatory).
               </li>
+              <li>
+                <strong>Poster Measurements:</strong> Poster size should be 4
+                feet (height) x 3 feet (width). You can download the template of
+                the poster{" "}
+                <a
+                  className="text-blue-700 underline hover:cursor-pointer"
+                  href="/documents/Template-for-the-poster-AFMECA-2025.pptx"
+                  download="Template-for-the-poster-AFMECA-2025.pptx"
+                >
+                  here.
+                </a>
+              </li>
             </ul>
 
             <p className="mt-6">
@@ -92,7 +104,9 @@ const Abstract = () => {
             </a>
           </div>
 
-          <div className="text-center mt-5 text-gray-800 font-bold">Poster size should be: 4(height) x 3(width)</div>
+          <div className="text-center mt-5 text-gray-800 font-bold">
+            Poster size should be: 4(height) x 3(width)
+          </div>
         </motion.div>
       </div>
     </section>
