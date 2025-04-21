@@ -93,19 +93,29 @@ const Abstract = () => {
               professional presentation.
             </p>
           </div>
-
-          <div className="mt-8 text-center space-y-4">
-            <a
-              href="/documents/Abstract-AFMECA-2025.docx"
-              download="Abstract_Template.docx"
-              className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium inline-block"
-            >
-              Download Abstract Template
-            </a>
+          <div className="flex flex-row">
+            <div className="mt-8 text-center space-y-4">
+              <a
+                href="/documents/Abstract-AFMECA-2025.docx"
+                download="Abstract_Template.docx"
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium inline-block"
+              >
+                Download Abstract Template
+              </a>
+            </div>
+            <div className="mt-8 text-center space-y-4">
+              <a
+                href="/documents/Template-for-the-poster-AFMECA-2025.pptx"
+                download="Template-for-the-poster-AFMECA-2025.pptx"
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium inline-block"
+              >
+                Download Poster Template
+              </a>
+            </div>
           </div>
 
           <div className="text-center mt-5 text-gray-800 font-bold">
-            Poster size should be: 4(height) x 3(width)
+            Poster size should be: 4 feet (height) x 3 feet (width)
           </div>
         </motion.div>
       </div>
