@@ -10,11 +10,20 @@ import genNextLogo from "../img/genNextLogo.webp";
 import royalLogo from "../img/royalLogo.png";
 import aparLogo from "../img/image copy 5.png";
 import aromazenLogo from "../img/aromazen.jpg";
+import bob from "../img/bob.png";
+import thermofisher from "../img/Thermofisher.png";
+import canarabank from "../img/CanaraBank.png";
+import springer from "../img/SpringerNature.png";
+import cardolite from "../img/Cardolite.png";
+import sea6 from "../img/Sea6.png";
+import kalbavi from "../img/Kalbavi.png";
+import samvitti from "../img/SamvittiCapital.png";
+import srico from "../img/Srico.png";
 
 const HeroSection = () => {
   return (
     <>
-      <section className="relative h-[1270px] md:h-[1080px] overflow-hidden bg-deep-blue">
+      <section className="relative h-[1650px] md:h-[1350px] overflow-hidden bg-deep-blue">
         {/* Atom Background */}
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
@@ -140,7 +149,7 @@ const HeroSection = () => {
             <h2 className="text-xl font-semibold text-white mt-8">
               Sponsored By
             </h2>
-            <div className="flex flex-wrap justify-center gap-8 mt-4">
+            <div className="flex flex-wrap md:grid md:grid-cols-4 justify-center gap-8 mt-4">
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
@@ -192,8 +201,100 @@ const HeroSection = () => {
                   className="w-full h-full object-contain"
                 />
               </motion.div>
+
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
+              >
+                <img
+                  src={bob}
+                  alt="Bank of Baroda Logo"
+                  className="w-full h-full object-contain"
+                />
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
+              >
+                <img
+                  src={thermofisher}
+                  alt="Thermofisher Logo"
+                  className="w-full h-full object-contain"
+                />
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
+              >
+                <img
+                  src={canarabank}
+                  alt="Canara Bank Logo"
+                  className="w-full h-full object-contain"
+                />
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
+              >
+                <img
+                  src={sea6}
+                  alt="Sea6 Logo"
+                  className="w-full h-full object-contain"
+                />
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
+              >
+                <img
+                  src={springer}
+                  alt="Springer Nature Logo"
+                  className="w-full h-full object-contain"
+                />
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
+              >
+                <img
+                  src={srico}
+                  alt="Srico Logo"
+                  className="w-full h-full object-contain"
+                />
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
+              >
+                <img
+                  src={samvitti}
+                  alt="Samvitti Logo"
+                  className="w-full h-full object-contain"
+                />
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
+              >
+                <img
+                  src={cardolite}
+                  alt="Cardolite Logo"
+                  className="w-full h-full object-contain"
+                />
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
+              >
+                <img
+                  src={kalbavi}
+                  alt="Kalbavi Logo"
+                  className="w-full h-full object-contain"
+                />
+              </motion.div>
             </div>
           </motion.div>
+          
           {/* <div
             className="relative text-3xl mt-6 lg:mt-3 text-center hacker-glitch-text"
             data-text="Best Poster Awards by ACS"
@@ -204,7 +305,7 @@ const HeroSection = () => {
             🏆Best Poster Awards by ACS and RSC publishers
           </div>
 
-{/*           <div class="mt-2 text-center text-white text-2xl font-bold animate-pulse-text">
+          {/*           <div class="mt-2 text-center text-white text-2xl font-bold animate-pulse-text">
             📕Book proceedings by Springer
           </div> */}
         </div>

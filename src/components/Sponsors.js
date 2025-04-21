@@ -11,6 +11,15 @@ import genNextLogo from "../img/genNextLogo.webp";
 import royalLogo from "../img/royalLogo.png";
 import aromazenLogo from "../img/aromazen.jpg";
 import afmeca_sponsor from "../img/afmeca_sponsorship.png";
+import bob from "../img/bob.png"
+import thermofisher from "../img/Thermofisher.png"
+import canarabank from "../img/CanaraBank.png"
+import springer from "../img/SpringerNature.png"
+import cardolite from "../img/Cardolite.png"
+import sea6 from "../img/Sea6.png"
+import kalbavi from "../img/Kalbavi.png"
+import samvitti from "../img/SamvittiCapital.png"
+import srico from "../img/Srico.png"
 
 const Sponsors = () => {
   const [ref, inView] = useInView({
@@ -46,11 +55,48 @@ const Sponsors = () => {
       name: "Aromazen",
       logo: aromazenLogo,
     },
+    {
+      name: "Bank of Baroda",
+      logo: bob,
+    },
+    {
+      name: "Thermofisher",
+      logo: thermofisher,
+    },
+    {
+      name: "Canara Bank",
+      logo: canarabank,
+    },
+    {
+      name: "Sea6 Energy",
+      logo: sea6,
+    },
+    {
+      name: "Springer Nature",
+      logo: springer,
+    },
+    {
+      name: "Srico",
+      logo: srico,
+    },
+    {
+      name: "Samvitti Capital",
+      logo: samvitti,
+    },
+    {
+      name: "Cardolite",
+      logo: cardolite,
+    },
+    {
+      name: "Kalbavi",
+      logo: kalbavi,
+    },
+
   ];
 
   const SponsorTier = ({ sponsors, gridCols, logoSize }) => (
     <div className="mb-16">
-      <div className={`grid md:flex justify-center ${gridCols} gap-8`}>
+      <div className={`grid ${gridCols} gap-8`}>
         {sponsors.map((sponsor, index) => (
           <motion.div
             key={index}
@@ -83,7 +129,7 @@ const Sponsors = () => {
         </motion.div>
         <SponsorTier
           sponsors={otherSponsors}
-          gridCols="grid-cols-1 md:grid-cols-3"
+          gridCols="grid-cols-1 md:grid-cols-4"
           logoSize="w-32 h-20"
         />
 
