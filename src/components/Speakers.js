@@ -36,13 +36,13 @@ import animikh from "../img/animikh.jpeg";
 
 const dummySpeaker = "https://via.placeholder.com/200x200?text=Speaker";
 
-const chiefGuest = {
+const guestOfHonor = {
     name: "Dr. Kannan Srinivasan",
     title: "Director, CSIR-CSMCRI Bhavnagar",
     image: one,
 };
 
-const guestOfHonor = {
+const chiefGuest = {
     name: "Ajay Mehta",
     title: "Vice President Engineering Technology at Shell",
     image: chief_guest,
