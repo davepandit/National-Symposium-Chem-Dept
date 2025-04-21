@@ -93,7 +93,7 @@ const Abstract = () => {
               professional presentation.
             </p>
           </div>
-          <div className="flex flex-row">
+          <div className="flex flex-row justify-center mx-auto gap-2">
             <div className="mt-8 text-center space-y-4">
               <a
                 href="/documents/Abstract-AFMECA-2025.docx"
