@@ -117,9 +117,18 @@ const Abstract = () => {
           <div className="text-center mt-5 text-gray-800 font-bold">
             Poster size should be: 4 feet (height) x 3 feet (width)
           </div>
+          <div class="my-6 text-center p-4 border border-blue-500">
+            <span class="text-blue-600 text-xl font-bold pulse-text">
+              Selected high quality papers will be published in {" "}
+              <a href="https://www.thieme.de/en/thieme-chemistry/journals-synlett-54848.htm"
+                class="underline hover:text-blue-500 transition-colors duration-300">
+                SYNLETT journal
+              </a>
+            </span>
+          </div>
         </motion.div>
-      </div>
-    </section>
+      </div >
+    </section >
   );
 };
 

@@ -64,8 +64,8 @@ const speakers = [
   { name: "Dr. Chandan Maity", title: "Vellore Institute of Technology", image: twelve },
   { name: "Dr. Manash Sarmah", title: "Syngene International Ltd Bangalore", image: fourteen },
   { name: "Dr. Kathiresan Murugavel", title: "CSIR-CECRI", image: seventeen },
-  { name: "Dr. Jince Sebastian", title: "Süd-Chemie India Pvt. Ltd.", image: eighteen },
   { name: "Dr. Mallikarjun Angadi", title: "Librarian, Central Library, NITK", image: nineteen },
+  { name: "Dr. Mukul Lal", title: "Syngenta Biosciences Pvt. Ltd.", image: "" }
 ].filter((speaker) => speaker.name !== "Prof. Sanjeev Chaudhari");
 
 const SpeakerCard = ({ speaker, index, inView }) => {
@@ -120,12 +120,12 @@ const Speakers = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 justify-center space-x-16 mb-20">
           <div className="grid grid-cols-1 items-center">
-            <h3 className="text-2xl font-semibold text-gray-700 mb-4">Chief Guest</h3>
+            <h3 className="text-2xl font-semibold text-gray-700 mb-4 mx-auto">Chief Guest</h3>
             <SpeakerCard key={chiefGuest.name} speaker={chiefGuest} index={1} inView={inView} />
           </div>
 
           <div className="grid grid-cols-1 items-center">
-            <h3 className="text-2xl font-semibold text-gray-700 mb-4">Guest of Honor</h3>
+            <h3 className="text-2xl font-semibold text-gray-700 mb-4 mx-auto">Guest of Honor</h3>
             <SpeakerCard key={guestOfHonor.name} speaker={guestOfHonor} index={2} inView={inView} />
           </div>
         </div>
