@@ -302,7 +302,7 @@ const HeroSection = () => {
             Best Poster Awards by ACS and RSC
           </div> */}
           <div class="mt-4 lg:mt-11 text-center text-white text-2xl font-bold animate-pulse-text">
-            🏆Best Poster Awards by ACS and RSC publishers
+            🏆Best Poster Awards by ACS, RSC and 2 books by Thieme Publishers
           </div>
 
           {/*           <div class="mt-2 text-center text-white text-2xl font-bold animate-pulse-text">
