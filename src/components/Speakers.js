@@ -65,7 +65,10 @@ const speakers = [
   { name: "Dr. Manash Sarmah", title: "Syngene International Ltd Bangalore", image: fourteen },
   { name: "Dr. Kathiresan Murugavel", title: "CSIR-CECRI", image: seventeen },
   { name: "Dr. Mallikarjun Angadi", title: "Librarian, Central Library, NITK", image: nineteen },
-  { name: "Dr. Mukul Lal", title: "Syngenta Biosciences Pvt. Ltd.", image: "" }
+  { name: "Dr. Mukul Lal", title: "Syngenta Biosciences Pvt. Ltd.", image: "" },
+  { name: "Prof. Keyur Raval", title: "Professor-In-Charge, CRF, NITK", image: "" },
+  { name: "Dr. Suprabha K. R", title: "Associate Professor, NITK", image: "" },
+  { name: "Prof. Vidya Shetty K", title: "Professor, NITK", image: "" },
 ].filter((speaker) => speaker.name !== "Prof. Sanjeev Chaudhari");
 
 const SpeakerCard = ({ speaker, index, inView }) => {
