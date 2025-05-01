@@ -122,7 +122,14 @@ const Abstract = () => {
               Selected high quality papers will be published in {" "}
               <a href="https://www.thieme.de/en/thieme-chemistry/journals-synlett-54848.htm"
                 class="underline hover:text-blue-500 transition-colors duration-300">
-                SYNLETT Journal (IF- 1.7, 2023), Thieme Publication
+                SYNLETT journal
+              </a>, and Wiley {" "}
+              <a href="https://onlinelibrary.wiley.com/journal/21944296"
+              class="underline hover:text-blue-500 transition-colors duration-300">
+              Energy technology (3.6 IF)</a> and {" "}
+              <a href="https://chemistry-europe.onlinelibrary.wiley.com/journal/23656549"
+              class="underline hover:text-blue-500 transition-colors duration-300">
+              ChemistrySelect (1.9 IF)
               </a>
             </span>
           </div>
