@@ -34,6 +34,11 @@ import eighteen from "../img/18th.png";
 import nineteen from "../img/19th.png";
 import twenty from "../img/20th.jpg";
 import animikh from "../img/animikh.jpeg";
+import keyur from "../img/keyur.png";
+import suprabha from "../img/suprabha.jpg";
+import vidya from "../img/vidyashetty.png";
+import mukul from "../img/mukul.jpeg";
+
 
 const dummySpeaker = "https://via.placeholder.com/200x200?text=Speaker";
 
@@ -44,31 +49,32 @@ const guestOfHonor = {
 };
 
 const chiefGuest = {
-  name: "Ajay Mehta",
+  name: "Dr. Ajay Mehta",
   title: "Vice President Engineering Technology at Shell",
   image: chief_guest,
 };
 
 const speakers = [
   { name: "Prof. M. Ravikanth", title: "Indian Institute of Technology Bombay", image: two },
-  { name: "Prof. Pratap Vishnoi", title: "JNCASR Bengaluru", image: three },
   { name: "Prof. Tarun K. Panda", title: "Indian Institute of Technology Hyderabad", image: four },
   { name: "Prof. Ramaswamy Murugavel", title: "Indian Institute of Technology Bombay", image: twenty },
+  { name: "Prof. Vidya Shetty K", title: "Professor, NITK", image: vidya },
+  { name: "Prof. Keyur Raval", title: "Professor-In-Charge, CRF, NITK", image: keyur },
+  { name: "Prof. Manja Naik", title: "College of Fisheries Mangalore", image: seven },
   { name: "Dr. M. Rajeswara Rao", title: "Indian Institute of Technology Dharwad", image: eight },
   { name: "Dr. Debaprasad Shee", title: "Indian Institute of Technology Hyderabad", image: eleven },
   { name: "Dr. Animikh Roy", title: "Father Muller Medical College Mangalore", image: animikh },
   { name: "Dr. Chinna Ayya Swamy P.", title: "National Institute of Technology Calicut", image: ten },
-  { name: "Prof. Manja Naik", title: "College of Fisheries Mangalore", image: seven },
+  { name: "Dr. Pratap Vishnoi", title: "JNCASR Bengaluru", image: three },
   { name: "Dr. Hussain B.", title: "IISER Tirupathi", image: thirteen },
   { name: "Dr. Debaprasad Mandal", title: "Indian Institute of Technology Ropar", image: sixteen },
   { name: "Dr. Chandan Maity", title: "Vellore Institute of Technology", image: twelve },
   { name: "Dr. Manash Sarmah", title: "Syngene International Ltd Bangalore", image: fourteen },
   { name: "Dr. Kathiresan Murugavel", title: "CSIR-CECRI", image: seventeen },
   { name: "Dr. Mallikarjun Angadi", title: "Librarian, Central Library, NITK", image: nineteen },
-  { name: "Dr. Mukul Lal", title: "Syngenta Biosciences Pvt. Ltd.", image: "" },
-  { name: "Prof. Keyur Raval", title: "Professor-In-Charge, CRF, NITK", image: "" },
-  { name: "Dr. Suprabha K. R", title: "Associate Professor, NITK", image: "" },
-  { name: "Prof. Vidya Shetty K", title: "Professor, NITK", image: "" },
+  { name: "Dr. Mukul Lal", title: "Syngenta Biosciences Pvt. Ltd.", image: mukul },
+  { name: "Dr. Suprabha K. R", title: "Associate Professor, NITK", image: suprabha },
+
 ].filter((speaker) => speaker.name !== "Prof. Sanjeev Chaudhari");
 
 const SpeakerCard = ({ speaker, index, inView }) => {

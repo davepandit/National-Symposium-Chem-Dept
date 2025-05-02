@@ -4,26 +4,187 @@ import AtomModel from "./AtomModel";
 import { Link } from "react-router-dom";
 import nitkLogo from "../img/image copy 2.png";
 import crfLogo from "../img/crf03.png";
+// Import sponsor logos
 import anrfLogo from "../img/PHOTO-2025-01-24-19-36-23.jpg";
 import acsLogo from "../img/acsLogo.webp";
 import genNextLogo from "../img/genNextLogo.webp";
 import royalLogo from "../img/royalLogo.png";
 import aparLogo from "../img/image copy 5.png";
 import aromazenLogo from "../img/aromazen.jpg";
-import bob from "../img/bob.png";
-import thermofisher from "../img/Thermofisher.png";
-import canarabank from "../img/CanaraBank.png";
-import springer from "../img/SpringerNature.png";
-import cardolite from "../img/Cardolite.png";
-import sea6 from "../img/Sea6.png";
-import kalbavi from "../img/Kalbavi.png";
-import samvitti from "../img/SamvittiCapital.png";
-import srico from "../img/Srico.png";
+import afmeca_sponsor from "../img/afmeca_sponsorship.png";
+import bob from "../img/bob.png"
+import thermofisher from "../img/Thermofisher.png"
+import canarabank from "../img/CanaraBank.png"
+import springer from "../img/SpringerNature.png"
+import cardolite from "../img/Cardolite.png"
+import sea6 from "../img/Sea6.png"
+import kalbavi from "../img/Kalbavi.png"
+import samvitti from "../img/SamvittiCapital.png"
+import srico from "../img/Srico.png"
+import adani from "../img/Adani-power-logo.png"
+import gmpl from "../img/GMPL.png"
+import scdcc from "../img/scdcc.jpeg"
+import horiba from "../img/HORIBA LOGO RGB (1).jpg"
+import tsar from "../img/TSAR labcare.png"
+import chemscene from "../img/ChemScene-logo  (2).jpg"
+import ongc from "../img/MRPL ONGC.png"
+import worldsc from "../img/WORLD SCIENTIFIC.png"
+import icici from "../img/ICICI.jpeg"
+import bisleri from "../img/bisleri.png"
+import sdles from "../img/SRI DURGA LAB - LOGO (1).jpg"
+import siddi from "../img/siddi.png"
+import eskaray from "../img/essarkay.png"
+import quadri from "../img/quandravalet labs.png"
+import rkfunr from "../img/rakesh shenoy furnitures.png"
+import thieme from "../img/Thieme publishers.png"
+import wiley from "../img/Wiley publishers.png"
 
 const HeroSection = () => {
+
+  const featuredSponsors = {
+    diamond: [
+      {
+        name: "Adani Power",
+        logo: adani,
+      },
+      {
+        name: "GMPL",
+        logo: gmpl,
+      },
+      {
+        name: "NRF",
+        logo: anrfLogo,
+      },
+      {
+        name: "Aromazen",
+        logo: aromazenLogo,
+      },
+    ],
+    gold: [
+      {
+        name: "GenNext",
+        logo: genNextLogo,
+      },
+    ],
+    silver: [
+      {
+        name: "Bank of Baroda",
+        logo: bob,
+      },
+      {
+        name: "SCDCC",
+        logo: scdcc,
+      }
+    ],
+    bronze: [
+      {
+        name: "Horiba",
+        logo: horiba,
+      },
+      {
+        name: "TSAR",
+        logo: tsar,
+      },
+      {
+        name: "Chem Scene",
+        logo: chemscene,
+      },
+      {
+        name: "ONGC",
+        logo: ongc,
+      },
+      {
+        name: "World Scientific",
+        logo: worldsc,
+      },
+      {
+        name: "ICICI Bank",
+        logo: icici,
+      },
+      {
+        name: "Canara Bank",
+        logo: canarabank,
+      },
+      {
+        name: "Sea6 Energy",
+        logo: sea6,
+      },
+      {
+        name: "Kalbavi",
+        logo: kalbavi,
+      },
+    ],
+    miscellaneous: [
+      {
+        name: "Samvitti Capital",
+        logo: samvitti,
+      },
+      {
+        name: "Srico",
+        logo: srico,
+      },
+      {
+        name: "Springer Nature",
+        logo: springer,
+      },
+      {
+        name: "Cardolite",
+        logo: cardolite,
+      },
+      {
+        name: "Bisleri",
+        logo: bisleri,
+      },
+      {
+        name: "SDLES",
+        logo: sdles,
+      },
+      {
+        name: "Siddhi",
+        logo: siddi,
+      },
+      {
+        name: "Essraay",
+        logo: eskaray,
+      },
+      {
+        name: "Quadri",
+        logo: quadri,
+      },
+      {
+        name: "Rakesh Shenoy",
+        logo: rkfunr,
+      },
+    ],
+    bestPosterAwards: [
+      {
+        name: "ACS Publications",
+        logo: acsLogo,
+      },
+      {
+        name: "Royal Society Of Chemistry",
+        logo: royalLogo,
+      },
+      {
+        name: "Thieme",
+        logo: thieme,
+      },
+    ],
+    publicationPartners: [
+      {
+        name: "Wiley",
+        logo: wiley,
+      },
+      {
+        name: "Thieme",
+        logo: thieme,
+      }
+    ],
+  };
+
   return (
     <>
-      <section className="relative h-[1650px] md:h-[1350px] overflow-hidden bg-deep-blue">
+      <section className="relative h-[1900px] md:h-[1450px] overflow-hidden bg-deep-blue">
         {/* Atom Background */}
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
@@ -145,169 +306,121 @@ const HeroSection = () => {
               </motion.div>
             </div>
 
-            {/* sponsors part  */}
-            <h2 className="text-xl font-semibold text-white mt-8">
-              Sponsored By
-            </h2>
-            <div className="flex flex-wrap md:grid md:grid-cols-4 justify-center gap-8 mt-4">
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
-              >
-                <img
-                  src={anrfLogo}
-                  alt="ANRF Logo"
-                  className="w-full h-full object-contain"
-                />
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
-              >
-                <img
-                  src={acsLogo}
-                  alt="APAR Logo"
-                  className="w-full h-full object-contain"
-                />
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
-              >
-                <img
-                  src={royalLogo}
-                  alt="Cezen Tech Logo"
-                  className="w-full h-full 
-                object-contain"
-                />
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
-              >
-                <img
-                  src={genNextLogo}
-                  alt="Durga Chemicals Logo"
-                  className="w-full h-full object-contain"
-                />
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
-              >
-                <img
-                  src={aromazenLogo}
-                  alt="New Sponsor Logo"
-                  className="w-full h-full object-contain"
-                />
-              </motion.div>
+            {/* sponsors part */}
+            <h2 className="text-xl font-semibold text-white mt-6 text-center">Sponsored By</h2>
+            <div className="mt-4 w-full max-w-5xl mx-auto">
+              {/* All sponsor tiers */}
+              <div className="grid gap-6">
+                {/* Diamond Sponsors */}
+                <div>
+                  <h3 className="text-sm font-medium text-blue-300 mb-2 text-center">Diamond Sponsors</h3>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-3 place-items-center">
+                    {featuredSponsors.diamond.map((sponsor, index) => (
+                      <motion.div
+                        key={`diamond-${index}`}
+                        whileHover={{ scale: 1.05 }}
+                        className="w-20 h-20 shadow-lg rounded-lg flex items-center justify-center bg-white/95 p-2"
+                      >
+                        <img
+                          src={sponsor.logo}
+                          alt={sponsor.name}
+                          className="max-w-full max-h-full object-contain"
+                        />
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
 
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
-              >
-                <img
-                  src={bob}
-                  alt="Bank of Baroda Logo"
-                  className="w-full h-full object-contain"
-                />
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
-              >
-                <img
-                  src={thermofisher}
-                  alt="Thermofisher Logo"
-                  className="w-full h-full object-contain"
-                />
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
-              >
-                <img
-                  src={canarabank}
-                  alt="Canara Bank Logo"
-                  className="w-full h-full object-contain"
-                />
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
-              >
-                <img
-                  src={sea6}
-                  alt="Sea6 Logo"
-                  className="w-full h-full object-contain"
-                />
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
-              >
-                <img
-                  src={springer}
-                  alt="Springer Nature Logo"
-                  className="w-full h-full object-contain"
-                />
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
-              >
-                <img
-                  src={srico}
-                  alt="Srico Logo"
-                  className="w-full h-full object-contain"
-                />
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
-              >
-                <img
-                  src={samvitti}
-                  alt="Samvitti Logo"
-                  className="w-full h-full object-contain"
-                />
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
-              >
-                <img
-                  src={cardolite}
-                  alt="Cardolite Logo"
-                  className="w-full h-full object-contain"
-                />
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
-              >
-                <img
-                  src={kalbavi}
-                  alt="Kalbavi Logo"
-                  className="w-full h-full object-contain"
-                />
-              </motion.div>
+                {/* Gold & Silver Sponsors */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                  <h3 className="text-sm font-medium text-yellow-300 mb-2 text-center">Gold Sponsors</h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-3 place-items-center">
+                    {[...featuredSponsors.gold].map((sponsor, index) => (
+                      <motion.div
+                        key={`gold-${index}`}
+                        whileHover={{ scale: 1.05 }}
+                        className="w-16 h-16 shadow-lg rounded-lg flex items-center justify-center bg-white/95 p-2"
+                      >
+                        <img
+                          src={sponsor.logo}
+                          alt={sponsor.name}
+                          className="max-w-full max-h-full object-contain"
+                        />
+                      </motion.div>
+                    ))}
+                  </div>
+                  </div>
+
+                  <div>
+                  <h3 className="text-sm font-medium text-gray-300 mb-2 text-center">Silver Sponsors</h3>
+                  <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-3 place-items-center">
+                    {[...featuredSponsors.silver].map((sponsor, index) => (
+                      <motion.div
+                        key={`silver-${index}`}
+                        whileHover={{ scale: 1.05 }}
+                        className="w-16 h-16 shadow-lg rounded-lg flex items-center justify-center bg-white/95 p-2"
+                      >
+                        <img
+                          src={sponsor.logo}
+                          alt={sponsor.name}
+                          className="max-w-full max-h-full object-contain"
+                        />
+                      </motion.div>
+                    ))}
+                  </div>
+                  </div>
+                </div>
+
+                {/* Bronze and Miscellaneous Sponsors in two columns on larger screens */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {/* Bronze Sponsors */}
+                  <div>
+                    <h3 className="text-sm font-medium text-amber-800 mb-2 text-center">Bronze Sponsors</h3>
+                    <div className="grid grid-cols-4 sm:grid-cols-5 gap-3 place-items-center">
+                      {featuredSponsors.bronze.map((sponsor, index) => (
+                        <motion.div
+                          key={`bronze-${index}`}
+                          whileHover={{ scale: 1.05 }}
+                          className="w-14 h-14 shadow-lg rounded-lg flex items-center justify-center bg-white/95 p-2"
+                        >
+                          <img
+                            src={sponsor.logo}
+                            alt={sponsor.name}
+                            className="max-w-full max-h-full object-contain"
+                          />
+                        </motion.div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Miscellaneous Sponsors */}
+                  <div>
+                    <h3 className="text-sm font-medium text-gray-400 mb-2 text-center">Miscellaneous Sponsors</h3>
+                    <div className="grid grid-cols-4 sm:grid-cols-5 gap-3 place-items-center">
+                      {featuredSponsors.miscellaneous.map((sponsor, index) => (
+                        <motion.div
+                          key={`misc-${index}`}
+                          whileHover={{ scale: 1.05 }}
+                          className="w-14 h-14 shadow-lg rounded-lg flex items-center justify-center bg-white/95 p-2"
+                        >
+                          <img
+                            src={sponsor.logo}
+                            alt={sponsor.name}
+                            className="max-w-full max-h-full object-contain"
+                          />
+                        </motion.div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </motion.div>
-          
-          {/* <div
-            className="relative text-3xl mt-6 lg:mt-3 text-center hacker-glitch-text"
-            data-text="Best Poster Awards by ACS"
-          >
-            Best Poster Awards by ACS and RSC
-          </div> */}
+
           <div class="mt-4 lg:mt-11 text-center text-white text-2xl font-bold animate-pulse-text">
             🏆Best Poster Awards by ACS, RSC and 2 books by Thieme Publishers
           </div>
-
-          {/*           <div class="mt-2 text-center text-white text-2xl font-bold animate-pulse-text">
-            📕Book proceedings by Springer
-          </div> */}
         </div>
       </section>
       {/* Scrolling News Section */}
