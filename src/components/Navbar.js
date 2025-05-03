@@ -36,6 +36,10 @@ const Navbar = () => {
     "About",
     "Speakers",
     "Committee",
+    {
+      name: 'Submission',
+      subItems: ['Abstract', 'Publications']
+    },
     "Accommodation",
     "Hotels",
     "Sightseeing",

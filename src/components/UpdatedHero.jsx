@@ -32,7 +32,7 @@ import worldsc from "../img/WORLD SCIENTIFIC.png"
 import icici from "../img/ICICI.jpeg"
 import bisleri from "../img/bisleri.png"
 import sdles from "../img/SRI DURGA LAB - LOGO (1).jpg"
-import siddi from "../img/siddi.png"
+import siddi from "../img/siddi.jpg"
 import eskaray from "../img/essarkay.png"
 import quadri from "../img/quandravalet labs.png"
 import rkfunr from "../img/rakesh shenoy furnitures.png"
@@ -184,7 +184,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <section className="relative h-[1900px] md:h-[1450px] overflow-hidden bg-deep-blue">
+      <section className="relative h-[2050px] md:h-[1500px] overflow-hidden bg-deep-blue">
         {/* Atom Background */}
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
@@ -401,6 +401,49 @@ const HeroSection = () => {
                       {featuredSponsors.miscellaneous.map((sponsor, index) => (
                         <motion.div
                           key={`misc-${index}`}
+                          whileHover={{ scale: 1.05 }}
+                          className="w-14 h-14 shadow-lg rounded-lg flex items-center justify-center bg-white/95 p-2"
+                        >
+                          <img
+                            src={sponsor.logo}
+                            alt={sponsor.name}
+                            className="max-w-full max-h-full object-contain"
+                          />
+                        </motion.div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Best poster awards and publication partners */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {/* Best Poster Awards */}
+                  <div>
+                    <h3 className="text-sm font-medium text-gray-400 mb-2 text-center">Best Poster Awards</h3>
+                    <div className="grid grid-cols-3 sm:grid-cols-3 gap-3 place-items-center">
+                      {featuredSponsors.bestPosterAwards.map((sponsor, index) => (
+                        <motion.div
+                          key={`bpa-${index}`}
+                          whileHover={{ scale: 1.05 }}
+                          className="w-14 h-14 shadow-lg rounded-lg flex items-center justify-center bg-white/95 p-2"
+                        >
+                          <img
+                            src={sponsor.logo}
+                            alt={sponsor.name}
+                            className="max-w-full max-h-full object-contain"
+                          />
+                        </motion.div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Publication Partners */}
+                  <div>
+                    <h3 className="text-sm font-medium text-gray-400 mb-2 text-center">Publication Partners</h3>
+                    <div className="grid grid-cols-2 sm:grid-cols-2 gap-3 place-items-center">
+                      {featuredSponsors.publicationPartners.map((sponsor, index) => (
+                        <motion.div
+                          key={`pp-${index}`}
                           whileHover={{ scale: 1.05 }}
                           className="w-14 h-14 shadow-lg rounded-lg flex items-center justify-center bg-white/95 p-2"
                         >
