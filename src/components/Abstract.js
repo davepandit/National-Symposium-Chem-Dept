@@ -121,16 +121,17 @@ const Abstract = () => {
             <span class="text-blue-600 text-xl font-bold pulse-text">
               Selected high quality papers will be published in {" "}
               <a href="https://www.thieme.de/en/thieme-chemistry/journals-synlett-54848.htm"
-                class="underline hover:text-blue-500 transition-colors duration-300">
-                SYNLETT journal
+                class="underline text-cyan-600 hover:text-cyan-500 transition-colors duration-300">
+                Thieme SYNLETT journal (1.7 IF)
               </a>, and Wiley {" "}
               <a href="https://onlinelibrary.wiley.com/journal/21944296"
-              class="underline hover:text-blue-500 transition-colors duration-300">
-              Energy technology (3.6 IF)</a> and {" "}
+                class="underline text-green-600 hover:text-green-500 transition-colors duration-300">
+                Energy technology (3.6 IF)</a> and {" "}
               <a href="https://chemistry-europe.onlinelibrary.wiley.com/journal/23656549"
-              class="underline hover:text-blue-500 transition-colors duration-300">
-              ChemistrySelect (1.9 IF)
-              </a>
+                class="underline text-violet-600 hover:text-violet-500 transition-colors duration-300">
+                ChemistrySelect (1.9 IF)
+              </a> {" "}
+              journals.
             </span>
           </div>
         </motion.div>

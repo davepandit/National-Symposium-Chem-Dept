@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Download, Linkedin, Instagram } from "react-feather";
+import { Watch } from "lucide-react";
 
 const Footer = () => {
   const handleDownloadFlyer = () => {
@@ -88,6 +89,13 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Downloads</h4>
             <div className="space-y-4">
+              <button
+                className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"
+              >
+                <a href="https://iris.nitk.ac.in/tk/afmeca_schedule">
+                  <span>View Schedule</span>
+                </a>
+              </button>
               <button
                 onClick={handleDownloadFlyer}
                 className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"

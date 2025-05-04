@@ -54,9 +54,6 @@ const Registration = () => {
         <h2 className="text-4xl font-bold text-center text-gray-800">
           Registration
         </h2>
-        <div className="text-red-600 text-center mb-12 mt-5">
-          Click the register button below to register.
-        </div>
 
         <div className="bg-transparent rounded-lg shadow-lg p-8 relative z-20">
           <h3 className="text-2xl font-bold mb-4">Registration Fees*</h3>
@@ -94,12 +91,12 @@ const Registration = () => {
               Registration Deadline: 5<sup>th</sup> May 2025
             </p>
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeEzZk_FmeVuxC_N10pSxFjWr2ZY5LkrA2l1QuOlYVFN2NeKQ/viewform"
+              href="https://iris.nitk.ac.in/tk/afmeca_schedule"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg inline-block"
             >
-              Register here
+              View Schedule
             </a>
           </div>
 

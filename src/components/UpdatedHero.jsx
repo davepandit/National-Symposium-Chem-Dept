@@ -252,13 +252,13 @@ const HeroSection = () => {
               transition={{ delay: 4.2, duration: 0.8 }}
               className="mt-8"
             >
-              <Link to="/registration">
+              <Link to="https://iris.nitk.ac.in/tk/afmeca_schedule">
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="px-6 py-2 md:px-8 md:py-3 bg-blue-500 text-white rounded-full font-semibold hover:bg-blue-600 transition-colors duration-300"
                 >
-                  Register Now
+                  View Schedule
                 </motion.button>
               </Link>
             </motion.div>
@@ -334,41 +334,41 @@ const HeroSection = () => {
                 {/* Gold & Silver Sponsors */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                  <h3 className="text-sm font-medium text-yellow-300 mb-2 text-center">Gold Sponsors</h3>
-                  <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-3 place-items-center">
-                    {[...featuredSponsors.gold].map((sponsor, index) => (
-                      <motion.div
-                        key={`gold-${index}`}
-                        whileHover={{ scale: 1.05 }}
-                        className="w-16 h-16 shadow-lg rounded-lg flex items-center justify-center bg-white/95 p-2"
-                      >
-                        <img
-                          src={sponsor.logo}
-                          alt={sponsor.name}
-                          className="max-w-full max-h-full object-contain"
-                        />
-                      </motion.div>
-                    ))}
-                  </div>
+                    <h3 className="text-sm font-medium text-yellow-300 mb-2 text-center">Gold Sponsors</h3>
+                    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-3 place-items-center">
+                      {[...featuredSponsors.gold].map((sponsor, index) => (
+                        <motion.div
+                          key={`gold-${index}`}
+                          whileHover={{ scale: 1.05 }}
+                          className="w-16 h-16 shadow-lg rounded-lg flex items-center justify-center bg-white/95 p-2"
+                        >
+                          <img
+                            src={sponsor.logo}
+                            alt={sponsor.name}
+                            className="max-w-full max-h-full object-contain"
+                          />
+                        </motion.div>
+                      ))}
+                    </div>
                   </div>
 
                   <div>
-                  <h3 className="text-sm font-medium text-gray-300 mb-2 text-center">Silver Sponsors</h3>
-                  <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-3 place-items-center">
-                    {[...featuredSponsors.silver].map((sponsor, index) => (
-                      <motion.div
-                        key={`silver-${index}`}
-                        whileHover={{ scale: 1.05 }}
-                        className="w-16 h-16 shadow-lg rounded-lg flex items-center justify-center bg-white/95 p-2"
-                      >
-                        <img
-                          src={sponsor.logo}
-                          alt={sponsor.name}
-                          className="max-w-full max-h-full object-contain"
-                        />
-                      </motion.div>
-                    ))}
-                  </div>
+                    <h3 className="text-sm font-medium text-gray-300 mb-2 text-center">Silver Sponsors</h3>
+                    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-3 place-items-center">
+                      {[...featuredSponsors.silver].map((sponsor, index) => (
+                        <motion.div
+                          key={`silver-${index}`}
+                          whileHover={{ scale: 1.05 }}
+                          className="w-16 h-16 shadow-lg rounded-lg flex items-center justify-center bg-white/95 p-2"
+                        >
+                          <img
+                            src={sponsor.logo}
+                            alt={sponsor.name}
+                            className="max-w-full max-h-full object-contain"
+                          />
+                        </motion.div>
+                      ))}
+                    </div>
                   </div>
                 </div>
 
@@ -477,39 +477,13 @@ const HeroSection = () => {
             >
               <div className="animate-marquee inline-block">
                 <span className="text-blue-700 font-semibold px-4">
-                  🔴 Registration Start date: 20th Feb 2025.
+                  🔴 Registrations are now closed. You can find the full Schedule in the Downloads section.
                 </span>
-                <span className="text-blue-700 font-semibold px-4">
-                  🔴 Deadline for Abstract Submission: 30th April 2025
-                </span>
-                <span className="text-blue-700 font-semibold px-4">
-                  🔴 Abstract acceptance notification: 1st May 2025
-                </span>
-                <span className="text-blue-700 font-semibold px-4">
-                  🔴 Registration End Date: 5th May 2025.
-                </span>
-                <span className="text-blue-700 font-semibold px-4">
-                  🔴 Accommodation will be provided on prior request in
-                  registration form.
-                </span>{" "}
               </div>
               <div className="animate-marquee2 inline-block absolute">
                 <span className="text-blue-700 font-semibold px-4">
-                  🔴 Registration Start date: 15th Feb 2025.
+                  🔴 Registrations are now closed. You can find the full Schedule in the Downloads section.
                 </span>
-                <span className="text-blue-700 font-semibold px-4">
-                  🔴 Deadline for Abstract Submission: 30th April 2025
-                </span>
-                <span className="text-blue-700 font-semibold px-4">
-                  🔴 Abstract acceptance notification: 1st May 2025
-                </span>
-                <span className="text-blue-700 font-semibold px-4">
-                  🔴 Registration End Date: 5th May 2025.
-                </span>
-                <span className="text-blue-700 font-semibold px-4">
-                  🔴 Accommodation will be provided on prior request in
-                  registration form.
-                </span>{" "}
               </div>
             </motion.div>
           </div>
