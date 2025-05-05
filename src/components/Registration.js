@@ -90,14 +90,17 @@ const Registration = () => {
             <p className="text-red-600 font-semibold mb-4">
               Registration Deadline: 5<sup>th</sup> May 2025
             </p>
-            <a
-              href="https://iris.nitk.ac.in/tk/afmeca_schedule"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg inline-block"
-            >
-              View Schedule
-            </a>
+            {new Date() < new Date('2025-05-06T00:00:00+05:30') &&
+              (
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeEzZk_FmeVuxC_N10pSxFjWr2ZY5LkrA2l1QuOlYVFN2NeKQ/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg inline-block"
+                >
+                  Register
+                </a>
+              )}
           </div>
 
           <div className="flex flex-col md:flex-row gap-8 items-start mt-8">

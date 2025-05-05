@@ -219,7 +219,6 @@ const HeroSection = () => {
               AFMECA-2025
             </p>
 
-            {/* deadline thing  */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -262,9 +261,27 @@ const HeroSection = () => {
                 </motion.button>
               </Link>
             </motion.div>
+
+            {new Date() < new Date('2025-05-06T00:00:00+05:30') && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 4.2, duration: 0.8 }}
+                className="mt-8"
+              >
+                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSeEzZk_FmeVuxC_N10pSxFjWr2ZY5LkrA2l1QuOlYVFN2NeKQ/viewform">
+                  <motion.button
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="px-6 py-2 md:px-8 md:py-3 bg-blue-500 text-white rounded-full font-semibold hover:bg-blue-600 transition-colors duration-300"
+                  >
+                    Register Now
+                  </motion.button>
+                </Link>
+              </motion.div>
+            )}
           </motion.div>
 
-          {/* here goes the organised section  */}
           {/* Organized By Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -476,14 +493,26 @@ const HeroSection = () => {
               className="flex whitespace-nowrap"
             >
               <div className="animate-marquee inline-block">
-                <span className="text-blue-700 font-semibold px-4">
-                  🔴 Registrations are now closed. You can find the full Schedule in the Downloads section.
-                </span>
+                {new Date() < new Date('2025-05-06T00:00:00+05:30') ? (
+                  <span className="text-blue-700 font-semibold px-4">
+                    🔴 Registrations are open till 5th May
+                  </span>
+                ) : (
+                  <span className="text-blue-700 font-semibold px-4">
+                    🔴 Registrations are now closed. You can find the full Schedule in the Downloads section.
+                  </span>
+                )}
               </div>
               <div className="animate-marquee2 inline-block absolute">
-                <span className="text-blue-700 font-semibold px-4">
-                  🔴 Registrations are now closed. You can find the full Schedule in the Downloads section.
-                </span>
+                {new Date() < new Date('2025-05-06T00:00:00+05:30') ? (
+                  <span className="text-blue-700 font-semibold px-4">
+                    🔴 Registrations are open till 5th May
+                  </span>
+                ) : (
+                  <span className="text-blue-700 font-semibold px-4">
+                    🔴 Registrations are now closed. You can find the full Schedule in the Downloads section.
+                  </span>
+                )}
               </div>
             </motion.div>
           </div>
