@@ -37,6 +37,7 @@ import quadri from "../img/quandravalet labs.png"
 import rkfunr from "../img/rakesh shenoy furnitures.png"
 import thieme from "../img/Thieme publishers.png"
 import wiley from "../img/Wiley publishers.png"
+import pspl from "../img/PSPL logo.png"
 
 const Sponsors = () => {
   const [ref, inView] = useInView({
@@ -116,6 +117,10 @@ const Sponsors = () => {
       {
         name: "Kalbavi",
         logo: kalbavi,
+      },
+      {
+        name: "PSPL",
+        logo: pspl,
       },
     ],
     miscellaneous: [

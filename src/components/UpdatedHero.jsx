@@ -38,6 +38,7 @@ import quadri from "../img/quandravalet labs.png"
 import rkfunr from "../img/rakesh shenoy furnitures.png"
 import thieme from "../img/Thieme publishers.png"
 import wiley from "../img/Wiley publishers.png"
+import pspl from "../img/PSPL logo.png"
 
 const HeroSection = () => {
 
@@ -113,6 +114,10 @@ const HeroSection = () => {
         name: "Kalbavi",
         logo: kalbavi,
       },
+      {
+        name: "PSPL",
+        logo: pspl,
+      }
     ],
     miscellaneous: [
       {
@@ -394,7 +399,7 @@ const HeroSection = () => {
                   {/* Bronze Sponsors */}
                   <div>
                     <h3 className="text-sm font-medium text-amber-800 mb-2 text-center">Bronze Sponsors</h3>
-                    <div className="grid grid-cols-4 sm:grid-cols-5 gap-3 place-items-center">
+                    <div className="grid grid-cols-5 sm:grid-cols-5 gap-3 place-items-center">
                       {featuredSponsors.bronze.map((sponsor, index) => (
                         <motion.div
                           key={`bronze-${index}`}
